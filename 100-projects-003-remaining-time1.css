@@ -22,3 +22,7 @@ body {
 P {
     display: inline-block;
 }
+
+h3 {
+    color: firebrick;
+}
