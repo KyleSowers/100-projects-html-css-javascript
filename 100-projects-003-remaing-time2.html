@@ -3,8 +3,42 @@
 <head>
     <link rel="stylesheet" href="100-projects-003-remaining-time2.css">
 </head>
-<body>
 
+<!--Made for user to directly select the year-month-day-->
+
+<body>
+    <div class="page-wrapper">
+        <div class="container">
+            <div class="row">
+                <h2>Remaining Time Calculator</h2>
+                <label for="datePicker">Choose a date: </label>
+                <br><br>
+                <input type="date" id="datePicker">
+                <br><br>
+                <button id="startCountdown">Start countdown</button>
+                <br><br>
+                <br><br>
+            </div>
+            <div class="row">
+                <label for="days">Remaining days :
+                    <p id="days"></p>
+                </label>
+                <br>
+                <label for="hours">Remaining hours :
+                    <p id="hours"></p>
+                </label>
+                <br>
+                <label for="minutes">Remaining minutes :
+                    <p id="minutes"></p>
+                </label>
+                <br>
+                <label for="seconds">Remaining seconds :
+                    <p id="seconds"></p>
+                </label>
+                <br>
+            </div>
+        </div>
+    </div>
     <script src="100-projects-003-remaining-time2.js"></script>
 </body>
 </html>
