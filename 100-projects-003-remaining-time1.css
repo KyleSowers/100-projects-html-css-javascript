@@ -4,4 +4,17 @@ body {
     align-items: center;
     margin-top: 200px;
     background-color: antiquewhite;
+    color: darkslateblue;
+    border: darkslateblue;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 600px;
+    border: 8px darkslateblue solid;
+    border-radius: 30px;
 }
