@@ -1,8 +1,38 @@
 * {
     text-align: center;
+    background-color: #000;
 }
 
 p {
     display:inline-block;
+}
+
+.page-wrapper {
+    display: flex;
+    justify-content: center;
+
+}
+
+.container {
+    background-color: antiquewhite;
+    color: darkslateblue;
+    margin-top: 30px;
+    padding-top: 90px;
+    width: 850px;
+    height: 750px;
+    border: 12px #fff solid;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.row, h1, h2, h3, label, input, button, p  {
+    background-color:antiquewhite;
+}
+
+button, input {
+    background-color: #fff;
+    color: darkslateblue;
+    border: 3px darkslateblue solid;
+
 }
 
