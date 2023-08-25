@@ -18,3 +18,7 @@ body {
     border: 8px darkslateblue solid;
     border-radius: 30px;
 }
+
+P {
+    display: inline-block;
+}
