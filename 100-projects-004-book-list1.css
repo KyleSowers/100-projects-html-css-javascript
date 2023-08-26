@@ -33,4 +33,5 @@ input {
 
 .button  {
     color: #000;
+    border-radius: 15px;
 }
