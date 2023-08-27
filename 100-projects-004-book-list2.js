@@ -54,11 +54,11 @@ function loadListFromLocalStorage() {
     }
 }
 
-function saveListtoLocalStorage() {
+function saveListToLocalStorage() {
     const books = [];
     for (let i = 0; i < bookList.children.length; i++) {
-        const bookItem = booklist.children[i];
-        const titleAuthor = bookitem.firstChild.textContent.split(" by ");
+        const bookItem = bookList.children[i];
+        const titleAuthor = bookItem.firstChild.textContent.split(" by ");
         const book = { title: titleAuthor[0], author: titleAuthor[1] };
         // books.push(book)  // ascending order
         books.unshift(book);  //decending order

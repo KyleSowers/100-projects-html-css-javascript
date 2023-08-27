@@ -47,7 +47,7 @@ h1 {
 form {
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #ddd;
     color: #444;
     padding: 8px;
     gap: 5px
@@ -58,7 +58,7 @@ label {
     flex-direction: column;
     width: 150px;
     color: #666;
-    background-color: #fff;
+    background-color: #ddd;
 }
 
 input {
@@ -78,7 +78,7 @@ input[type=submit] {
     align-self: end;
 }
 
-.book-list {
+#book-list {
     list-style: none;
     padding: 20px;
     margin: 0;
@@ -92,7 +92,7 @@ input[type=submit] {
     position: relative;
 }
 
-.delete-btn, completed-btn {
+.delete-btn, .complete-btn {
     margin-left: 10px;
     padding: 3px;
     border: none;
@@ -104,12 +104,13 @@ input[type=submit] {
     color: #fff;
 }
 
-.completed-btn {
+.complete-btn {
     background-color: #4CAF50;
     color: #fff;
 }
 
-.book-item-completed {
+.book-item.completed {
     text-decoration: line-through;
+    color: #4CAF50;
 }
 
