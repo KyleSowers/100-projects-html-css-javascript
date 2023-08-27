@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    align-items: start;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+     align-items: start;
+    width: 40%;
+}
+
+section {
+    width: 100%;
+}
+
+table {
+    width: 80%;
+    border: 1px solid #464646;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #c0bdbd;
+}
+
+th, td {
+    border: 1px solid #9f9d9d;
+    padding: 5px;
+    font-size: 0.8em;
+}
+
+p, ul, li {
+    color: #666666;
+}
+
