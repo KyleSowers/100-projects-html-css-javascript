@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+h2 {
+    margin-bottom: 20px;
+    background-color: #e26767;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#tip-form {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 20px 5px rgba(0,0,0,0.3);
+    width: 300px;
+    box-sizing: border-box;
+}
