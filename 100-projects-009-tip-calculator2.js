@@ -8,3 +8,4 @@ function calculateTip() {
 
     document.getElementById('result').innerHTML = 'The tip amount is: $' + tip.toFixed(2);
 }
+
