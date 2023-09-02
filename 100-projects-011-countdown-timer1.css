@@ -1,0 +1,50 @@
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    font-size: 28px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    border: 19px black solid;
+    border-radius: 26px;
+    padding: 0 20px;
+}
+
+h2 {
+    background-color: lightgray;
+    border: 4px black solid;
+    border-radius: 12px;
+}
+
+form {
+    border: 4px black solid;
+    border-radius: 12px;
+    padding: 16px;
+    background-color: lightgray;
+}
+
+input {
+    border-radius: 5px;
+}
+
+input[type='button'] {
+    background-color: lightblue;
+}
+
+input[type='button']:hover {
+    background-color: red;
+    color: white;
+}
+
+#countdown {
+    color: red;
+}
