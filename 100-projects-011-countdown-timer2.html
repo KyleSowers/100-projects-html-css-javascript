@@ -3,14 +3,25 @@
     <head>
         <meta charset="UTF-8">
         <title>Countdown Timer</title>
-        <link rel="stylesheet" href="100-projects-011-countdown-timer1.css">
+        <link rel="stylesheet" href="100-projects-011-countdown-timer2.css">
     </head>
     <body>
         <div class="page-wrapper">
             <div class="container">
                 <h2>Custom Countdown Timer</h2>
 
+                <div id="timerForm">
+                    <label for="hours">Hours:</label><br>
+                    <input type="number" id="hours" name="hours" min="o" value="0"><br>
 
+                    <label for="minutes">Minutes:</label><br>
+                    <input type="number" id="minutes" name="minutes" min="0" max="59" value="0"><br>
+
+                    <label for="seconds">Seconds:</label><br>
+                    <input type="number" id="seconds" name="seconds" min="0" max="59" value="0"><br>
+
+                    <input type="button" value="Start Countdown" onclick="startCountdown()">
+                </div>
             </div>
         </div>
 
