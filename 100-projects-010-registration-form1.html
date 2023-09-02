@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Registration Form</title>
-    <link rel="stylesheet" href="100-projects-010-registration-from1.css">
-</head>
-<body>
-    <script src="100-projects-010-registration-form1.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="100-projects-010-registration-from1.css">
+    </head>
+    <body>
+        <h2>Registration Form</h2>
+
+        <form id="registrationForm">
+            <label for="name">Name:</label>
+            <br>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <br>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="password">Password:</label>
+            <br>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <p id="feedback"></p>
+
+        <script src="100-projects-010-registration-form1.js"></script>
+    </body>
 </html>
