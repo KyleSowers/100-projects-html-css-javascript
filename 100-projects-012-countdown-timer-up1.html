@@ -6,7 +6,28 @@
       <link rel="stylesheet" href="100-projects-012-countdown-timer-up1.css">
   </head>
   <body>
+    <div class="page-wrapper">
+      <div class="container">
+        <h2>Count Up Timer</h2>
 
+        <form id="timerForm">
+          <label for="hours">Hours:</label><br>
+          <input type="number" id="hours" name="hours" min="0" value="0"><br>
+
+          <label for="minutes">Minutes:</label><br>
+          <input type="number" id="minutes" name="minutes" min="0" max="59" value="0"><br>
+
+          <label for="seconds">Seconds:</label><br>
+          <input type="number" id="seconds" name="seconds" min="0" max="59" value="0"><br>
+
+          <input type="button" value="Start Countdown" onclick="startCountdown()">
+          <input type="button" value="Stop Countdown" onclick="stopCountdown()">
+          <input type="button" value="Reset Countdown" onclick="resetCountdown()">
+        </form>
+
+        <p id="countdown"></p>
+      </div>
+    </div>
 
     <script src="100-projects-012-countdown-timer-up1.js"></script>
   </body>
