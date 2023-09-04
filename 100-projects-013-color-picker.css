@@ -16,12 +16,45 @@ body {
     padding-bottom: 30px;
     border: 10px blue solid;
     border-radius: 8px;
+    box-shadow: 25px 20px 5px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 30px;
 }
 
 form {
     display: flex;
     flex-direction: column;
     gap: 12px;
+}
+
+label {
+    font-size: 24px;
+}
+
+label[for='red'] {
+    color: red;
+    font-weight: bold;
+}
+
+label[for='green'] {
+    color: limegreen;
+    font-weight: bold;
+}
+
+label[for='blue'] {
+    color: blue;
+    font-weight: bold;
+}
+
+label[for='hex'] {
+    font-weight: bold;
+}
+
+input[name='hex'] {
+    font-size: 18px;
 }
 
 #colorDisplay {
