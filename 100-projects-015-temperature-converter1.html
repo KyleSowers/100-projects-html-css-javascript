@@ -7,15 +7,13 @@
   </head>
   <body>
     <div class="container">
-      <label for="temp">Tempature</label>
+      <label for="temp">Temperature</label>
 
-      <input type="text" id="temp" name="temp"><br>
+      <input type="text" id="temp" name="temp" placeholder="enter temp..."><br>
 
-      <input type="radio" id="f_to_c" name="conversion" value="f_to_c">
-      <label for="f_to_c">Farenheit to Celcius</label><br>
+      <label for="f_to_c" class="f_to_c"><input type="radio" id="f_to_c" name="conversion" value="f_to_c">Farenheit to Celcius</label><br>
 
-      <input type="radio" id="c_to_f" name="conversion" value="c_to-f">
-      <label for="c_to_f">Celcius to Farenheit</label><br>
+      <label for="c_to_f"><input type="radio" id="c_to_f" name="conversion" value="c_to-f">Celcius to Farenheit</label><br>
 
       <button onclick="convertTemperature()">Convert</button>
 
