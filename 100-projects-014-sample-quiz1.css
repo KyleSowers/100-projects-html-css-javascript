@@ -1,0 +1,53 @@
+.page-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 420px;
+    border: 12px black solid;
+    border-radius: 40px;
+    box-shadow: -29px 30px 0 rgba(0, 225, 225, 1.4);
+    background-color: black;
+}
+
+h1 {
+    font-size: 36px;
+    color: rgba(0, 225, 225, 1);
+}
+
+p {
+    font-size: 18px;
+    color: white;
+}
+
+input {
+    height: 20px;
+    width: 230px;
+    border-radius: 6px;
+}
+
+input[type='submit'] {
+    margin-top: 12px;
+    height: 30px;
+    width: 240px;
+    background-color: #e1e1ff;
+}
+
+input[type='submit']:hover {
+    background-color: rgba(0, 225, 225, 1);
+}
+
+p[id='score'] {
+    font-size: 26px;
+    color: rgba(0, 225, 225, 1);
+}
