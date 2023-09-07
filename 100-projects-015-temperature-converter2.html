@@ -6,8 +6,21 @@
       <link rel="stylesheet" href="100-projects-015-temperature-converter2.css">
   </head>
   <body>
-
-
+    <div class="container">
+        <label for="temp">Temperature</label>
+        <input type="text" id="temp" name="temp">
+        <div class="radio-container">
+            <input type="radio" id="f_to_c" name="conversion" value="f_to_c">
+            <label for="f_to_c">Fahrenheit to Celsius</label>
+        </div>
+        <div>
+            <input type="radio" id="c_to_f" name="conversion" value="c_to_f">
+            <label for="c_to_f">Celsius to Fahrenheit</label>
+        </div>
+    </div>
+    <button onclick="convertTemperature()">Convert</button>
+    <p id="output"></p>
+    <img id="thermometer" src='Images/thermometer.webp' alt="thermometer image" image" width="300" height="200">
 
     <script src="100-projects-015-temperature-converter2.js"></script>
   </body>
