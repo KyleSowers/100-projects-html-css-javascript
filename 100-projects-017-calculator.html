@@ -19,16 +19,47 @@
         <button class="button" value="8">8</button>
         <button class="button" value="9">9</button>
         <button class="button" value="0">0</button>
-        <button class="button" value=".">.</button>
-        <button class="button" value="+">+</button>
-        <button class="button" value="-">-</button>
-        <button class="button" value="*">*</button>
-        <button class="button" value="/">/</button>
+        <button class="operator" value=".">.</button>
+        <button class="operator" value="+">+</button>
+        <button class="operator" value="-">-</button>
+        <button class="operator" value="*">*</button>
+        <button class="operator" value="/">/</button>
         <button id="equals" value="=">=</button>
         <button id="clear">C</button>
       </div>
     </div>
 
     <script src="100-projects-017-calculator.js"></script>
+<!--    <script>-->
+<!--      let display = document.getElementById('display').value;-->
+<!--      let buttons = Array.from(document.getElementsByClassName('button'));-->
+<!--      let operators = Array.from(document.getElementsByClassName('operator'));-->
+<!--      let equals = document.getElementById('equals');-->
+<!--      let clear = document.getElementById('clear');-->
+
+<!--      buttons.map(button =>{-->
+<!--        button.addEventListener('click', (e) => {-->
+<!--          display.value += e.target.value;-->
+<!--        })-->
+<!--      });-->
+
+<!--      operators.map(operator => {-->
+<!--        operator.addEventListener('click', (e) => {-->
+<!--          display.value += e.target.value;-->
+<!--        })-->
+<!--      });-->
+
+<!--      equals.addEventListener('click', () => {-->
+<!--        try{-->
+<!--          display.value = eval(display.value);-->
+<!--        } catch {-->
+<!--          display.value = 'Error';-->
+<!--        }-->
+<!--      });-->
+
+<!--      clear.addEventListener('click', () => {-->
+<!--        display.value = "";-->
+<!--      });-->
+    </script>
   </body>
 </html>
