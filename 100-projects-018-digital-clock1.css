@@ -4,8 +4,13 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #333333;
-    color: white;
+    color: goldenrod;
     font-family: Arial, sans-serif;
+    gap: 30px;
+}
+
+h1 {
+    font-size: 50px;
 }
 
 #clock {
