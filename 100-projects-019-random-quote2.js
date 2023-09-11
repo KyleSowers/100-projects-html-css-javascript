@@ -23,3 +23,21 @@ let quotes = [
     "It pays to keep an open mind, but not so open your brains fall out.",
     "Our species needs, and deserves, a citizendry with minds wide awake and a basic understanding of how the world works."
 ];
+
+//This function selects a random quote from the array
+function getRandomQuote() {
+    let randomIndex = Math.floor(Math.random() * quotes.length);
+    return quotes[randomIndex];
+}
+
+//This function updates the text of the #quote paragraph with a new random quote
+function displayNewQuote() {
+    let quote = getRandomQuote();
+    document.getElementById('quote').textContent = quote;
+}
+
+//Even listener calls displayNewQuote each time button is pressed
+document.getElementById('new-quote-button').addEventListener('click', displayNewQuote);
+
+//This line displays a quote when the page is first loaded
+window.onload = displayNewQuote;
