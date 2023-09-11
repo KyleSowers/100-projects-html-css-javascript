@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #eeeeee;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#image-display {
+    width: 40%;
+    height: 80vh;
+    background: url('Images/carl_sagan.jpg') no-repeat center center/cover;
+    border-radius: 10px;
+    margin-right: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75);
+}
+
+#quote-display {
+    width: 40%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #333333;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.9);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75);
+}
+
+#quote {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+button  {
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
