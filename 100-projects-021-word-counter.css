@@ -5,6 +5,8 @@ body {
     text-align: center;
     padding: 20px;
     height: 100vh;
+    background-color: whitesmoke;
+
 }
 
 #container {
@@ -23,6 +25,8 @@ textarea {
     height: 150px;
     margin-bottom: 10px;
     margin-top: 100px;
+    border: 3px black solid;
+    border-radius: 10px;
 }
 
 button {
@@ -30,6 +34,16 @@ button {
     margin-bottom: 10px;
     cursor: pointer;
     padding: 17px;
+    color: #222;
+    background-color: #bbb;
+    border: 3px black solid;
+    border-radius: 10px;
+    box-shadow: 0 0 9px 5px rgba(40, 40, 40, 0.7);
+}
+
+button:hover {
+    background-color: white;
+    color: goldenrod;
 }
 
 p {
