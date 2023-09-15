@@ -1,13 +1,24 @@
 body {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 20px;
+    align-items: center;
+    background-color: ghostwhite;
+}
+
+h2 {
+    display: flex;
+    align-self: start;
 }
 
 input {
     margin-bottom: 10px;
     width: 250px;
     font-size: 20px;
+    border: 3px darkgray solid;
 }
 
 button  {
@@ -17,12 +28,32 @@ button  {
     cursor: pointer;
 }
 
-ul {
-    list-style: none;
+button:hover {
+    background-color: darkgray;
+    color: white;
 }
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    border: 2px darkgray solid;
+    border-radius: 90px 90px 90px 90px;
+    width: fit-content;
+    min-width: 400px;
+    min-height: 600px;
+    padding: 20px 0;
+    box-shadow: 0 0 30px 10px rgba(40, 40, 40, 0.6);
+    background-color: rgba(100, 139, 237, 0.1);
+}
+
+
 
 .bought {
     text-decoration: line-through;
+    color: red;
 }
 
 .item-button {
