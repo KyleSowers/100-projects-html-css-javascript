@@ -1,6 +1,6 @@
 'use strict'
 
-document.addEventListener('click', function () {
+document.getElementById('add-button').addEventListener('click', function () {
     let itemInput = document.getElementById('item-input');
     let itemText = itemInput.value;
     itemInput.value = '';
