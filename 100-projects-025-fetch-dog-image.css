@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+#image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center-10px;
+    padding: 20px;
+}
+#image-container img {
+    width: 300px;
+    height: auto;
+    margin-left: -30px;
+}
