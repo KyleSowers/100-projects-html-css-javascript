@@ -2,12 +2,37 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 20px;
+    background-color: black;
+}
+
+#container {
+    border: 3px black solid;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    height: 500px;
+    background-color: white;
+    box-shadow: 0 30px 20px 5px rgba(255, 255, 255, 0.9);
 }
 
 button {
     padding: 10px 20px;
     font-size: 20px;
     margin-bottom: 20px;
+    background-color: black;
+    color: bisque;
+    border: 3px bisque solid;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: coral;
+    border: 6px coral solid;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 #trivia-container {
@@ -19,4 +44,5 @@ button {
     align-items: center;
     padding: 20px;
     gap: 40px;
+    font-size: 32px;
 }
