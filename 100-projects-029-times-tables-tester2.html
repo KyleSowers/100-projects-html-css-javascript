@@ -8,10 +8,14 @@
   <body>
     <div id="quiz-container">
       <h1>Times Tables Tester</h1>
-      <div id="question">Loading...</div>
+      <div id="question">Set a limit and press <mark> 'Set Limit & Start'</mark> to start</div>
+      <label for="limit">Set Limit:</label>
+      <input id="limit" type="number" min="10" value="10">
+      <button id="set-limit">Set Limit & Start</button>
+        <hr>
+      <div id="feedback">Enter your answer and press submit</div>
       <input id="answer" type="number" min="0" autofocus>
       <button id="submit">Submit</button>
-      <div id="feedback">Enter your answer and press submit</div>
     </div>
 
     <script src="100-projects-029-times-tables-tester2.js"></script>

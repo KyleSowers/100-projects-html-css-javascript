@@ -11,7 +11,7 @@ function generateQuestion() {
     document.getElementById('question').innerText = `What is ${num1} x ${num2}?`;
 }
 
-function checkanswer() {
+function checkAnswer() {
     let userAnswer = document.getElementById('answer').value;
     if (userAnswer == correctAnswer) {
         document.getElementById('feedback').innerText = "Correct! Great job.";
