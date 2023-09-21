@@ -1,12 +1,14 @@
 'use strict'
 
 document.getElementById('submit').addEventListener('click', checkAnswer);
+document.getElementById('set-limit').addEventListener('click', generateQuestion);
 
 let num1, num2, correctAnswer;
 
 function generateQuestion() {
-    num1 = Math.floor(Math.random() * 10) + 1;
-    num2 = Math.floor(Math.random() * 10) + 1;
+    let limit = parseInt(document.getElementById('limit').value);
+    num1 = Math.floor(Math.random() * limit) + 1;
+    num2 = Math.floor(Math.random() * limit) + 1;
     correctAnswer = num1 * num2;
     document.getElementById('question').innerText = `What is ${num1} x ${num2}?`;
 }
@@ -26,4 +28,4 @@ function checkAnswer() {
         document.getElementById('answer').focus();
 }
 //Generate the first question as soon as the page loads
-generateQuestion();
+// generateQuestion();
