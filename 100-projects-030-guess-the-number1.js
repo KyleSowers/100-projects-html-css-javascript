@@ -6,7 +6,7 @@ var randomNumber = Math.floor(Math.random() * 100) + 1;
 document.getElementById('try').onkeypress = function (e) {
     if (e.keyCode == 13 || e.which == 13) {
         finding();
-        retrun false;
+        return false;
     }
 }
 
