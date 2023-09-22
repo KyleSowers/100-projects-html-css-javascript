@@ -1,0 +1,77 @@
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    text-align: center;
+    border: 10px solid #2c6efe;
+    outline: 2px dotted #fff;
+    outline-offset: -6px;
+}
+
+h2 {
+    margin-top: 0;
+    padding: 15px;
+    background-color: #2626ef;
+    color: white;
+}
+
+form {
+    margin-top: 40px;
+}
+
+input[type='number'] {
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 130px;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+.btn {
+    width: 50px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 10px 3px;
+    border: #ccc 1px solid;
+}
+
+.btn-1 {
+    background-color: rgb(135, 241, 133);
+}
+
+.btn-2 {
+    background-color: #fa7c7c;
+}
+
+#display {
+    font-size: 20px;
+    margin-top: 70px;
+    color: red;
+}
+
+.output {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#counter {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+
+.footer {
+    background-color: #4548fb;
+    color: white;
+    line-height: 50px;
+}
