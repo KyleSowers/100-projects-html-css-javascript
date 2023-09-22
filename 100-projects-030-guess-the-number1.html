@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Guess The Number</title>
+        <link rel="stylesheet" href="100-projects-030-guess-the-number1.css">
+    </head>
+    <body>
+        < id="quiz-container">
+            <h2>Guess The Number</h2>
+        <p>Guess a number between 1 and 100</p>
+        <form action="">
+            <input type="number" min="1" max="100" id="try" autocomplete="off" autofocus>
+
+            <input type="button" value="Check" id="check" class="btn btn-1" onclick="finding()">
+            <input type="button" value="Reset" id="reset" class="btn btn-2" onclick="window.location.reload()">
+        </form>
+        <div id="display" class="output"></div>
+        <div id="counter" class="footer"></div>
+        </div>
+
+        <script src="100-projects-030-guess-the-number1.js"></script>
+    </body>
+</html>
