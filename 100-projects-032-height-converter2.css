@@ -1,0 +1,15 @@
+.jumbotron {
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 500px;
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+.btn-block {
+    margin-top: 15px;
+}
