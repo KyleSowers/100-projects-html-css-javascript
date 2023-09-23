@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="100-projects-031-calendar3.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="d-flex justify-content-between my-3">
+            <button id="prev-month" class="btn btn-primary">< Prev</button>
+            <h2 id="month-year">Month Year</h2>
+            <button id="next-month" class="btn btn-primary">Next ></button>
+        </div>
+        <table id="calendar" class="table table-bordered">
+            <thead>
+                <tr>
+                    <th class="sunday">Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wen</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th class="saturday">Sat</th>
+                </tr>
+            </thead>
+            <tbody id="calendar-body">
+<!--            JS will fill with days of the month-->
+            </tbody>
+        </table>
+    </div>
+
+  <script src="100-projects-031-calendar3.js"></script>
+</body>
+</html>
