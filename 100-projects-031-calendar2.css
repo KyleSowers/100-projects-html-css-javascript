@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#calendar-header {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 0;
+    margin-top: 40px;
+}
+
+#calendar {
+    margin: auto;
+    width: 70%;
+}
+
+#calendar th {
+    padding: 10px;
+    background-color: #cccccc;
+}
+
+.sunday {
+    color: red;
+}
+
+.saturday {
+    color: blue;
+}
+
+#calendar td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.today {
+    background-color: #ff0;
+}
+
+button {
+    width: 60px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 10px 3px;
+    border: #ccc 2px solid;
+    cursor: pointer;
+}
