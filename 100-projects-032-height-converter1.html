@@ -6,7 +6,22 @@
       <link rel="stylesheet" href="100-projects-032-height-converter1.css">
   </head>
   <body>
-
+    <h1>Height Converter</h1>
+    <form id="container">
+      <input id="inputHeight" type="number" placeholder="Enter Height" required>
+      <select id="inputUnit">
+        <option value="cm">Centimeters</option>
+        <option value="in">Inches</option>
+        <option value="ft">Feet</option>
+      </select>
+      <span> to </span>
+      <select id="outputUnit">
+        <option value="cm">Centimeters</option>
+        <option value="in">Inches</option>
+        <option value="ft">Feet</option>
+      </select>
+      <input id="outputHeight" type="number" readonly>
+    </form>
 
     <script src="100-projects-032-height-converter1.js"></script>
   </body>
