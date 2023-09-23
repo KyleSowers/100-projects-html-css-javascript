@@ -17,9 +17,9 @@ for (let i = 0; i < startDayOfWeek; i++) {
 
 for (let day = 1; day <= daysInMonth; day++) {
     if (day === currentDay) {
-        html += '<td class="today">${day}</td>';
+        html += `<td class="today">${day}</td>`;
     } else {
-        html += '<td>${day}</td>';
+        html += `<td>${day}</td>`;
     }
 
     if (new Date(currentYear, currentMonth, day).getDay() === 6) {
