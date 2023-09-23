@@ -40,7 +40,7 @@ function  generateCalendar(month, year) {
         if (year === today.getFullYear() && month === today.getMonth() && day === currentDay) {
             html += `<td class="today">${day}</td>`;
         } else if (new Date(year, month, day).getDay() === 0) {
-            html += `<td class="sunday>${day}</td>`;
+            html += `<td class="sunday">${day}</td>`;
         } else if (new Date(year, month, day).getDay() === 6) {
             html += `<td class="saturday">${day}</td>`;
         } else {
