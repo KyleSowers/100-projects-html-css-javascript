@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#calendar {
+    margin: auto;
+    margin-top: 50px;
+    width: 70%;
+}
+
+#calendar th {
+    padding: 10px;
+    background-color: #ccc;
+}
+
+#calendar td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.today {
+    background-color: #ff0;
+}
+
