@@ -1,0 +1,69 @@
+body:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('images/probability_bg.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(245, 245, 245, 0.5);
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+/*    make body positioning context for absolute positioned psuedo-element*/
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    width: 80%;
+    max-width: 500px;
+    gap: 10px;
+}
+
+#result {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    margin-top: 10px;
+}
