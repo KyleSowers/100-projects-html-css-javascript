@@ -6,7 +6,36 @@
       <link rel="stylesheet" href="100-projects-038-bmi-calculator2.css">
   </head>
   <body>
+    <div id="container">
+      <h1>BMI Calculator</h1>
+      <p>
+        BMI, or Body Mass Index, is a measure used to determine whether a person has a healthy body weight for a given height.
+        It is defined as the individual's body mass divided by the square of their height. The unit of BMI is kg/m².
+        <br><br>
+        The BMI cartegories for adults according to the World Health Organization (WHO) are:<br>
+        - Below 18.5: Underweight<br>
+        - 18.5-24.9: Normal Weight<br>
+        - 25-29.9: Overweight<br>
+        - 30 and above: Obesity<br><br>
+        Please note that while BMI is a useful screening tool, it does not directly measure body fat.
+        It's always a good idea to consult with a healthcare professional for a full understanding of your health.
+      </p>
 
+      <div id="input-group">
+        <label for="height">Height (cm)</label>
+        <input type="number" id="height" required>
+      </div>
+      <div id="input-group">
+        <label for="weight">Weight (kg)</label>
+        <input type="number" id="weight" required>
+      </div>
+
+      <button onclick="calculateBMI()">Caluclate BMI</button>
+      <hr>
+
+      <p id="result"></p>
+      <hr>
+    </div>
 
     <script src="100-projects-038-bmi-calculator2.js"></script>
   </body>
