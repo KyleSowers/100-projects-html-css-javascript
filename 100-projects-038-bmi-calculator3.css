@@ -1,4 +1,47 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background-color: #48f3e1;
+}
 
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 15px;
+    box-shadow: 0 0 100px rgba(255, 0, 0, 0.9);
+    background-color: #f8f8f8;
+    width: 75vw;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+    box-shadow: 0 0 40px rgba(255, 0, 0, 0.9);
+    border-radius: 15px;
+}
+
+h1 {
+    font-size: 34px;
+}
+
+p {
+    font-size: 0.9em;
+    /*background-color: #e0e0e0;*/
+    border-radius: 5px;
+    padding: 10px;
+}
 
 /*All input property*/
     .input[type = "number"] {
@@ -35,7 +78,7 @@
         background: #0D1127;
         padding: 1rem 3rem 1rem 3rem;
         border-radius: 5rem;
-        border: 5px solid #5978F3;
+        border: 5px solid #14f1e0;
         font-size: 1.2rem;
         line-height: 1em;
         letter-spacing: 0.075em;
@@ -76,7 +119,7 @@
     }
 
     .voltage-button svg path.line-2 {
-        stroke: #6bfeff;
+        stroke: #14f1e0;
         stroke-dashoffset: 500;
         animation: spark-2 3s linear infinite;
     }
@@ -175,3 +218,21 @@
             transform: translateY(3rem) scale(0.2);
         }
     }
+
+.resultPhoto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+#result {
+    height: 30px;
+    min-width: 50%;
+    font-size: 18px;
+}
+
+img {
+    border-radius: 35px;
+}
