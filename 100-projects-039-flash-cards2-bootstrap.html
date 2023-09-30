@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Flash Cards</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="100-projects-039-flash-cards2-bootsrtap.css">
-</head>
-<body>
-
-
-  <script src="100-projects-039-flash-cards2-bootstrap.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Flash Cards</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="100-projects-039-flash-cards2-bootsrtap.css">
+    </head>
+    <body>
+        <div class="container my-5">
+            <div class="row justify-content-center">
+                <div class="card col-sm-4" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <p>What is the capital of France?</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Paris</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-sm-4" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <p>What is the capital of Japan?</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Tokyo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <script src="100-projects-039-flash-cards2-bootstrap.js"></script>
+    </body>
 </html>
