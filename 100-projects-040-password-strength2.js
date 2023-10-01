@@ -40,7 +40,7 @@ function checkPasswordStrength(password) {
 
     switch (strength) {
         case 0:
-            passowrdStrength.textContent = '';
+            passwordStrength.textContent = '';
             break;
         case 1:
             passwordStrength.textContent = 'Very weak';
