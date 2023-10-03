@@ -6,6 +6,18 @@
       <link rel="stylesheet" href="100-projects-042-loan-calculator1.css">
   </head>
   <body>
+    <div class="container">
+        <h2>Loan Calculator</h2>
+        <label for="loanAmount">Loan Amount</label>
+        <input type="number" id="loanAmount"  min="1" value="">
+
+        <label for="interestRate">Interest Rate</label>
+        <input type="number" id="interestRate" min="1" max="100" value="">
+
+        <button onclick="calculateLoan()">Calculator</button>
+
+        <p id="output"></p>
+    </div>
 
 
     <script src="100-projects-042-loan-calculator1.js"></script>
