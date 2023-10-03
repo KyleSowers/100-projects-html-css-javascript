@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 300px;
+    padding: 16px;
+    background-color: #f1f1f1;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 4px;
+}
+
+label {
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+}
+
+input[type='number'], input[type='range'] {
+    width: 100%;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 10px;
+}
+
+#output {
+    margin-top: 16px;
+}
