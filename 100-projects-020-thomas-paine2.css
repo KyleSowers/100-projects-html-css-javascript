@@ -4,7 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url('Images/american-flag.jpeg') no-repeat center center/cover;
+    background: url('completed_projects/american-flag.jpeg') no-repeat center center/cover;
     background-color: rgba(255, 255, 255, 0.3);
     color: black;
     font-family: Arial, sans-serif;
@@ -21,11 +21,11 @@ body {
 }
 
 #left-image-display {
-    background: url("Images/thomas-paine.jpeg") no-repeat center center/contain;
+    background: url("completed_projects/thomas-paine.jpeg") no-repeat center center/contain;
 }
 
 #right-image-display {
-    background: url("Images/thomas-paine2.jpeg") no-repeat center center/contain;
+    background: url("completed_projects/thomas-paine2.jpeg") no-repeat center center/contain;
 }
 
 #quote-display {

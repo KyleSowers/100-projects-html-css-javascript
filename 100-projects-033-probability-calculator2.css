@@ -6,7 +6,7 @@ body:before {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: url('images/probability_bg.jpeg') no-repeat center center fixed transparent;
+    background: url('completed_projects/probability_bg.jpeg') no-repeat center center fixed transparent;
     background-size: cover;
     opacity: 0.5;
 }

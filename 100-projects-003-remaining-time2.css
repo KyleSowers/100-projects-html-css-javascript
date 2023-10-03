@@ -5,6 +5,7 @@
 
 p {
     display:inline-block;
+    margin: 0;
 }
 
 .page-wrapper {
@@ -16,10 +17,10 @@ p {
 .container {
     background-color: antiquewhite;
     color: darkslateblue;
-    margin-top: 15px;
+    margin-top: 0;
     padding-top: 90px;
-    width: 850px;
-    height: 750px;
+    width: 800px;
+    height: 700px;
     border: 12px #fff solid;
     border-radius: 999px;
     overflow: hidden;
@@ -30,7 +31,7 @@ p {
 }
 
 .row:last-of-type {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 button, input {
@@ -50,6 +51,8 @@ h3 {
     font-size: 23px;
 }
 
-label {
+label, p {
     font-size: 16px;
 }
+
+
