@@ -9,8 +9,8 @@ async function getWeather() {
         const weatherDiv = document.getElementById('weather');
         weatherDiv.innerHTML = `
             <h2>Weather in ${data.name}</h2>
-            <p><strong>Temperature</strong> ${data.main.temp}</p>
-            <p><storng>Weather</storng>${data.weather[0].description}</p>
+            <p><strong>Temperature: </strong> ${data.main.temp} °C</p>
+            <p><storng>Weather: </storng>${data.weather[0].description}</p>
         `;
     } else {
         alert(data.message);
