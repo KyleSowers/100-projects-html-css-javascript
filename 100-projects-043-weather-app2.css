@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #5a5a5a;
+}
+
+#app {
+    width: 500px;
+    height: 320px;
+    margin: 200px auto;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 18px;
+    box-shadow: 0 0 35px rgba(41, 128, 185, 0.8);
+    background-color: ghostwhite;
+}
+
+h1 {
+    color: #1590dc;
+}
+
+button {
+    font-size: 16px;
+    background-color: #2980b9;
+    color: white;
+}
+
+button:hover {
+    background-color: white;
+    color: #2980b9;
+}
+
+#weather {
+    color: #2980b9;
+}
