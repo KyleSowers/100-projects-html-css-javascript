@@ -6,6 +6,16 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 </head>
 <body>
+  <div id="app" class="container mt-5">
+    <h1 class="text-center mb-4">ToDo List</h1>
+    <div class="input-group mb-3">
+      <input type="text" id="new-task" class="form-control" placeholder="Enter a new task...">
+      <div class="input-group-append">
+        <button onclick="addTask()" class="btn btn-outline-secondary" type="button">Add Task</button>
+      </div>
+    </div>
+    <ul id="task-list" class="list-group"></ul>
+  </div>
 
   <script src="100-projects-044-todo-list2-bootstrap.js"></script>
 </body>
