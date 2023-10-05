@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    /*background-color: #cccccc;*/
+}
+
+#app {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#new-task {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.task {
+    text-align: left;
+}
+
+.completed {
+    text-decoration: line-through;
+}
