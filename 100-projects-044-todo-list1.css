@@ -1,25 +1,57 @@
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family: Arial, sans-serif;
-    /*background-color: #cccccc;*/
+    background-color: #cccccc;
 }
 
 #app {
-    width: 400px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+    margin: 50px auto 0;
     text-align: center;
+    background-color: #aaa;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 #new-task {
-    width: 100%;
+    display: flex;
+    align-self: center;
+    width: 95%;
     padding: 10px;
     margin: 20px 0;
-    border-radius: 5px;
+    border-radius: 10px;
+}
+
+button {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    background-color: #ccc;
+    width: 25%;
+    background-color: blue;
+    color: white;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
 }
 
 .task {
     text-align: left;
 }
 
+
+
 .completed {
-    text-decoration: line-through;
+    text-decoration: line-through blue;
 }
