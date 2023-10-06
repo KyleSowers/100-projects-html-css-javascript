@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#app {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#cost, #tax-rate {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+}
+
