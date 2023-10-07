@@ -2,7 +2,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f5f5f5;
+    background-color: #333;
 }
 
 .container {
@@ -12,11 +12,12 @@ body {
     justify-content: center;
     gap: 12px;
     width: 20%;
-    margin-top: 150px;
+    margin-top: 60px;
     padding-bottom: 30px;
     border: 10px blue solid;
     border-radius: 8px;
-    box-shadow: 25px 20px 5px rgba(0, 0, 0, 0.4);
+    background-color: #aaa;
+    box-shadow: 0 0 135px rgba(255, 255, 255, 1);
 }
 
 h2 {
@@ -58,6 +59,6 @@ input[name='hex'] {
 }
 
 #colorDisplay {
-    width: 380px;
+    width: 300px;
     height: 100px;
 }
