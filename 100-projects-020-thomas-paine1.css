@@ -45,8 +45,8 @@ button {
 }
 
 button:hover {
-    background-color: #333444
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4)
+    background-color: #333444;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
 button:active {
