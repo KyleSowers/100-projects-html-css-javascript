@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Simple Blog</title>
-    <link rel="stylesheet" href="100-projects-046-simple-blog1.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Simple Blog</title>
+        <link rel="stylesheet" href="100-projects-046-simple-blog1.css">
+    </head>
+    <body>
+      <div id="app">
+          <h3>Blog Title<br>(What is the blog topic?)</h3>
+          <p>This is the blog content<br>(Record your writings or photos.)</p>
+          <h2>Comments</h2>
+          <div id="comments"></div>
+          <input type="text" id="input" placeholder="Write a comment"/>
+          <button onclick="addComment()">Post Comment</button>
+      </div>
 
 
-  <script src="100-projects-046-simple-blog1.js"></script>
-</body>
+      <script src="100-projects-046-simple-blog1.js"></script>
+    </body>
 </html>
