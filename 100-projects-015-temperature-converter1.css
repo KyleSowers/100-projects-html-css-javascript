@@ -4,7 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #666666;
+    background-color: #333444;
 }
 
 .container  {
@@ -18,8 +18,8 @@ body {
     width: 400px;
     height: 400px;
     padding: 15px 0;
-    background-color: black;
-    box-shadow: 35px 35px 0 rgba(36, 36, 36, 0.4);
+    background-color: #ccc;
+    box-shadow: 35px 35px 0 rgba(16, 16, 16, 0.4);
 }
 
 label[for='temp'] {
@@ -48,7 +48,7 @@ button:hover {
 }
 
 p {
-    color: whitesmoke;
+    color: #333444;
     font-size: 24px;
     font-weight: bold;
 }

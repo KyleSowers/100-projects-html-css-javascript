@@ -5,7 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f5f5f5;
+    background-color: #333444;
 }
 
 .container {
@@ -15,7 +15,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    background-color: #fffff;
+    background-color: #fff;
 }
 
 label, input[type='text'] {
@@ -49,10 +49,13 @@ button:hover {
 }
 
 #output {
+    width: 280px;
+    height: 45px;
     padding: 10px;
+    text-align: center;
     border: none;
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 1.5em;
     background-color: #b07c02;
     color: white;
