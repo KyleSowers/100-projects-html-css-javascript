@@ -1,16 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
   <head>
       <meta charset="UTF-8">
       <title>Random Quote Generator</title>
       <link rel="stylesheet" href="100-projects-019-random-quote1.css">
   </head>
   <body>
-    <div id="quote-display">
-      <p id="quote"></p>
-    </div>
+      <div class="container">
+        <div id="quote-display">
+          <p id="quote"></p>
+        </div>
+          <button id="btn" class="btn" type="button">
+              <strong>Get (Carl Sagan) Quote</strong>
+              <div id="container-stars">
+                  <div id="stars"></div>
+              </div>
 
-    <button id="new-quote-button">New Quote (Carl Sagan)</button>
+              <div id="glow">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+              </div>
+          </button>
+      </div>
 
     <script src="100-projects-019-random-quote1.js"></script>
   </body>

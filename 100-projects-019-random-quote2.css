@@ -15,7 +15,7 @@ body {
 #image-display {
     width: 40%;
     height: 80vh;
-    background: url('completed_projects/carl_sagan.jpg') no-repeat center center/cover;
+    background: url('images/carl_sagan.jpg') no-repeat center center/cover;
     border-radius: 10px;
     margin-right: 20px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75);

@@ -37,7 +37,7 @@ function displayNewquote() {
 }
 
 //The event listener calls the displayNewQuote function each time the button is clicked
-document.getElementById('new-quote-button').addEventListener('click', displayNewquote);
+document.getElementById('btn').addEventListener('click', displayNewquote);
 
 //This  line displays a quote when the page is first loaded
 window.onload = displayNewquote;
