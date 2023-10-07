@@ -1,12 +1,30 @@
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 20px;
+    background-color: #333444;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px auto;
+    border: 2px #ccc solid;
+    border-radius: 5px;
+    background-color: #ccc;
+    width: 280px;
+    height: 390px;
+    box-shadow: 0 0 25px rgba(204, 204, 204, 1.5);
 }
 
 #calculator {
     width: 200px;
     margin: auto;
     padding: 20px;
-    background: #ddd;
+    background: #aaa;
     border-radius: 5px;
 }
 
@@ -23,6 +41,11 @@ body {
     margin: 2px;
     cursor: pointer;
     font-size: 18px;
+}
+
+.button:hover, .operator:hover, #clear:hover, #equals:hover {
+    background-color: #333344;
+    color: white;
 }
 
 #clear, #equals {
