@@ -1,16 +1,57 @@
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 20px;
+    height: 100vh;
+    background-color: #333444;
+}
+
+.container {
+    border: 2px black solid;
+    width: 1450px;
+    height: 30vh;
+    background-color: #fff;
+    border-radius: 150px;
+    box-shadow: 0 2px 80px rgba(255, 255, 255, 0.7), 0 4px 100px rgba(0, 0, 255, 0.3);
 }
 
 #quote-display {
-    margin: 20px;
+    margin: 60px;
     font-size: 24px;
 }
 
-button  {
-    padding: 10px 20px;
-    font-size: 20px;
+/*button  {*/
+/*    padding: 10px 20px;*/
+/*    font-size: 20px;*/
+/*    cursor: pointer;*/
+/*    border-radius: 150px;*/
+/*    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);*/
+/*}*/
+
+button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
     cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #333444;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4)
+}
+
+button:hover {
+    background-color: #333444
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4)
+}
+
+button:active {
+    background-color: #333444;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4)
 }

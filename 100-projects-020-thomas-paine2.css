@@ -4,7 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url('completed_projects/american-flag.jpeg') no-repeat center center/cover;
+    background: url('images/american-flag.jpeg') no-repeat center center/cover;
     background-color: rgba(255, 255, 255, 0.3);
     color: black;
     font-family: Arial, sans-serif;
@@ -16,21 +16,20 @@ body {
 #left-image-display, #right-image-display {
     width: 25%;
     height: 80vh;
-    border-radius: 10px;
     margin: 20px;
 }
 
 #left-image-display {
-    background: url("completed_projects/thomas-paine.jpeg") no-repeat center center/contain;
+    background: url("images/thomas-paine.jpeg") no-repeat center center/contain;
 }
 
 #right-image-display {
-    background: url("completed_projects/thomas-paine2.jpeg") no-repeat center center/contain;
+    background: url("images/thomas-paine2.jpeg") no-repeat center center/contain;
 }
 
 #quote-display {
     width: 40%;
-    height: 80vh;
+    height: 65vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,7 +50,12 @@ body {
 
 button {
     padding: 10px 20px;
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: bold;
     cursor: pointer;
     margin-top: 20px;
+    border: 2px black solid;
+    border-radius: 10px;
+    background: linear-gradient(to bottom left, blue 20%, white 40%, white 60%, red 80%);
+    color: black;
 }
