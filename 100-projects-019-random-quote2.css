@@ -4,9 +4,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #eeeeee;
+    background-color: black;
     color: #000000;
     font-family: Arial, sans-serif;
+    font-weight: bold;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,7 +19,7 @@ body {
     background: url('images/carl_sagan.jpg') no-repeat center center/cover;
     border-radius: 10px;
     margin-right: 20px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 60px rgba(255, 200, 0, 0.7), 0 0 60px rgba(255, 0, 0, 0.7), 0 0 60px rgba(254, 83, 167, 0.7);
 }
 
 #quote-display {
@@ -31,8 +32,8 @@ body {
     border: 2px solid #333333;
     border-radius: 10px;
     padding: 20px;
-    background-color: rgba(255,255,255,0.9);
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 60px rgba(255, 200, 0, 0.7), 0 0 60px rgba(255, 0, 0, 0.7), 0 0 60px rgba(254, 83, 167, 0.7);
+    background: linear-gradient(to bottom right, #ffc800 25%,#ff0000 50%, #fe58a7 75%);
 }
 
 #quote {
@@ -47,4 +48,9 @@ button  {
     font-size: 20px;
     cursor: pointer;
     margin-top: 20px;
+}
+
+button:hover {
+    background-color: #333444;
+    color: white;
 }
