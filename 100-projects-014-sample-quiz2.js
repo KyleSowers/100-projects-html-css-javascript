@@ -20,7 +20,7 @@ let questions = [
         correctAnswer: 'Cell'
     },
     {
-        question: 'What is te force that pulls objects towards each other called?',
+        question: 'What is the force that pulls objects towards each other called?',
         options: ['Friction', 'Magnetic Force', 'Electric Force', 'Gravity'],
         correctAnswer: 'Gravity'
     },
