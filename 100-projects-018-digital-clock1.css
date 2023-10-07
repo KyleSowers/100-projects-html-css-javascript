@@ -1,5 +1,6 @@
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -10,9 +11,9 @@ body {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 75px;
 }
 
 #clock {
-    font-size: 60px;
+    font-size: 70px;
 }
