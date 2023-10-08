@@ -1,18 +1,47 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333444;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 12px;
     padding: 20px;
+    background-color: ghostwhite;
+    box-shadow: 0 0 135px rgba(0, 0, 0, 2), 0 0 145px rgba(255, 255, 255, 0.7);
 }
 
 input {
     margin-bottom: 20px;
+    border-radius: 12px;
     width: 300px;
     font-size: 20px;
 }
 
+#result {
+    font-size: 22px;
+}
+
 button {
     padding: 10px 20px;
+    border-radius: 12px;
     font-size: 20px;
     margin-bottom: 10px;
     cursor: pointer;
+}
+
+button:hover {
+    background-color: #333444;
+    color: white;
+    border: 2px white solid;
 }
