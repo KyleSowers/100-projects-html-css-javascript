@@ -11,7 +11,7 @@ body    {
     padding: 10px 0 10px 10px;
     background-color: #FFFFFF;
     gap: 5px;
-    box-shadow: 0 0 45px rgba(100, 200, 255, 0.9);
+    box-shadow: 0 0 25px rgba(100, 200, 255, 0.9);
 }
 
 h2 {
