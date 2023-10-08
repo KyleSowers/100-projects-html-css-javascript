@@ -6,7 +6,18 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     </head>
     <body>
-
+        <div id="=app">
+            <h3 class="mb-4">Blog Time <br>(What is the blog topic?)</h3>
+            <p>This is the blog content. <br>(Record your writings or photos.)</p>
+            <h2 class="mt-5 mb-3">Comments</h2>
+            <div id="comments"></div>
+            <div class="input-group mt-3">
+                <input type="text" id="comment-input" class="form-control" placeholder="Write a comment">
+                <div class="input-group-append">
+                    <button onclick="addComment()" class="btn btn-outline-secondary">Post Comment</button>
+                </div>
+            </div>
+        </div>
 
         <script src=""></script>
     </body>
