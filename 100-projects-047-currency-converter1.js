@@ -6,14 +6,14 @@ async function convertCurrency() {
     const toCurrency = document.getElementById('to-currency').value.toUpperCase();
 
 //     http://v6.exchangerate-api.com/v6/YOUR_API_KEY/latest/USD create own number.
-    const responce = await fetch(`http://v6.exchangerate-api.com/v6/YOURKEY/latest/${fromCurrency}`);
+    const responce = await fetch(`https://v6.exchangerate-api.com/v6/YOURKEY/latest/${fromCurrency}`);
     const data = await responce.json();
     if(data && data.conversion_rates) {
         const rate = data.conversion_rates[toCurrency];
         const convertedAmount = amount * rate;
         document.getElementById('output').innerHTML = `${amount} ${fromCurrency} = ${convertedAmount.toFixed(2)} ${toCurrency}`;
     } else {
-        document.getElementById('output').innerHTML = 'An error occured while fetching the exchange rates';
+        document.getElementById('output').innerHTML = 'An error occurred while fetching the exchange rates';
     }
 }
 
