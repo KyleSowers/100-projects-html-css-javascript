@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="100-projects-047-currency-converter3.css">
+</head>
+<body>
+<div id="app">
+    <h2>Currency Converter</h2>
+    <input type="number" id="amount" min="0" step="0.01" placeholder="Amount"/>
+    <select id="from-currency">
+        <option value="KRW">KRW - South Korean Won</option>
+        <option value="USD">USD - United States Dollar</option>
+        <option value="EUR">EUR - Euro</option>
+        <option value="GBP">GBP - Great Britain Pound</option>
+        <option value="JPY">JPY - Japanese Yen</option>
+        <option value="AUD">AUD - Australian Dollar</option>
+        <option value="CAD">CAD - CAnadian Dollar</option>
+        <option value="CHF">CHF - Swiss Franc</option>
+        <option value="CNY">CNY - Chinese Yuan</option>
+        <option value="SEK">SEK - Swedish Krona</option>
+        <option value="NZD">NZD - New Zealand Dollar</option>
+        <option value="MXN">MXN - Mexican Peso</option>
+        <option value="SGD">SGD - Singapore Dollar</option>
+        <option value="HKD">HKD - Hong Kong Dollar</option>
+        <option value="NOK">NOK - Norwegian Krone</option>
+        <option value="TRY">TRY - Turkish Lira</option>
+        <option value="INR">INR - Indian Rupee</option>
+        <option value="RUB">RUB - Russian Ruble</option>
+        <option value="BRL">BRL - Brazilian Real</option>
+        <option value="ZAR">ZAR - South African Rand</option>
+        <option value="SAR">SAR - Saudi riyal</option>
+        <option value="AED">AED - United Arab Emirates</option>
+    </select>
+    <p>to</p>
+    <select id="to-currency">
+        <option value="KRW">KRW - South Korean Won</option>
+        <option value="USD">USD - United States Dollar</option>
+        <option value="EUR">EUR - Euro</option>
+        <option value="GBP">GBP - Great Britain Pound</option>
+        <option value="JPY">JPY - Japanese Yen</option>
+        <option value="AUD">AUD - Australian Dollar</option>
+        <option value="CAD">CAD - CAnadian Dollar</option>
+        <option value="CHF">CHF - Swiss Franc</option>
+        <option value="CNY">CNY - Chinese Yuan</option>
+        <option value="SEK">SEK - Swedish Krona</option>
+        <option value="NZD">NZD - New Zealand Dollar</option>
+        <option value="MXN">MXN - Mexican Peso</option>
+        <option value="SGD">SGD - Singapore Dollar</option>
+        <option value="HKD">HKD - Hong Kong Dollar</option>
+        <option value="NOK">NOK - Norwegian Krone</option>
+        <option value="TRY">TRY - Turkish Lira</option>
+        <option value="INR">INR - Indian Rupee</option>
+        <option value="RUB">RUB - Russian Ruble</option>
+        <option value="BRL">BRL - Brazilian Real</option>
+        <option value="ZAR">ZAR - South African Rand</option>
+        <option value="SAR">SAR - Saudi riyal</option>
+        <option value="AED">AED - United Arab Emirates</option>
+    </select>
+
+    <button onclick="convertCurrency()">Convert</button>
+    <div id="output"></div>
+</div>
+
+  <script src="100-projects-047-currency-converter3.js"></script>
+</body>
+</html>
