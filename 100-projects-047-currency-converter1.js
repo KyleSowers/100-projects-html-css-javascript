@@ -2,7 +2,7 @@
 
 async function convertCurrency() {
     const amount = parseFloat(document.getElementById('amount').value);
-    const fromCurrency = document.getElementById('form-currency').value.toUpperCase();
+    const fromCurrency = document.getElementById('from-currency').value.toUpperCase();
     const toCurrency = document.getElementById('to-currency').value.toUpperCase();
 
 //     http://v6.exchangerate-api.com/v6/YOUR_API_KEY/latest/USD create own number.
