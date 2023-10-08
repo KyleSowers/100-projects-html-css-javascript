@@ -8,7 +8,7 @@
 <body>
 <div id="app">
     <h2>Currency Converter</h2>
-    <input type="number" id="amount" min="0" step="0.01" placeholder="Amount"/>
+    <input type="text" id="amount" oninput="formatInput(this)" placeholder="Amount"/>
     <select id="from-currency">
         <option value="KRW">KRW - South Korean Won</option>
         <option value="USD">USD - United States Dollar</option>
