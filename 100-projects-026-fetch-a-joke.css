@@ -1,11 +1,11 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: white;
+    background-color: #334444;
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 20px;
@@ -21,7 +21,7 @@ body {
     background-color: ghostwhite;
     border: 2px lightgray solid;
     border-radius: 23px;
-    box-shadow: 0 0 20px 10px rgba(235, 235, 255, 0.6);
+    box-shadow: 0 0 20px 10px rgba(50, 255, 255, 0.2);
 }
 
 button  {
@@ -32,7 +32,7 @@ button  {
     font-weight: bold;
     text-decoration: underline;
     border-radius: 34px;
-    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 5px rgba(50, 255, 255, 0.9);
     cursor: pointer;
 }
 
@@ -43,6 +43,8 @@ button:hover {
 }
 
 #joke-container {
+    font-size: 22px;
+    color: #334444;
     width: 100%;
     display: flex;
     justify-content: center;
