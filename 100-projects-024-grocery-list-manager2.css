@@ -1,12 +1,29 @@
 body {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    height: 100vh;
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 20px;
     background-color: red;
+    gap: 100px;
+}
+
+img {
+    width: 400px;
+    height: 40vh;
+    border-radius: 25px;
+}
+
+#column {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
 }
 
 h2 {
@@ -33,19 +50,29 @@ button  {
     padding: 5px 10px;
     margin-bottom: 5px;
     cursor: pointer;
-    border-radius: 5px;
     border: none;
-    color: white;
+    border-radius: 25px;
+    background-color: white;
+    color: red;
 }
 
 #add-button {
     padding: 10px 20px;
     font-size: 20px;
-    background-color: #4CAF50;
+    border: none;
+    border-radius: 25px;
+    background-color: white;
+    color: red;
+}
+
+#add-button:hover {
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .item-button {
-    background-color: #f44336;
+    background-color: red;
+    color: white;
     margin-left: 15px;
 }
 
@@ -55,12 +82,17 @@ ul {
 }
 
 li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     background-color: white;
     margin-bottom: 5px;
     padding: 5px;
     border-radius: 5px;
+    min-width: 400px;
 }
 
 .bought {
     text-decoration: line-through;
+    color: red;
 }
