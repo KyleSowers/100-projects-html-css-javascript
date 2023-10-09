@@ -1,8 +1,23 @@
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 20px;
-    background-color: #f2f2f2;
+    background-color: red;
+}
+
+h2 {
+    border: 2px white solid;
+    border-radius: 25px;
+    background-color: red;
+    color: white;
+    width: fit-content;
+    padding: 0 10px 0;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 input   {
@@ -10,8 +25,8 @@ input   {
     width: 250px;
     font-size: 20px;
     padding: 10px;
-    border-radius: 5px;
-    border: 2px solid #ddd;
+    border-radius: 25px;
+    border: 2px solid white;
 }
 
 button  {
