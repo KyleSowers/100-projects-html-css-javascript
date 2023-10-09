@@ -6,7 +6,7 @@ body {
 }
 
 #container {
-    border: 3px black solid;
+    border: 10px black solid;
     border-radius: 13px;
     display: flex;
     flex-direction: column;
@@ -15,7 +15,7 @@ body {
     padding: 40px;
     height: 500px;
     background-color: white;
-    box-shadow: 0 30px 20px 5px rgba(255, 255, 255, 0.9);
+    box-shadow: 0 10px 20px  rgba(255, 255, 255, 0.9);
 }
 
 button {
