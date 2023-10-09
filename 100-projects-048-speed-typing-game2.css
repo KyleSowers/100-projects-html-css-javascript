@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background-color: #666999;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 80vh;
+    width: 400px;
+    gap: 30px;
+    margin-top: 50px;
+    box-shadow: 0 0 40px 15px rgb(255, 255, 255, 0.8);
+    background-image: linear-gradient(to right, rgb(170, 170, 170) 10%, rgb(170, 170, 170) 50%, rgb(204, 204, 204)75%, rgb(204, 204, 204) 85%, rgb(238, 238, 238) 97%, rgb(255, 255, 255) 100%);
+}
+
+#word-display {
+    font-size: 36px;
+}
+
+#word-input {
+    font-size: 24px;
+    width: 300px;
+    transition: 0.5s;
+}
+
+#word-input:active {
+    width: 100%;
+}
+
+#timer {
+    color: rgb(255, 92, 92);
+}
+
+#score {
+    color: #6981a9;
+}
+
+#game-over {
+    padding: 15px;
+}
+
+button {
+    font-size: 22px;
+    background-color: blue;
+    color: white;
+}
+
+button:hover {
+    background-color: whitesmoke;
+    color: blue;
+    border: 1px blue solid;
+    border-radius: 3px;
+}
