@@ -14,12 +14,13 @@ body {
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    height: 80vh;
+    height: 90vh;
     width: 400px;
-    gap: 30px;
-    margin-top: 50px;
+    gap: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
     box-shadow: 0 0 40px 15px rgb(255, 255, 255, 0.8);
-    background-image: linear-gradient(to right, rgb(170, 170, 170) 10%, rgb(170, 170, 170) 50%, rgb(204, 204, 204)75%, rgb(204, 204, 204) 85%, rgb(238, 238, 238) 97%, rgb(255, 255, 255) 100%);
+    background-image: linear-gradient(to right, rgb(170, 170, 170), rgb(170, 170, 170), rgb(204, 204, 204), rgb(204, 204, 204), rgb(238, 238, 238), rgb(255, 255, 255));
 }
 
 #word-display {

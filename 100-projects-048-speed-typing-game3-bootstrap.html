@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Speed Typing Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+  <div class="container text-center py-5">
+    <h1 class="mb-5">Speed Typing Game</h1>
+    <h2 id="word-display" class="display-4 mb-5"></h2>
+    <input id="word-input" type="text" placeholder="Start typing..." class="form-control-lg mb-4"/>
+    <h3 id="timer" class="text-danger mb-4">60</h3>
+    <h2 id="score" class="text-primary mb-5">0</h2>
+
+    <div id="game-over" style="display: none;">
+      <h1 class="mb-4">Game Over</h1>
+      <p class="mb-4">Your final score is: <span id="final-score"></span>.</p>
+      <button onclick="restartGame()" class="btn btn-primary">Try Again</button>
+    </div>
+  </div>
+
+  <script src="100-projects-048-speed-typing-game3-bootstrap.js"></script>
+</body>
+</html>
