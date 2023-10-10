@@ -5,7 +5,70 @@
     <title>Mad Lib Game</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
-<body>
+<body class="bg-light">
+    <div class="container py-5">
+        <h1 class="text-center mb-5">Mad Libs Game</h1>
+        <div class="form-container card p-5">
+            <select id="noun" class="form-control mb-3">
+                <option value="" selected disabled>Select a noun</option>
+                <option value="cat">Cat</option>
+                <option value="dog">Dog</option>
+                <option value="mouse">Mouse</option>
+                <option value="tree">Tree</option>
+                <option value="book">Book</option>
+                <option value="house">House</option>
+                <option value="car">Car</option>
+                <option value="bird">Bird</option>
+                <option value="computer">Computer</option>
+                <option value="phone">Phone</option>
+            </select>
+            <select id="verb" class="form-control mb-3">
+                <option value="" selected disabled>Select a verb</option>
+                <option value="run">Run</option>
+                <option value="jump">Jump</option>
+                <option value="play">Play</option>
+                <option value="laugh">Laugh</option>
+                <option value="sing">Sing</option>
+                <option value="dance">Dance</option>
+                <option value="read">Read</option>
+                <option value="write">Write</option>
+                <option value="eat">Eat</option>
+                <option value="sleep">Sleep</option>
+            </select>
+            <select id="adjective" class="form-control mb-3">
+                <option value="" selected disabled>Select an adjective</option>
+                <option value="happy">Happy</option>
+                <option value="sad">Sad</option>
+                <option value="big">Big</option>
+                <option value="small">Small</option>
+                <option value="fast">Fast</option>
+                <option value="slow">Slow</option>
+                <option value="hot">Hot</option>
+                <option value="cold">Cold</option>
+                <option value="bright">Bright</option>
+                <option value="dark">Dark</option>
+            </select>
+            <select id="adverb" class="form-control mb-3">
+                <option value="" selected disabled>Select an adverb</option>
+                <option value="quickly">Quickly</option>
+                <option value="slowly">Slowly</option>
+                <option value="happily">Happily</option>
+                <option value="sadly">Sadly</option>
+                <option value="silently">Silently</option>
+                <option value="loudly">Loudly</option>
+                <option value="easily">Easily</option>
+                <option value="hardly">Hardly</option>
+                <option value="carefully">Carefully</option>
+                <option value="recklessly">Recklessly</option>
+            </select>
+            <button onclick="generateStory()" class="btn btn-primary btn-block">Generate Story</button>
+        </div>
+
+        <div id="madlib-story" class="madlib-story card mt-5 p-5" style="display: none;">
+            <h2 class="text-center">Your Mad Libs Story</h2>
+            <p id="story" class="mt-4"></p>
+        </div>
+    </div>
 
 
   <script src="100-projects-049-mad-libs-game3-bootstrap.js"></script>
