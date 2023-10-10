@@ -6,7 +6,21 @@
     <link rel="stylesheet" href="100-projects-049-mad-libs-game1.css">
 </head>
 <body>
+    <div class="container">
+        <h1>Mad Libs Game</h1>
+        <div class="form-container">
+            <input id="noun" type="text" placeholder="Enter a noun...">
+            <input id="verb" type="text" placeholder="Enter a verb...">
+            <input id="adjective" type="text" placeholder="Enter an adjective...">
+            <input id="adverb" type="text" placeholder="Enter an adverb...">
+            <button onclick="generateStory()">Generate Story</button>
+        </div>
 
+        <div id="madlib-story" class="madlib-story">
+            <h2>Your Mad Libs Story</h2>
+            <p id="story"></p>
+        </div>
+    </div>
 
   <script src="100-projects-049-mad-libs-game1.js"></script>
 </body>
