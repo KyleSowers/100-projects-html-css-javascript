@@ -3,10 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <title>Mad Libs Game</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="100-projects-049-mad-libs-game2.css">
 </head>
 <body>
+    <h1>Mad Libs Game</h1>
+    <div class="form-container">
+        <select id="noun">
+            <option value="" selected disabled>Select a noun</option>
+            <option value="cat">Cat</option>
+            <option value="dog">Dog</option>
+            <option value="mouse">Mouse</option>
+            <option value="tree">Tree</option>
+            <option value="book">Book</option>
+            <option value="house">House</option>
+            <option value="car">Car</option>
+            <option value="bird">Bird</option>
+            <option value="computer">Computer</option>
+            <option value="phone">Phone</option>
+        </select>
+        <select id="verb">
+            <option value="" selected disabled>Select a verb</option>
+            <option value="run">Run</option>
+            <option value="jump">Jump</option>
+            <option value="play">Play</option>
+            <option value="laugh">Laugh</option>
+            <option value="sing">Sing</option>
+            <option value="dance">Dance</option>
+            <option value="read">Read</option>
+            <option value="write">Write</option>
+            <option value="eat">Eat</option>
+            <option value="sleep">Sleep</option>
+        </select>
+        <select id="adjective">
+            <option value="" selected disabled>Select an adjective</option>
+            <option value="happy">Happy</option>
+            <option value="sad">Sad</option>
+            <option value="big">Big</option>
+            <option value="small">Small</option>
+            <option value="fast">Fast</option>
+            <option value="slow">Slow</option>
+            <option value="hot">Hot</option>
+            <option value="cold">Cold</option>
+            <option value="bright">Bright</option>
+            <option value="dark">Dark</option>
+        </select>
+        <select id="adverb">
+            <option value="" selected disabled>Select an adverb</option>
+            <option value="quickly">Quickly</option>
+            <option value="slowly">Slowly</option>
+            <option value="happily">Happily</option>
+            <option value="sadly">Sadly</option>
+            <option value="silently">Silently</option>
+            <option value="loudly">Loudly</option>
+            <option value="easily">Easily</option>
+            <option value="hardly">Hardly</option>
+            <option value="carefully">Carefully</option>
+            <option value="recklessly">Recklessly</option>
+        </select>
+        <button onclick="generateStory()">Generate Story</button>
+    </div>
 
-    <script src=""></script>
+    <div id="madlib-story" class="madlib-story">
+        <h2>Your Mad Libs Story</h2>
+        <p id="story"></p>
+    </div>
+
+    <script src="100-projects-049-mad-libs-game2.js"></script>
 </body>
 </html>
