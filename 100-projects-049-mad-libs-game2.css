@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: #333344;
+    color: whitesmoke;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 10px auto;
+    padding: 20px;
+    border: 2px solid #888;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+select {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #fafafa;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    margin: 20px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: ghostwhite;
+    color: #334444;
+    border: 2px #334444 solid;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background-color: #334444;
+    color: ghostwhite;
+}
+
+.madlib-story {
+    display: none;
+    margin: 10px auto;
+    padding: 10px;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    background-color: #b7eeb2;
+    font-size: 1.5em;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+h2 {
+    color: #334444;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+p {
+    text-align: justify;
+}
+
+option {
+    color: rgb(48,16,205);
+}
+
+.noun {
+    color: red;
+}
+
+.verb {
+    color: rgb(88, 13, 13);
+}
+
+.adjective {
+    color: brown;
+}
+
+.adverb {
+    color: rgb(35, 16, 156);
+}
+
