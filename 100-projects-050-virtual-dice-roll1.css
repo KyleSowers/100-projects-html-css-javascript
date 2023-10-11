@@ -1,0 +1,42 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #334444;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: whitesmoke;
+    color: #334444;
+    border: none;
+    border-radius: 20px;
+    min-height: 350px;
+    min-width: 400px;
+}
+
+h1 {
+
+}
+
+#dice {
+    display: flex;
+    justify-self: end;
+    font-size: 56px;
+    margin: 0;
+    hieght:  65px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+}
