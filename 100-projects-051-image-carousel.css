@@ -1,9 +1,20 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+}
+
 .carousel {
     position: relative;
-    width: 300px;
-    height: 200px;
-    margin: auto;
+    width: 500px;
+    height: 400px;
+    margin: 0 auto;
     overflow: hidden;
+    border: 10px ghostwhite solid;
 }
 
 .carousel img {
@@ -14,10 +25,24 @@
     opacity: 0;
 }
 
-.carousel img active {
+.carousel img.active {
     opacity: 1;
 }
- .buttons {
-     text-align: center;
-     margin-top: 10px;
+.buttons {
+    text-align: center;
+    margin-top: 25px;
  }
+
+button {
+    height: 24px;
+    width: 70px;
+    background-color: deepskyblue;
+    opacity: 0.7;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
+    cursor: pointer;
+
+}
