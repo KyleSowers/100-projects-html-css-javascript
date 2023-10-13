@@ -4,7 +4,7 @@
 // JavaScript functions Library
 
 
-//Countdown() : countdown, time, calendar, days, hours, minutes, seconds, remaining : ex:003
+////Countdown() : countdown, date, time, calendar, days, hours, minutes, seconds, remaining : ex:003
 //         Call function
         function countdown() {
             // Create new date
@@ -91,4 +91,4 @@
             }, 1000);
         }
 
-//End of Countdown()
+////End of Countdown()
