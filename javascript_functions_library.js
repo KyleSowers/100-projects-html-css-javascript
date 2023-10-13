@@ -30,6 +30,7 @@
             minutes = (minutes < 10) ? "0" + minutes : minutes;
             seconds = (seconds < 10) ? "0" + seconds : seconds;
 
+            // combines each with added html text
             document.getElementById("days").textContent = days;
             document.getElementById("hours").textContent = hours;
             document.getElementById("minutes").textContent = minutes;
@@ -40,7 +41,7 @@
 
         countdown();
 
-//      OR (also Countdown())
+//      OR (also Countdown(), with a input type="date" selector from HTML)
 
         let countdownInterval;
 
