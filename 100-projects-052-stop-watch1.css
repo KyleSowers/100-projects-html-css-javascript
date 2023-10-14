@@ -10,3 +10,9 @@ body {
     font-size: 50px;
     margin-bottom: 20px;
 }
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+}
