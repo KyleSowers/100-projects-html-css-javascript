@@ -10,6 +10,10 @@ body {
     color: #333;
 }
 
+h1 {
+    text-align: center;
+}
+
 #timer-container {
     display: flex;
     flex-direction: column;
