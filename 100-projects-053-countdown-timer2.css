@@ -41,3 +41,18 @@ body {
     height: 20px;
     background-color: #4caf50;
 }
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4caf50;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:disabled {
+    background-color: #ccc;
+}
