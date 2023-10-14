@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+
 body {
     display: flex;
     flex-direction: column;
@@ -38,6 +40,7 @@ input {
     border: 1px #ccc solid;
     border-radius: 10px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.23);
+    text-align: center;
 }
 
 button {
@@ -47,7 +50,6 @@ button {
     border: 1px #ccc solid;
     border-radius: 10px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.23);
+    cursor: pointer;
 }
-
-
 

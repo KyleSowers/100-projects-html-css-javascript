@@ -21,3 +21,4 @@ document.getElementById('start-countdown').addEventListener('click', function() 
         }
     }, 1000); // Run the function every second
 });
+
