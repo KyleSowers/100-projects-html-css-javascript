@@ -4,16 +4,17 @@ body {
     align-items: center;
     height: auto;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #226666;
+    color: whitesmoke;
     flex-direction: column;
 }
 
 #ingredients-input {
+    display: flex;
     width: 400px;
-    margin: 5px;
     padding: 10px 20px;
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 20px 5px;
 }
 
 button {
@@ -23,6 +24,17 @@ button {
 }
 
 #recipes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 80%;
     margin-top: 20px;
+    gap: 20px;
 }
+
+.recipeDiv>h2 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 370px;
+}
+

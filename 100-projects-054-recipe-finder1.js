@@ -6,19 +6,22 @@ document.getElementById('search-recipes').addEventListener("click", function () 
 
     const ingredients = ingredientInput.split(',').map(ingredient => ingredient.trim());
 
-    fetch(`https//api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredients.join(',')}&apiKey=YOURKEY`)
+    fetch(`https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredients.join(',')}&apiKey=YOURAPIKEY`)
         .then(response => response.json())
         .then(data => {
-            const recipesElement = document.getElementByID('recipes');
+            const recipesElement = document.getElementById('recipes');
             recipesElement.innerHTML = ''; // clear previous results
 
-            data.foreach(recipe => {
+            data.forEach(recipe => {
+                // recipe.missedIngredientCount = undefined;
+                // recipe.usedIngredientCount = undefined;
                 const recipeElement = document.createElement('div');
+                recipeElement.classList.add('recipeDiv');
                 recipeElement.innerHTML = `
-                <h2>${recipe.title}</h2>'
+                <h2>${recipe.title}</h2>
                 <img src='${recipe.image}' alt='${recipe.title}'/>
                 <p>${recipe.usedIngredientCount} ingredients used </p>
-                <p>${recipe.usedIngredientCount} ingredients missed</p>
+                <p>${recipe.missedIngredientCount} ingredients missed</p>
             `;
 
             recipesElement.appendChild(recipeElement);
