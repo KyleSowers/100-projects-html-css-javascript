@@ -71,10 +71,12 @@ button:hover {
 .recipe h2 {
     font-size: 1.5em;
     margin-bottom: 10px;
+    color: #226666;
 }
 
 .recipe p {
     margin-bottom: 5px;
+    color: #226666;
 }
 
 .recipe img {

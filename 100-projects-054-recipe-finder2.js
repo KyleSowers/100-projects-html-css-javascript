@@ -13,13 +13,13 @@ document.getElementById('search-recipes').addEventListener('click', function (){
             recipesElement.innerHTML = '';
 
             data.forEach(recipe => {
-                const recipeElement = document.creeateElement('div');
+                const recipeElement = document.createElement('div');
                 recipeElement.classList.add('recipe');
 
                 recipeElement.innerHTML = `
                 <h2>${recipe.title}</h2>
                 <img src='${recipe.image}' alt='${recipe.title}'/>
-                <p>${recipe.usedIngredientCount} ingredients used: ${recipe.usedIngredients.map(i => name).join(',')}</p>
+                <p>${recipe.usedIngredientCount} ingredients used: ${recipe.usedIngredients.map(i => i.name).join(',')}</p>
                 <p>${recipe.missedIngredientCount} ingredients missed: ${recipe.missedIngredients.map(i => i.name).join(',')}</p>
                 `;
                 recipesElement.appendChild(recipeElement);
