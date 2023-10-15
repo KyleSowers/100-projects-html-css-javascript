@@ -8,9 +8,9 @@ function setProgress(time) {
     $('#progress-bar div').width(((originalTime - time) / originalTime) * 100 + '%');
 }
 
-$('startCountdown').click(function() {
+$('#start-countdown').click(function() {
     let timeInput = $('#time-input').val(); //get user input
-    if (timeInput) return; // return if input is empty
+    if (!timeInput) return; // return if input is empty
 
     timeInput = parseInt(timeInput);
     if (isNaN(timeInput) || timeInput <= 0) return; // return if input is not a positive number
@@ -26,10 +26,10 @@ $('startCountdown').click(function() {
     countdown = setInterval(function () {
         if (timeInput <= 0) { // if the countdown should be over
             clearInterval(countdown); // clear the countdown
-            $('#timer').text('00'); // reset the displayed countdown
+            $('#timer').text("00"); // reset the displayed countdown
         } else {
             timeInput--; // subtract one second
-            $('timer').text((timeInput > 9 ? "" : "0") + timeInput); // display the new time
+            $('#timer').text((timeInput > 9 ? "" : "0") + timeInput); // display the new time
             setProgress(timeInput);
         }
     }, 1000); // run the function every second
@@ -37,7 +37,7 @@ $('startCountdown').click(function() {
 
 $('#pause-countdown').click(function () {
     if (isPaused) {
-        $('#pause-countdown').text('pause');
+        $('#pause-countdown').text('Pause');
         countdown = setInterval(function () {
             let timeInput = parseInt($('#timer').text());
             if (timeInput <= 0) {
@@ -51,19 +51,19 @@ $('#pause-countdown').click(function () {
         }, 1000);
     } else {
         clearInterval(countdown);
-        $('pause-countdown').text('continue');
+        $('#pause-countdown').text('Continue');
     }
     isPaused = !isPaused;
 });
 
 $('#reset-countdown').click(function () {
     clearInterval(countdown);
-    $('timer').text('00');
+    $('#timer').text('00');
     $('#time-input').val('');
     $('#progress-bar div').width('0%');
     $('#start-countdown').prop('disabled', false);
     $('#pause-countdown').prop('disabled', true);
-    $('#pause-countdown').prop('Pause');
+    $('#pause-countdown').text('Pause');
     $('#reset-countdown').prop('disabled', true);
     isPaused = false;
 });

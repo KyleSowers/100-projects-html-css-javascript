@@ -9,6 +9,16 @@ body {
     color: #333;
 }
 
+h1 {
+    padding: 30px;
+    letter-spacing: 2px;
+}
+
+#time-input {
+    text-align: center;
+    border-radius: 9px;
+}
+
 #timer-container {
     display: flex;
     flex-direction: column;
@@ -20,4 +30,23 @@ body {
     padding: 20px;
     margin-top: 20px;
     width: 300px;
+}
+
+#timer {
+    font-size: 50px;
+    margin: 20px;
+}
+
+#progress-bar {
+    width: 100%;
+    background-color: #dce97d;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#progress-bar div {
+    height: 20px;
+    background-color: #4caf50;
 }
