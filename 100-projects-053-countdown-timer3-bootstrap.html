@@ -8,8 +8,15 @@
 </head>
 <body>
   <h1 class="text-center">Countdown Timer</h1>
-  <div  id="timer-container" class="form-control" type="number" placeholder="Enter time in seconds">
-
+  <div  id="timer-container" class="text-center">
+    <input id="time-input" class="form-control" type="number" placeholder="Enter time in seconds">
+    <div id="progress-bar" class="mt-4">
+      <div></div>
+    </div>
+    <span id="timer" class="display-4">00</span>
+    <button id="start-countdown" class="btn btn-success btn-lg mt-2">Start</button>
+    <button id="pause-countdown" class="btn btn-warning btn=lg mt-2" disabled>Pause</button>
+    <button id="reset-countdown" class="btn btn-danger btn-lg mt-2" disabled>Reset</button>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
