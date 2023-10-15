@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    flex-direction: column;
+}
+
+#ingredients-input {
+    width: 400px;
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+#recipes {
+    width: 80%;
+    margin-top: 20px;
+}
