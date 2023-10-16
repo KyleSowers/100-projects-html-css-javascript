@@ -1,6 +1,21 @@
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     font-family: Arial, sans-serif;
     text-align: center;
+}
+
+.container {
+    /*border: 1px #ccc solid;*/
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.19);
+}
+
+input, select {
+    border-radius: 10px;
 }
 
 #converter {
