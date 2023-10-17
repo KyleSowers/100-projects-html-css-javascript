@@ -9,4 +9,10 @@ document.getElementById('calculate-tip').addEventListener('click', function () {
         document.getElementById('result').textContent = "Please enter valid inputs!";
         return;
     }
-})
+
+    const tipAmount = bill * (tipPercentage / 100);
+    const totalAmount = bill + tipAmount;
+    const splitAmount = totalAmount / people;
+
+    document.getElementById('result').textContent = `Total bill with tip: $${totalAmount.toFixed(2)}\nEach person should pay: $${splitAmount.toFixed(2)}`;
+});
