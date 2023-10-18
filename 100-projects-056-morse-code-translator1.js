@@ -29,7 +29,7 @@ document.getElementById('to-text').addEventListener('click', function () {
     for (let i = 0; i < inputMorse.length; i++) {
         if (inverseMorseCode[inputMorse[i]]) {
             outputText += inverseMorseCode[inputMorse[i]];
-        } else {
+        } else if (outputText === "") {
             outputText += '?';
         }
     }
