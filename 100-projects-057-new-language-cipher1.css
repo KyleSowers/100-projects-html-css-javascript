@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    flex-direction: column;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+textarea {
+    width: 80%;
+    height: 100px;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 18px;
+}

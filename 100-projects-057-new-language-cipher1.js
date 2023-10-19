@@ -4,6 +4,11 @@ const NewLanguage = {
     'a': '!', 'b': '@', 'c': '#', 'd': '$', 'e': '%', 'f': '^', 'g': '&', 'h': '*', 'i': '(', 'j': ')', 'k':
 '-', 'l': '=', 'm': '+', 'n': '[', 'o': ']', 'p': '{', 'q': '}', 'r': ';', 's': ':', 't': ',', 'u': '.', 'v': '<', 'w': '>', 'x': '/', 'y': ':', 'z': '|', '': '~', '!': 'x'};
 
+const inverseNewLanguage = {};
+for (const key in NewLanguage) {
+    inverseNewLanguage[NewLanguage[key]] = key
+}
+
 document.getElementById('to-new-language').addEventListener('click', function () {
     const inputEnglish = document.getElementById('input-english').value.toLowerCase();
     let outputNewLanguage = '';
