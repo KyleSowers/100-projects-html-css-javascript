@@ -1,6 +1,6 @@
 'use strict'
 
-let cards = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
+let cards = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
 cards.sort(() => 0.5 - Math.random());
 
 let firstCard = null;
