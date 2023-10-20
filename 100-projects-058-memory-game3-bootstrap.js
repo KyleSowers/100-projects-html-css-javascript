@@ -39,7 +39,7 @@ function shuffleAndDealCards() {
     });
 }
 
-$('#reset-button').on('click', fuction () {
+$('#reset-button').on('click', function () {
     pairsFound = 0;
     shuffleAndDealCards();
 });
