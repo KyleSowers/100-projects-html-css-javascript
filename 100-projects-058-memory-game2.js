@@ -39,7 +39,7 @@ function shuffleAndDealCards() {
                         alert('Congratulations! You found all pairs.');
                     }
                 } else {
-                    setTimeout(Function () {
+                    setTimeout(function () {
                         firstCard.children[0].style.display = 'none';
                         secondCard.children[0].style.display = 'none';
                         firstCard = null;
