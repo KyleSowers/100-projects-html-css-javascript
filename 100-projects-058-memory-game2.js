@@ -50,3 +50,10 @@ function shuffleAndDealCards() {
         });
     }
 }
+
+resetButton.addEventListener('click', function () {
+    pairsFound = 0;
+    shuffleAndDealCards();
+});
+
+shuffleAndDealCards();
