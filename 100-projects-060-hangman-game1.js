@@ -42,7 +42,7 @@ function makeGuess(letter) {
         }
     }
     if(isCorrectGuess) {
-        document.getElementById('word-container').innerText = answerArray.joint('');
+        document.getElementById('word-container').innerText = answerArray.join('');
     }
     if (remainingLetters === 0) {
         setTimeout(() => {
