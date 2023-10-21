@@ -1,7 +1,7 @@
 'use strict'
 
 let categories = {
-    'animals': ['elephant', 'giraffe', 'kangaroo', 'dog', 'cat', 'cow'],
+    'animal': ['elephant', 'giraffe', 'kangaroo', 'dog', 'cat', 'cow'],
     'food': ['hamburger', 'spaghetti', 'sandwich', 'bread', 'ramen', 'kimchi'],
     'nation': ['australia', 'brazil', 'canada', 'korea', 'japan', 'china']
 };
