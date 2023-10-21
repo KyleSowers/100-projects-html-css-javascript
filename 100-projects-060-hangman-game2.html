@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="100-projects-060-hangman-game2.css">
+</head>
+<body>
+  <div id="game=area">
+    <img src="" alt="Hangman Game"/>
+    <div id="game-content">
+      <h1>Hangman Game</h1>
+      <select id="category-selector" onchange="resetGame()">
+        <option value="animal">Animal</option>
+        <option value="food">Food</option>
+        <option value="nation">Nation</option>
+      </select>
+      <div id="word-container"></div>
+      <div id="keyboard"></div>
+      <button id="reset-button" onclick="resetGame()">Reset Game</button>
+    </div>
+  </div>
+
+  <script src="100-projects-060-hangman-game2.js"></script>
+</body>
+</html>
