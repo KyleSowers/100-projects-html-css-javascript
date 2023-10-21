@@ -27,7 +27,7 @@ function  drawBoard() {
     }
 }
 
-function makeMove() {
+function makeMove(i, j) {
     if (board[i][j] !== '') return;
     board[i][j] = currentPlayer;
     if (checkWin(currentPlayer)) {
