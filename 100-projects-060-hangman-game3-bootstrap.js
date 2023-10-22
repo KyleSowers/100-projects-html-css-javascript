@@ -19,6 +19,7 @@ function resetGame() {
     }
     remainingLetters = word.length;
     $('#word-container').text(answerArray.join(" "));
+    $('#message').text('');
     drawKeyboard();
 }
 
@@ -31,7 +32,7 @@ function drawKeyboard() {
         letterElement.on('click', function () {
             makeGuess(letter);
         });
-        keyboard.appendChild(letterElement);
+        keyboard.append(letterElement);
     }
 }
 
