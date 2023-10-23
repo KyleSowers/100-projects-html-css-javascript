@@ -28,5 +28,49 @@ body {
     color: #005792;
 }
 
+/*Style for weekly*/
+.day-block {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 90%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    background-color: #ffe66d;
+}
+
+.day-info {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    color: #193549;
+}
+
+.day-block h4 {
+    color: #005792;
+    margin-bottom: 5px;
+}
+
+.day-block span {
+    font-size: 1.0em;
+    margin-bottom: 5px;
+}
+
+.day-block textarea {
+    width: 65%;
+    height: 100px;
+    margin-bottom: 5px;
+}
+
+.day-block button {
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    padding: 5px 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
 
 
