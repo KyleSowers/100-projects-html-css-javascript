@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
+#planner {
+    width: 400px;
+}
+
+.hour-block {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.hour-block input {
+    flex-grow: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.hour-block button {
+    margin-left: auto;
+}
