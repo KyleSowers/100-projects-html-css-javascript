@@ -61,7 +61,7 @@ function drawDailyPlanner() {
         inputElement.onchange = function (event) {
             plannerDay[i] = event.target.value;
         };
-        let deleteButton = document.getElementById('daily-planner-blocks');
+        let deleteButton = document.createElement('button');
         deleteButton.innerText = 'Delete';
         deleteButton.onclick = function() {
             plannerDay[i] = '';

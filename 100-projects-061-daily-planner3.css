@@ -73,4 +73,39 @@ body {
     cursor: pointer;
 }
 
+/*Style Daily Planner*/
+.hour-block {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ffe66d;
+    padding: 10px;
+    margin-bottom: 5px;
+    width: 90%;
+}
+
+.hour-block span {
+    width: 20%;
+}
+
+.hour-block input {
+    flex-grow: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.hour-block button {
+    margin-left: auto;
+    background-color: #ff6b6b;
+}
+
+.weekly-blocks {
+    width: 90%;
+}
+
+.daily-blocks {
+    width: 90%;
+}
+
+
+
 
