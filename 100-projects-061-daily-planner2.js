@@ -36,9 +36,9 @@ function drawPlanner() {
             localStorage.setItem(`plans-${dayDate.toLocaleDateString()}`, event.target.value);
         };
 
-        dayBlock.appendChild(dayinfo);
+        dayBlock.appendChild(dayInfo);
         dayBlock.appendChild(textarea);
-        dayBlock.appendChild(dayBlock);
+        planner.appendChild(dayBlock);
     }
 }
 

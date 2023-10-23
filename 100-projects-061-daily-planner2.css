@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+#planner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #333;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #fff;
+    width: 90%;
+}
+
+#planner h2 {
+    text-align: center;
+    color: #4a47a3;
+}
+
+.day-block {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #ade8f4;
+    width: 90%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.day-info {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    color: #183d5d;
+}
+
+.day-block h3 {
+    color: #03396c;
+    margin-bottom: 20px;
+}
+
+.day-block span {
+    font-size: 1.0em;
+    margin-bottom: 10px;
+}
+
+.day-block textarea {
+    width: 70%;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.day-block button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
