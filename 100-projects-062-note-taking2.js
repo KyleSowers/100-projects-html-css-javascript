@@ -10,7 +10,7 @@ const noteText = document.getElementById('note-text');
 const noteContainer = document.getElementById('notes');
 
 //Form submission event listener
-noteForm.addEventListener('submit', function () {
+noteForm.addEventListener('submit', function (e) {
     e.preventDefault();
 
     notes.push({title: noteTitle.value, text: noteText.value});
@@ -27,7 +27,7 @@ function displayNotes() {
     <div class="note">
         <h2>${note.title}</h2>
         <p>${note.text}</p>
-        <button onclick="deleteNotes(${i})">Delete</button>
+        <button onclick="deleteNote(${i})">Delete</button>
     </div>
     `).join('');
 
