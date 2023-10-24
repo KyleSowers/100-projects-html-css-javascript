@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+#note-form {
+    margin-bottom: 20px;
+}
+
+#note-title, #note-text {
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.note {
+    border: 2px solid #f80606;
+    padding: 10px;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+/*    Will handle line breaks*/
+    overflow-wrap: break-word;
+/*    Prevents long words from extending note width*/
+}
+
+.note h2 {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+.note p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+}
+
+.note button {
+    display: block;
+    margin-bottom: 0;
+}
