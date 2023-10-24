@@ -1,0 +1,20 @@
+body {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+#note-form button:hover {
+    background-color: #6755a8;
+}
+
+.note {
+    white-space: pre-wrap;
+}
+
+.note button {
+    float: right;
+}
+
+.note button:hover {
+    background-color: #e35b70;
+}
