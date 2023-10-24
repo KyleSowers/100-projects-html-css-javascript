@@ -68,7 +68,7 @@ section article.profile h1 {
 section article.profile h2 {
     font-weight: normal;
     font-size: 14px;
-    font-family: "arial";
+    font-family: Arial;
     color: #8b8888;
     margin-bottom: 30px;
 }
@@ -78,15 +78,14 @@ section a.btnView {
     width: 180px;
     height: 35px;
     margin: 0 auto 15px;
-    background-color: #444;
     border-radius: 16px;
     font-weight: bold;
     font-size: 14px;
-    font-family: "arial";
+    font-family: Arial;
     color: #fff;
     line-height: 32px;
     text-align: center;
-    background: linear-gradient(45deg, #4affff, #05dcf9);
+    background: #444 linear-gradient(45deg, #4affff, #05dcf9);
     box-shadow: 5px 10px 20px rgba(1, 81, 81, 0.493);
 }
 
@@ -115,7 +114,7 @@ section ul.contact li i {
 section ul.contact li span {
     font-weight: normal;
     font-size: 11px;
-    font-family: "orbitron";
+    font-family: orbitron;
     color: #555;
     letter-spacing: 1px;
     cursor: pointer;
@@ -152,7 +151,7 @@ section ul.contact {
 section article.more-info {
     display: none;
     text-align: left;
-    font-family: "arial";
+    font-family: Arial;
     color: #666;
     margin-top: 20px;
 }
