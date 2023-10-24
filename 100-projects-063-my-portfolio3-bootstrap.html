@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:transform="http://www.w3.org/1999/xhtml" xmlns:display="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,35 @@
             <a id="note-icon" href="#"><i class="far fa-sticky-note"></i></a>
         </nav>
 
+        <div id="note-popup" class="popup bg-light border rounded p-2 shadow position-absolute" style="width: 300px; height: 200px; top: 50%; left: 50%; transform: translate(-50%,-50%); display: none;">
+            <textarea id="note-text" class="w-100 h-75" placeholder="Write a note..."></textarea>
+            <button id="note-save" class="btn btn-primary w-100 h-25">Save Note</button>
+        </div>
 
+        <article class="profile text-center">
+            <img src="images/100-projects-005-resume2.jpg" alt="my profile image" class="rounded-circle mb-2" style="width: 200px; height: 200px;">
+
+            <h1 class="font-weight-bold text-primary mb-1">FUNCODING</h1>
+            <h2 class="text-secondary mb-3">PLANET ECO DEVELOPER</h2>
+
+            <a href="#" id="btnView" class="btnView btn btn-block btn-primary w-50 mx-auto">FIND MORE</a>
+        </article>
+
+        <article class="more-info text-left text-secondary mt-2" style="display: none;">
+            <h3 class="font-weight-bold mb-1">About FUNCODING</h3>
+            <p>FUNCODING is a planet eco developer, passionate about creating solutons that are friendly to our planet. They have been involved in various eco projects across the globe, creating sustainable tech solutions.</p>
+        </article>
+
+        <ul id="content-list" class="contact list-unstyled mb-3" style="display: none;">
+            <li class="d-flex align-items-center mb-1">
+                <i class="fas fa-envelope mr-2 text-secondary"></i>
+                <span class="text-secondary">funcoding@naver.com</span>
+            </li>
+            <li class="d-flex align-items-center">
+                <i class="fab fa-facebook-f mr-2 text-secondary"></i>
+                <span class="text-secondary">Welcome to My Facebook</span>
+            </li>
+        </ul>
     </section>
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
