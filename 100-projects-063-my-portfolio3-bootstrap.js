@@ -2,7 +2,7 @@
 
 //JQUERY for Interactivity
 
-$(document).ready(function() {
+$(document).ready(function () {
     $("#menu-icon").click(function (e) {
         e.preventDefault();
         $("#contact-list").toggle();
@@ -19,7 +19,7 @@ $(document).ready(function() {
     });
 
     $(window).on('load', function() {
-        var savedNote = localStorage.getItem('note');
+        const savedNote = localStorage.getItem('note');
         if (savedNote) {
             $("#note-text").val(savedNote);
         }
