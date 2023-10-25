@@ -33,6 +33,8 @@ function addTask(event) {
     dueDateInput.value = '';
 }
 
+
+
 function updateTaskDisplay() {
     const taskList = document.getElementById('task-list');
 
