@@ -33,33 +33,33 @@ function addTask(event) {
     dueDateInput.value = '';
 }
 
-    function updateTaskDisplay() {
-        const taskList = document.getElementById('task-list');
+function updateTaskDisplay() {
+    const taskList = document.getElementById('task-list');
 
-    //     Clear the task list
-        taskList.innerHTML = '';
+//     Clear the task list
+    taskList.innerHTML = '';
 
-    //     Create a new list item for each task and append it to the task list
-        for (let i = 0; i < tasks.length; i++) {
-            const listItem = document.createElement('div');
-        //     Check if the date is valid before displaying it
-            if(isNaN(tasks[i].dueDate.getTime())) {
-                listItem.textContent = `$${tasks[i].name} - No Due Date`;
-            } else {
-                listItem.textContent = `${tasks[i].name} - ${tasks[i].dueDate.toDateString()}`;
-            }
-
-        //     Create delete button
-            const deleteButton = document.createElement('button');
-            deleteButton.textContent = 'Delete';
-            deleteButton.addEventListener('click', function () {
-                tasks = tasks.filter(task => task !== tasks[i]); //remove the task from the tasks array
-                localStorage.setItem('tasks', JSON.stringify(tasks)); // update tasks in local storage
-                updateTaskDisplay(); // re-display the tasks
-            });
-
-            listItem.appendChild(deleteButton); //add the delete button to the task
-            taskList.appendChild(listItem);
+//     Create a new list item for each task and append it to the task list
+    for (let i = 0; i < tasks.length; i++) {
+        const listItem = document.createElement('div');
+    //     Check if the date is valid before displaying it
+        if(isNaN(tasks[i].dueDate.getTime())) {
+            listItem.textContent = `$${tasks[i].name} - No Due Date`;
+        } else {
+            listItem.textContent = `${tasks[i].name} - ${tasks[i].dueDate.toDateString()}`;
         }
+
+    //     Create delete button
+        const deleteButton = document.createElement('button');
+        deleteButton.textContent = 'Delete';
+        deleteButton.addEventListener('click', function () {
+            tasks = tasks.filter(task => task !== tasks[i]); //remove the task from the tasks array
+            localStorage.setItem('tasks', JSON.stringify(tasks)); // update tasks in local storage
+            updateTaskDisplay(); // re-display the tasks
+        });
+
+        listItem.appendChild(deleteButton); //add the delete button to the task
+        taskList.appendChild(listItem);
     }
-    updateTaskDisplay();
+}
+updateTaskDisplay();
