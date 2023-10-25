@@ -6,6 +6,33 @@
   <link rel="stylesheet" href="100-projects-064-task-tracker2.css">
 </head>
 <body>
+  <h1>Task Tracker</h1>
+  <div id="app">
+    <form id="task-form">
+      <input type="text" id="task-input" placeholder="New Task" required>
+      <input type="date" id="due-date-input" required>
+      <input type="submit" value="Add Task">
+    </form>
+
+    <div id="sort">
+      <button id="sort-asc">Sort by date (asc)</button>
+      <button id="sort-desc">Sort by date (desc)</button>
+    </div>
+
+    <table id="task-list">
+      <thead>
+        <tr>
+          <th style="=width: 220px;">Task</th>
+          <th style="=width: 120px;">Date</th>
+          <th style="width: 70px;">Complete</th>
+          <th style="width: 80px;">Delete</th>
+        </tr>
+      </thead>
+    </table>
+    <tbody>
+<!--    Tasks will display here-->
+    </tbody>
+  </div>
 
   <script src="100-projects-064-task-tracker2.js"></script>
 </body>
