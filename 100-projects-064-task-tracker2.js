@@ -54,24 +54,43 @@ function updateTaskDisplay() {
 //     Create a new list item for each task and append it to the task list
     for (let i = 0; i < tasks.length; i++) {
         const row = document.createElement('tr');
-        //     Check if the date is valid before displaying it
-        if(isNaN(tasks[i].dueDate.getTime())) {
-            listItem.textContent = `$${tasks[i].name} - No Due Date`;
-        } else {
-            listItem.textContent = `${tasks[i].name} - ${tasks[i].dueDate.toDateString()}`;
-        }
 
-        //     Create delete button
+        const taskCell = document.createElement('td');
+        taskCell.textContent = tasks[i].name;
+        taskCell.style.width = '220px';
+        row.appendChild(taskCell);
+
+        const dateCell = document.createElement('td');
+        dateCell.textContent = isNaN(tasks[i].dueDate.getTime()) ? 'No Due Date' : tasks[i].dueDate.toDateString();
+        dateCell.style.width = '120px';
+        row.appendChild(dateCell);
+
+        const completeCell = document.createElement('td');
+        completeCell.style.width = '70px';
+        const completeCheckbox = document.createElement('input');
+        completeCheckbox.type = 'checkbox';
+        completeCheckbox.checked = tasks[i].completed;
+        completeCheckbox.addEventListener('change', function () {
+            tasks[i].completed = completeCheckbox.checked;
+            localStorage.setItem('tasks', JSON.stringify(tasks)); //update tasks in local storage
+            updateTaskDisplay();
+        });
+        completeCell.appendChild(completeCheckbox);
+        row.appendChild(completeCell);
+
+        const deleteCell = document.getElementById('td');
+        deleteCell.style.width = '80px';
         const deleteButton = document.createElement('button');
         deleteButton.textContent = 'Delete';
         deleteButton.addEventListener('click', function () {
-            tasks = tasks.filter(task => task !== tasks[i]); //remove the task from the tasks array
-            localStorage.setItem('tasks', JSON.stringify(tasks)); // update tasks in local storage
+            tasks.splice(i, 1); // remove the task from the tasks array
+            localStorage.setItem('tasks', JSON.stringify(tasks)); // update tasks in localStorage
             updateTaskDisplay(); // re-display the tasks
         });
+        deleteCell.appendChild(deleteButton);
+        row.appendChild(deleteCell);
 
-        listItem.appendChild(deleteButton); //add the delete button to the task
-        taskList.appendChild(listItem);
+        taskList.appendChild(row);
     }
 }
-updateTaskDisplay();
+updateTaskDisplay(); // Call this function immediately after defining it to load tasks on page load
