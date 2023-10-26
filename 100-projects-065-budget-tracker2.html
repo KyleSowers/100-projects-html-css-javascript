@@ -6,7 +6,33 @@
     <link rel="stylesheet" href="100-projects-065-budget-tracker2.css">
 </head>
 <body>
+  <h1>Budget Tracker</h1>
 
+  <div id="app">
+    <div id="income">
+      <h2>Income</h2>
+      <form id="income-form">
+        <input type="text" id="income-desc" placeholder="Enter income description" required/>
+        <input type="number" id="income-amount" placeholder="Enter amount" min="0" required/>
+        <button type="submit">Add Income</button>
+      </form>
+      <ul id="income-list"></ul>
+      <div id="income-total"></div>
+    </div>
+
+    <div id="expenses">
+      <h2>Expenses</h2>
+      <form id="expenses-form">
+        <input type="text" id="expenses-desc" placeholder="Enter expense description" required>
+        <input type="number" id="expenses-amount" placeholder="Enter amount" min="0" required>
+        <button type="submit">Add Expense</button>
+      </form>
+      <ul id="expenses-list"></ul>
+      <div id="expenses-total"></div>
+    </div>
+  </div>
+
+  <div id="balance">Balance: $0</div>
 
   <script src="100-projects-065-budget-tracker2.js"></script>
 </body>
