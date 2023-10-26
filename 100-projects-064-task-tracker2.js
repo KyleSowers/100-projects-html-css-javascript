@@ -78,7 +78,7 @@ function updateTaskDisplay() {
         completeCell.appendChild(completeCheckbox);
         row.appendChild(completeCell);
 
-        const deleteCell = document.getElementById('td');
+        const deleteCell = document.createElement('td');
         deleteCell.style.width = '80px';
         const deleteButton = document.createElement('button');
         deleteButton.textContent = 'Delete';
