@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Budget Tracker</title>
+  <link rel="stylesheet" href="100-projects-065-budget-tracker1.css">
+</head>
+<body>
+  <h1>Budget Tracker</h1>
+  <div id="balance">Balance: $0</div>
+  <br>
+  <form id="money-form">
+    <input type="text" id="desc" placeholder="Enter description"/>
+    <input type="number" id="amount" placeholder="Enter amount"/>
+    <button type="submit">Add Transaction</button>
+  </form>
+
+<!--  Amount entered greater than zero is entered as income and amount less than zero is entered as expense-->
+
+  <h2>Income</h2>
+  <ul id="income-list"></ul>
+
+  <h2>Expenses</h2>
+  <ul id="expenses-list"></ul>
+
+  <script src="100-projects-065-budget-tracker1.js"></script>
+</body>
+</html>
