@@ -2,8 +2,8 @@
 
 $(document).ready(function () {
     let balance = 0;
-    let income = JSON.parse(localStorage.getItem('income')) || [];
-    let expenses = JSON.parse(localStorage.getItem('expenses')) || [];
+    let income = JSON.parse(localStorage.getItem("income")) || [];
+    let expenses = JSON.parse(localStorage.getItem("expenses")) || [];
 
     function loadItems() {
         $('#income-list').empty();
@@ -21,10 +21,10 @@ $(document).ready(function () {
         e.preventDefault();
 
         let desc = $('#income-desc').val();
-        let amount = $('#income-amount').val();
+        let amount = Number($('#income-amount').val());
 
         income.push({ desc: desc, amount: amount });
-        localStorage.setItem('income', JSON.stringify(income));
+        localStorage.setItem("income", JSON.stringify(income));
 
         loadItems();
 
@@ -36,10 +36,10 @@ $(document).ready(function () {
         e.preventDefault();
 
         let desc = $('#expenses-desc').val();
-        let amount = $('#expenses-amount').val();
+        let amount = Number($('#expenses-amount').val());
 
         expenses.push({ desc: desc, amount: amount });
-        localStorage.setItem('expenses', JSON.stringify(expenses));
+        localStorage.setItem("expenses", JSON.stringify(expenses));
 
         loadItems();
 
@@ -59,7 +59,7 @@ $(document).ready(function () {
     }
 
     function addToExpensesList(desc, amount) {
-        const item = $('<li>').addClass('list-group-item d-flex justify-content-between align-items-center').html(`${desc}: $${amount}<span><button class="btn btn-success btn-sm mr-2 edit"></button><button class="btn btn-danger btn-sm delete">Delete</button></span>`);
+        const item = $('<li>').addClass('list-group-item d-flex justify-content-between align-items-center').html(`${desc}: $${amount}<span><button class="btn btn-success btn-sm mr-2 edit">Edit</button><button class="btn btn-danger btn-sm delete">Delete</button></span>`);
         item.find('.edit').on('click', function () {
             editItem(desc, amount, false);
         });
@@ -87,18 +87,18 @@ $(document).ready(function () {
     }
 
     function editItem(desc, amount, isIncome) {
-        const newDesc = prompt('Enter new description:' desc);
+        const newDesc = prompt('Enter new description:', desc);
         const newAmount = Number(prompt('Enter new Amount:', amount));
 
         if (newDesc !== null && newAmount !== null) {
             if (isIncome) {
                 const index = income.findIndex(item => item.desc === desc && item.amount === amount);
                 income[index] = { desc: newDesc, amount: newAmount };
-                localStorage.setItem('income', JSON.stringify(income));
+                localStorage.setItem("income", JSON.stringify(income));
             } else {
                 const index = expenses.findIndex(item => item.desc === desc && item.amount === amount);
                 expenses[index] = { desc: newDesc, amount: newAmount };
-                localStorage.setItem('expenses', JSON.stringify(expenses));
+                localStorage.setItem("expenses", JSON.stringify(expenses));
             }
 
             loadItems();
@@ -108,12 +108,12 @@ $(document).ready(function () {
     function deleteItem(desc, amount, isIncome) {
         if (isIncome) {
             const index = income.findIndex(item => item.desc === desc && item.amount === amount);
-            imcnome.splice(index, 1);
-            localStorage.setItem('income', JSON.stringify(income));
+            income.splice(index, 1);
+            localStorage.setItem("income", JSON.stringify(income));
         } else {
-            const index = expenses.findIndex((item => item.desc === desc && item.amount === amount));
+            const index = expenses.findIndex(item => item.desc === desc && item.amount === amount);
             expenses.splice(index, 1);
-            localStorage.setItem('expenses', JSON.stringify(expenses));
+            localStorage.setItem("expenses", JSON.stringify(expenses));
         }
 
         loadItems();
