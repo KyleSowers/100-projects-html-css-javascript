@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9ecef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#app {
+    width: 900px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#income, #expenses {
+    width: 40%;
+}
+
+#balance {
+    font-size: 2em;
+    color: #17a2b8;
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    line-height: 25px;
+}
+
+h2 {
+    color: #17a2b8;
+}
+
+#income h2, #income ul {
+    color: #28a745;
+}
+
+#expenses h2, #expenses ul {
+    color: #dc3545;
+}
+
+#subtotal {
+    font-weight: bold;
+    margin-top: 1em;
+}
