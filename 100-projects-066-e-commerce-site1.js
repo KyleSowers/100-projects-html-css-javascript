@@ -41,7 +41,7 @@ function addToCart(product) {
 }
 
 //Checkout function
-document.getElementById('checckout').addEventListener('click', function () {
+document.getElementById('checkout').addEventListener('click', function () {
     if (cart.length > 0) {
         alert('Purchase made! Total cost: $' + cart.reduce((total, product) => total + product.price, 0));
         cart = [];
