@@ -5,7 +5,21 @@
     <title>Weather Dashboard</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 </head>
-<body>
+<body class="container">
+  <h1 class="text-center my-4">Weather Dashboard</h1>
+
+  <form id="search-form" class="form-inline justify-content-center mb-4">
+    <input type="text" id="serach-input" class="form-control mr-sm-2" placeholder="Search for a city">
+    <button type="submit" class="btn btn-outline-primary my-2 my-sm-0">Search</button>
+  </form>
+
+  <div id="current-weather" class="card mb-4 p-4">
+<!--    Current weather for city will be displayed-->
+  </div>
+
+  <div id="forecast" class="card p-4">
+<!--    Forecast weather will be displayed here-->
+  </div>
 
   <script src="https://ajax.googleapix.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="100-projects-067-weather-tracker2-bootstrap.js"></script>
