@@ -1,13 +1,13 @@
 'use strict'
 
 //Replace this with own API Key
-let apiKey = "APIKEYHERE";
+let apiKey = "YOURAPIKEYHERE";
 
 document.getElementById('search-form').addEventListener('submit', function(e) {
     e.preventDefault();
 
     let city = document.getElementById('search-input').value;
-    getWeather();
+    getWeather(city);
 });
 
 function getWeather(city) {
@@ -22,7 +22,7 @@ function getWeather(city) {
         .then(response => response.json())
         .then(data => {
             let forecastHTML = '<h2>Forecast for ' + city + '</h2>';
-            for (let i = 0; i < data.length; i += 8) {
+            for (let i = 0; i < data.list.length; i += 8) {
                 forecastHTML += '<p>' + data.list[i].dt_txt + ': ' + data.list[i].main.temp + '°C, ' + data.list[i].weather[0].main + '</p>';
             }
             document.getElementById('forecast').innerHTML = forecastHTML;
