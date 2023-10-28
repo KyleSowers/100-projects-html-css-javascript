@@ -28,7 +28,7 @@ $(document).ready(function () {
 });
 
 // Add to cart function
-function addToCart(produce, quantity) {
+function addToCart(product, quantity) {
     cart.push({ ...product, quantity });
 
     let cartItemElement = $('<li/>', { "class": 'list-group-item', "text": product.name + ' (' + quantity + '): $' + product.price * quantity });
