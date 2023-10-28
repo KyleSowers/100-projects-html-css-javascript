@@ -27,13 +27,14 @@ products.forEach(product => {
     let categoryElement = document.createElement('p');
     categoryElement.innerText = 'Category: ' + product.category;
     productElement.appendChild(categoryElement);
+
     let descriptionElement = document.createElement('p');
     descriptionElement.innerText = product.description;
     productElement.appendChild(descriptionElement);
 
     let priceElement = document.createElement('p');
-    priceElement.innerText = product.description;
-    productElement.appendChild(descriptionElement);
+    priceElement.innerText = 'Price: $' + product.price;
+    productElement.appendChild(priceElement);
 
     let quantityElement = document.createElement('input');
     quantityElement.type = 'number';
@@ -46,7 +47,7 @@ products.forEach(product => {
     buttonElement.innerText = 'Add to Cart';
     buttonElement.addEventListener('click', function () {
         let quantity = document.getElementById(`quantity_${product.id}`).value;
-        addToCart(product, quality);
+        addToCart(product, quantity);
     });
     productElement.appendChild(buttonElement);
 
@@ -65,7 +66,7 @@ function addToCart(product, quantity) {
 //Checkout function
 document.getElementById('checkout').addEventListener('click', function () {
     if (cart.length > 0) {
-        let total = cart.reduce((total, product) => total + produce.price * product.quantity, 0);
+        let total = cart.reduce((total, product) => total + product.price * product.quantity, 0);
         alert('Purchase made! Total cost: $' + total);
         cart = [];
         document.getElementById('cart').innerHTML = '';
