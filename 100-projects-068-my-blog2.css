@@ -13,3 +13,14 @@ header {
     border-bottom: 1px solid #dee2e6;
     color: #ffffff;
 }
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1em;
+}
+
+nav a {
+    color: #ffffff;
+    margin-right: 1em;
+}
