@@ -14,3 +14,11 @@ header {
 nav {
     margin-top: 1em;
 }
+
+nav a {
+    margin-right: 1em;
+}
+
+main {
+    padding: 1em;
+}
