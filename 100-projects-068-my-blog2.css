@@ -35,3 +35,12 @@ main, section, form {
 #new-post-form {
     margin-top: 1em;
 }
+
+footer {
+    background-color: #4682b4;
+    padding: 1em;
+    border-top: 1px solid #dee2e6;
+    text-align: center;
+    font-size: 0.8em;
+    color: #ffffff;
+}
