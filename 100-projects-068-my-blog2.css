@@ -31,3 +31,7 @@ main, section, form {
     padding: 1em;
     gap: 1em;
 }
+
+#new-post-form {
+    margin-top: 1em;
+}
