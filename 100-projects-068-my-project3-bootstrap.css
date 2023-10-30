@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar, .footer {
+    background-color: #f8f9fa;
+}
+
+.new-post {
+    margin-top: 1em;
+}
+
+.button {
+    margin: 20px;
+}
