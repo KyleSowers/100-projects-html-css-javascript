@@ -16,5 +16,8 @@ document.getElementById('workout-form').addEventListener('submit', function (eve
 //     Add log entries to workout log
     document.getElementById('workout-log').appendChild(logEntry);
 
-//
-})
+//  Clear the form
+    document.getElementById('date').value = '';
+    document.getElementById('workout-type').value = '';
+    document.getElementById('duration').value = '';
+});
