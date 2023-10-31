@@ -14,3 +14,6 @@ var duration = document.getElementById('duration').value;
 var logEntry = document.createElement('p');
 logEntry.textContent = date + ':' + workoutType + 'for' + duration + 'minutes';
 
+//Add the log entry to the workout log
+document.getElementById('workout-log').appendChild(logEntry);
+
