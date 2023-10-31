@@ -9,5 +9,12 @@ document.getElementById('workout-form').addEventListener('submit', function (eve
     var workoutType = document.getElementById('workout-type').value;
     var duration = document.getElementById('duration').value;
 
+// Create a new workout log entry
+    var logEntry = document.createElement('p');
+    logEntry.textContent = date + ': ' + workoutType + ' for ' + duration + ' minutes';
+
+//     Add log entries to workout log
+    document.getElementById('workout-log').appendChild(logEntry);
+
 //
 })
