@@ -43,3 +43,10 @@ function displayRecipes() {
     });
 }
 
+function deleteRecipe(event) {
+    const index = event.target.dataset.index;
+    recipes.splice(index, 1);
+    displayRecipes();
+}
+
+form.addEventListener('submit', handleSubmit);
