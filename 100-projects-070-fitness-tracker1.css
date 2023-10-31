@@ -10,6 +10,7 @@ body {
     padding: 20px;
     border: 1px solid black;
     border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 150, 0.7);
 }
 
 h1 {
@@ -21,4 +22,15 @@ form {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+label, input {
+    color: darkblue;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+button  {
+    color: white;
+    background-color: blue;
 }
