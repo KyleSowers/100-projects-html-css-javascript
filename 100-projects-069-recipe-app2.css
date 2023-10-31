@@ -28,3 +28,15 @@ nav {
     border-radius: 20px;
 }
 
+.right-column {
+    width: 65%;
+    background-color: #f3f8b4;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
