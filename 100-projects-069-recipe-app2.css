@@ -40,3 +40,64 @@ form {
     flex-direction: column;
 }
 
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type='text'], textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button[type='submit'] {
+    padding: 10px;
+    background-color: #1b29f5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.recipe-card:nth-child(even) {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.recipe-card:nth-child(odd) {
+    margin-bottom: 20px;
+    background-color: #dceff1;
+}
+
+.recipe-card {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.recipe-card h2 {
+    color: #8f5805;
+}
+
+.recipe-card h3 {
+    color: #119511;
+}
+
+.recipe-card p {
+    color: #3c3c37;
+    white-space: pre-wrap;
+}
+
+.recipe-card button {
+    margin: 10px;
+    color: #fff;
+    background-color: #f43b1f;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
