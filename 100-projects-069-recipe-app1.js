@@ -36,7 +36,7 @@ function displayRecipes() {
         <button class="delete-button" data-index="${index}">Delete Recipe</button>
         </div
         `;
-        rightColumn.innerHTML =+ recipeHTML;
+        rightColumn.innerHTML += recipeHTML;
     });
     document.querySelectorAll('.delete-button').forEach(button => {
         button.addEventListener('click', deleteRecipe);

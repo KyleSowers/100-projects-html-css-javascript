@@ -44,3 +44,24 @@ button[type='submit'] {
     border-radius: 5px;
     cursor: pointer;
 }
+
+.delete-button {
+    padding: 10px;
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.recipe-card {
+    border: 1px solid #ccc;
+    padding: 1em;
+    margin-bottom: 1em;
+    background-color: #fff;
+}
+
+.recipe-card p {
+    white-space: pre-wrap;
+}
