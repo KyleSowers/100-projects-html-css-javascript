@@ -6,13 +6,13 @@ document.getElementById('workout-form').addEventListener('submit', function(even
 
 
 //Get workout data
-var date = document.getElementById('date').value;
-var workoutType = document.getElementById('workout-type').value;
-var duration = document.getElementById('duration').value;
+let date = document.getElementById('date').value;
+let workoutType = document.getElementById('workout-type').value;
+let duration = document.getElementById('duration').value;
 
 //Create a new workout log entry
-var logEntry = document.createElement('p');
-logEntry.textContent = date + ':' + workoutType + 'for' + duration + 'minutes';
+let logEntry = document.createElement('p');
+logEntry.textContent = date + ': ' + workoutType + ' for ' + duration + ' minutes';
 
 //Add the log entry to the workout log
 document.getElementById('workout-log').appendChild(logEntry);
