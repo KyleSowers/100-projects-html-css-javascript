@@ -22,3 +22,24 @@ function handleSubmit(event) {
         displayRecipes();
     }
 }
+
+function displayRecipes() {
+    rightColumn.innerHTML = "";
+    recipes.forEach((recipe, index) => {
+        const recipeHTML = `
+        <div class='recipe-card'>
+        <h2>${recipe.name}</h2>
+        <h3>Ingredients</h3>
+        <p>${recipe.ingredients.join(', ')}</p>
+        <h3>Method</h3>
+        <p>${recipe.method}</p>
+        <button class="delete-button" data-index="${index}">Delete Recipe</button>
+        </div
+        `;
+        rightColumn.innerHTML =+ recipeHTML;
+    });
+    document.querySelectorAll('.delete-button').forEach(button => {
+        button.addEventListener('click', deleteRecipe);
+    });
+}
+
