@@ -29,3 +29,18 @@ form {
     display: grid;
     gap: 1em;
 }
+
+input[type='text'], textarea {
+    padding: .5em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button[type='submit'] {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
