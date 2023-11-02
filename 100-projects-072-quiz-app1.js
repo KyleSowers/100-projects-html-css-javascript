@@ -23,6 +23,7 @@ function loadQuestion() {
 function checkAnswer(answer) {
     if (answer === questions[currentQuestion].correct) {
         score++;
+        document.getElementById('score').innerText = "Score: " + score;
     }
     currentQuestion++;
     loadQuestion();
