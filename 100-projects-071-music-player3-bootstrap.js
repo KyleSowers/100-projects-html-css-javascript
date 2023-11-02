@@ -11,4 +11,9 @@ $(document).ready(function () {
     var currentTimeDisplay = $('#currentTime');
     var songTitle = $('#songTitle');
 
+    var songs = ['images/song1.mp3', 'images/song2.mp3', 'images/song3.mp3'];
+    var currentSongIndex = 0;
+
+
+
 })
