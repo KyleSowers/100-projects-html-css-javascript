@@ -21,3 +21,18 @@ body {
     margin: 20px;
     width: 100%;
 }
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: #fff;
+}
+
+#volume {
+    width: 100%;
+    margin-top: 20px;
+}
