@@ -13,7 +13,7 @@ window.onload = function () {
     var currentTimeDisplay = document.getElementById('currentTime');
     var songTitle = document.getElementById('songTitle');
 
-    var songs = ['101soundboards.com.mp3'];
+    var songs = ['images/song1.mp3', 'images/song2.mp3', 'images/song3.mp3'];
     var currentSongIndex = 0;
 
     function loadSong() {
