@@ -7,5 +7,20 @@ window.onload = function () {
     var skipButton = document.getElementById('skip');
     var replayButton = document.getElementById('replay');
 
+playButton.addEventListener('click', function () {
+    audio.play();
+});
 
+pauseButton.addEventListener('click', function () {
+    audio.pause();
+});
+
+skipButton.addEventListener('click', function () {
+    audio.currentTime += 10;
+});
+
+replayButton.addEventListener('click', function () {
+    audio.currentTime = 0;
+    audio.play();
+});
 }
