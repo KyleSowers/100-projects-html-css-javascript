@@ -6,7 +6,24 @@
     <link rel="stylesheet" href="100-projects-071-music-player3-bootstrap.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
-<body>
+<body class="d-flex align-items-center justify-content-center" style="height: 100vh; background-color: #fdf7f7;">
+  <div class="card text-center shadow" style="width: 18rem;">
+    <div class="card-header" id="songtitle"></div>
+    <div class="card-body">
+      <audio id="audio" class="w-100">
+        <source id="source" src="images/101soundboards.com.mp3">
+      </audio>
+      <div id="currentTime" class="mt-3"></div>
+      <div id="controls" class="d-flex justify-content-around mt-3">
+        <button id="prev" class="bt btn-primary">Prev</button>
+        <button id="play" class="btn-btn-danger">Play</button>
+        <button id="next" class="btn btn-primary">Next</button>
+        <button id="pause" class="btn btn-warning">Pause</button>
+        <button id="replay" class="btn btn-primary">Replay</button>
+      </div>
+      <input type="range" id="volume" class="custom-range mt-3" min="0" max="1" step="0.01" value="0.5">
+    </div>
+  </div>
 
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
