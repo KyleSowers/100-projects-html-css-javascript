@@ -15,17 +15,22 @@ function addBookToLibrary(title, author) {
 }
 
 function displayBooks() {
-    const bookList = document.getElementById('booklist');
+    const bookList = document.getElementById('bookList');
     bookList.innerHTML = '';
-    for (let i = 0; i < library.length; i++) {
-        const book = document.getElementById('bookList');
-        bookList.innerHTML = '';
         for (let i = 0; i < library.length; i++) {
             const book = document.getElementById('bookList');
             book.innerHTML = `<h2>${library[i].title}</h2> <h3>${library[i].author}</h3> <p>${library[i].status}</p> <button onclick="loanBook(${i})">Loan Book</button> <button onclick="returnBook(${i})">Return Book</button> <hr>`;
-                bookList.append(book);
+            bookList.append(book);
         }
     }
 
+    function loanBook(index) {
+        library[index].status = 'loaned Out';
+        displayBooks();
+    }
 
-}
+    function returnBook(index) {
+        library[index].status = 'Available';
+        displayBooks();
+    }
+
