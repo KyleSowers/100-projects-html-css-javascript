@@ -21,13 +21,13 @@ var questions = [
     { category: "Math", question: "What is the value of pi(n)?", answers: ["3.14", "2.71", "1.62", "4.20"], correct: 0},
     { category: "Geography", question: "Which city is known as the Big Apple?", answers: ["New York City", "Los Angelos", "Chicago", "Houston"], correct: 0},
     { category: "Science", question: "What is the freezing point of water in Fahrenheit?", answers: ["32°F", "0°F", "100°F", "212°F"], correct: 0},
-    { category: "History", question: "Which country was the first to send a human to space?", answers: ["United States", "Russia", "China", "Germany"], correct: 1}
+    { category: "History", question: "Which country was the first to send a human to space?", answers: ["United States", "Russia", "China", "Germany"], correct: 1},
 ];
 
-var currentQuestion = 0;
-var score = 0;
-var timer;
-var timeLeft = 10; // Default timer duration in seconds
+let currentQuestion = 0;
+let score = 0;
+let timer;
+let timeLeft = 10; // Default timer duration in seconds
 
 function startTimer() {
     clearInterval(timer);
@@ -46,7 +46,7 @@ function startTimer() {
 function loadQuestion() {
     if (currentQuestion < questions.length) {
         document.getElementById('question').innerText = questions[currentQuestion].question;
-        for (let i = 0; i < 4; i++) {
+        for (var i = 0; i < 4; i++) {
             document.getElementById('btn' + i).innerText = questions[currentQuestion].answers[i];
         }
         startTimer();
@@ -68,7 +68,7 @@ function  checkAnswer(answer) {
     loadQuestion();
 }
 
-for (let i = 0; i < 4; i++) {
+for (var i = 0; i < 4; i++) {
     document.getElementById("btn" + i).addEventListener('click', function (i) {
         return function () {
             checkAnswer(i);
@@ -80,6 +80,8 @@ document.getElementById('next').addEventListener('click', function () {
     currentQuestion++;
     loadQuestion();
 });
+
+loadQuestion();
 
 
 
