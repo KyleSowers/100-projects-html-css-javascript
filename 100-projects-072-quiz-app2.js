@@ -33,4 +33,13 @@ function startTimer() {
     clearInterval(timer);
     timeLeft = 10; // Reset time duration
     document.getElementById('timer').innerText = "Time left: " + timeLeft + "s";
+    timer = setInterval(function () {
+        timeLeft--;
+        document.getElementById('timer').innerText = "Time left: " + timeLeft + "s";
+        if (timeLeft === 0) {
+            clearInterval(timer);
+            checkAnswer(-1); //Timeout answer
+        }
+    }, 1000);
 }
+
