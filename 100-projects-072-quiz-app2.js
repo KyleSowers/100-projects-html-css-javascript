@@ -3,8 +3,8 @@
 var questions = [
     { category: "Math", question: "What is 2 + 2?", answers: ["4", "5", "6", "7"], correct: 0 },
     { category: "Geography", question: "What is the capital of France?", answers: ["Tokyo", "London", "Paris", "Berlin"], correct: 2},
-    { category: "Math", question: "What is 5 * 3?", answers: ["10, "15'', "20", "25"], correct: 1},
-    { category: "Science", question: "What is the chemical symbol for gold?", answers ["Au", "Ag", "Fe", "Cu"], correct: 0 },
+    { category: "Math", question: "What is 5 * 3?", answers: ["10", "15", "20", "25"], correct: 1},
+    { category: "Science", question: "What is the chemical symbol for gold?", answers: ["Au", "Ag", "Fe", "Cu"], correct: 0 },
     { category: "History", question: "Who was the first President of the United States?", answers: ["Thomas Jefferson", 'George Washington', "John Adams", "Abraham Lincoln"], correct: 1},
     { category: "Science", question: "What is the largest planet in our solar system?", answers: ["Venus", "Mars", "Jupiter", "Saturn"], correct: 2},
     { category: "History", question: "In which year did World War II end?", answers: ["1939", "1944", "1945", "1950"], correct: 2},
@@ -19,7 +19,7 @@ var questions = [
     { category: "Science", question: "What is the largest organ in the human body?", answers: ["Heart", "Liver", "Lungs", "Skin"], correct: 3},
     { category: "History", question: "Who wrote the play 'Romeo and Juliet'?", answers: ["William Shakespeare", "Charles Dickens", "Jane Austen", "Mark Twain"], correct: 0},
     { category: "Math", question: "What is the value of pi(n)?", answers: ["3.14", "2.71", "1.62", "4.20"], correct: 0},
-    { category: "Geography", question: "Which city is known as the Big Apple?", answers: ["New York City", "Los Angelos", "Chicago", "Houstin"], correct: 0},
+    { category: "Geography", question: "Which city is known as the Big Apple?", answers: ["New York City", "Los Angelos", "Chicago", "Houston"], correct: 0},
     { category: "Science", question: "What is the freezing point of water in Fahrenheit?", answers: ["32°F", "0°F", "100°F", "212°F"], correct: 0},
     { category: "History", question: "Which country was the first to send a human to space?", answers: ["United States", "Russia", "China", "Germany"], correct: 1}
 ];
@@ -45,8 +45,8 @@ function startTimer() {
 
 function loadQuestion() {
     if (currentQuestion < questions.length) {
-        document.getElementById('question').innerText = qustions[currentQuestion].question;
-        for (var i = 0; i < 4; i++) {
+        document.getElementById('question').innerText = questions[currentQuestion].question;
+        for (let i = 0; i < 4; i++) {
             document.getElementById('btn' + i).innerText = questions[currentQuestion].answers[i];
         }
         startTimer();
@@ -57,5 +57,30 @@ function loadQuestion() {
         document.getElementById('timer').innerText = '';
     }
 }
+
+function  checkAnswer(answer) {
+    clearInterval(timer);
+    if (answer === questions[currentQuestion].correct) {
+        score++;
+        document.getElementById('score').innerText = "Score: " + score;
+    }
+    currentQuestion++;
+    loadQuestion();
+}
+
+for (let i = 0; i < 4; i++) {
+    document.getElementById("btn" + i).addEventListener('click', function (i) {
+        return function () {
+            checkAnswer(i);
+        }
+    }(i));
+}
+
+document.getElementById('next').addEventListener('click', function () {
+    currentQuestion++;
+    loadQuestion();
+});
+
+
 
 
