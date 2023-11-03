@@ -35,3 +35,16 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+
+button:hover {
+    background-color: #45a049;
+}
+
+#scoreboard {
+    margin-top: 20px;
+    border: 1px solid #000;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #1058f5;
+    color: white;
+}
