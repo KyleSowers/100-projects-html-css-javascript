@@ -18,7 +18,7 @@ function displayBooks() {
     const bookList = document.getElementById('bookList');
     bookList.innerHTML = '';
         for (let i = 0; i < library.length; i++) {
-            const book = document.getElementById('bookList');
+            const book = document.createElement('div');
             book.innerHTML = `<h2>${library[i].title}</h2> <h3>${library[i].author}</h3> <p>${library[i].status}</p> <button onclick="loanBook(${i})">Loan Book</button> <button onclick="returnBook(${i})">Return Book</button> <hr>`;
             bookList.append(book);
         }
