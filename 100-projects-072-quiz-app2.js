@@ -43,3 +43,19 @@ function startTimer() {
     }, 1000);
 }
 
+function loadQuestion() {
+    if (currentQuestion < questions.length) {
+        document.getElementById('question').innerText = qustions[currentQuestion].question;
+        for (var i = 0; i < 4; i++) {
+            document.getElementById('btn' + i).innerText = questions[currentQuestion].answers[i];
+        }
+        startTimer();
+    } else {
+        document.getElementById('quiz').style.display = "none";
+        document.getElementById('next').style.display = "none";
+        clearInterval(timer);
+        document.getElementById('timer').innerText = '';
+    }
+}
+
+
