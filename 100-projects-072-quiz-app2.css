@@ -48,3 +48,24 @@ button:hover {
     background-color: #1058f5;
     color: white;
 }
+
+#score {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#next {
+    display: none;
+    margin-top: 20px;
+}
+
+#timer {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #fafafb;
+}
