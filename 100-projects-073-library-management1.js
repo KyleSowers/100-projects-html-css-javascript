@@ -10,3 +10,7 @@ document.getElementById("addBookForm").addEventListener("submit", function (even
     displayBooks();
 });
 
+function addBookToLibrary(title, author) {
+    library.push({title: title, author: author, status: 'Available'});
+}
+
