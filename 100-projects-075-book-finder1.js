@@ -1,6 +1,6 @@
 'use strict'
 
-document.getElementById('book-form').addEventListener('submit', fetchbooks);
+document.getElementById('book-form').addEventListener('submit', fetchBooks);
 
 function fetchBooks(e) {
     e.preventDefault();
@@ -8,7 +8,7 @@ function fetchBooks(e) {
 //     Get the search term
     let searchTerm = document.getElementById('search').value;
 
-//     Call the Goole Books API
+//     Call the Google Books API
     getBooks(searchTerm);
 }
 
@@ -23,7 +23,7 @@ function getBooks(searchTerm) {
                 let title = book.volumeInfo.title;
                 let authors = book.volumeInfo.authors;
                 let description = book.volumeInfo.description;
-                let imgLink = book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumnail : "Image Not Available";
+                let imgLink = book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail : "Image Not Available";
 
                 output += `
                 <div>
@@ -37,3 +37,5 @@ function getBooks(searchTerm) {
         })
         .catch(err => console.log(err));
 }
+
+fetchBooks();
