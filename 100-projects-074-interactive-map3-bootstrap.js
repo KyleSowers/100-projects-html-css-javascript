@@ -32,4 +32,36 @@ const cities = {
     "Manila": [14.5995, 120.9842],
     "Tianjin": [39.3434, 117.3616],
     "Jakarta": [-6.2088, 106.8456],
-}
+};
+
+//Initialize the map centered on Seoul with a zoom level of 13
+const map = L.map('map').setView(cities["Seoul"], 13);
+
+//Ad tile layer to the map (Map data © OpenStreetMap contributors
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy: <a href=https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors'
+}).addTo(map);
+
+//Add a marker for Seoul
+let marker = L.marker(cities['Seoul']).addTo(map);
+
+//Add a popup to the marker
+marker.bindPopup('<b>Seoul</b><br>South Korea').openPopup();
+
+//Populate the select form with cities
+$.each(cities, function (key) {
+    $('#city-select').append($('<option>', {
+        value: key,
+        text: key
+    }));
+});
+
+//Change the map view and marker when a city is selected
+$('#city-select').on('change', function () {
+    const city = this.value;
+    const coordinates = cities[city];
+
+    map.setView(coordinates, 13);
+    marker.setLatLng(coordinates);
+    marker.bindPopup('<b>${city}</b>').openPopup();
+});
