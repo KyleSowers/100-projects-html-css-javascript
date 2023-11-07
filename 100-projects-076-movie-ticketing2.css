@@ -33,3 +33,24 @@ h1 {
     color: #fff;
     overflow: hidden;
 }
+
+.screen-content {
+    display: inline-block;
+    position: relative;
+    animation: marquee 5s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
