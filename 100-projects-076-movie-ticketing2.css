@@ -71,3 +71,16 @@ h1 {
     cursor: pointer;
     border-radius: 5px;
 }
+
+.seat.selected {
+    background-color: #f00;
+}
+
+select, button {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button  {
+    width: 60vmin;
+}
