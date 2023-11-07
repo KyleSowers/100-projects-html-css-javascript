@@ -14,3 +14,22 @@ h1 {
     padding: 10px;
     border-radius: 5px;
 }
+
+.movie-selection {
+    display: flex;
+    justify-content: space-between;
+    width: 60vmin;
+    margin-bottom: 20px;
+}
+
+.screen {
+    width: 60vmin;
+    height: 10vmin;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    background-color: #000;
+    color: #fff;
+}
