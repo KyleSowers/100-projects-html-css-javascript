@@ -33,3 +33,20 @@ h1 {
     background-color: #000;
     color: #fff;
 }
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 10px;
+    width: 60vmin;
+    height: 60vmin;
+}
+
+.seat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    cursor: pointer;
+}
