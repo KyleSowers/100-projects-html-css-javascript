@@ -14,3 +14,16 @@ for (let i = 0; i < numSeats; i++) {
     container.appendChild(seat);
 }
 
+// Add event listener to each seat
+document.querySelectorAll('.seat').forEach(seat => {
+    seat.addEventListener('click', () => {
+        seat.classList.toggle('selected');
+    });
+});
+
+// Add event listener to the book button
+document.getElementById('book-button').addEventListener('click', () => {
+    const selectedSeats = document.querySelectorAll('.seat.selected');
+    alert(`You've selected ${selectedSeats.length} seats for ${document.getElementById('movie-select').value}`);
+});
+
