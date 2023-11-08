@@ -48,4 +48,8 @@ h2 {
     transition: 0.3s;
 }
 
-
+.close:hover, .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
