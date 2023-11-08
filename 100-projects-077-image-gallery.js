@@ -13,3 +13,7 @@ galleryImages.forEach(img => {
         captionText.innerHTML = this.alt;
     }
 });
+
+close.onclick = function () {
+    modal.style.display = 'none';
+};
