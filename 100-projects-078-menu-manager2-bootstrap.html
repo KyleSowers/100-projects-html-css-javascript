@@ -7,7 +7,28 @@
     <link rel="stylesheet" href="100-projects-078-menu-manager2-bootstrap.css">
 </head>
 <body>
+  <h1 class="text-center text-primary my-4">Menu Manager</h1>
+  <div class="container">
+    <div id="menu" class="row">
+<!--      Menu items will be rendered here-->
+    </div>
 
+    <form id="addItemForm" class="my-4">
+      <div class="form-group">
+        <input type="text" id="itemName" placeholder="Item name" class="form control">
+      </div>
+      <div class="form-group">
+        <input type="text" id="itemCategory" placeholder="Item category" class="form-control">
+      </div>
+      <div class="form-group">
+        <input type="text" id="itemPrice" placeholder="Item price" class="form-control">
+      </div>
+      <div class="form-group">
+        <input type="text" id="itemImage" placeholder="Image URL" class="form-control">
+      </div>
+      <button type="submit" class="btn btn-primary">Add Item</button>
+    </form>
+  </div>
 
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
