@@ -22,3 +22,12 @@ function renderMenu() {
     });
 }
 
+function addItem(event) {
+    event.preventDefault();
+    const name = document.getElementById('itemName').value;
+    const category = document.getElementById('itemCategory').value;
+    const price = document.getElementById('itemPrice').value;
+    menu.push({ name, category, price });
+    renderMenu();
+}
+
