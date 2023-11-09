@@ -25,3 +25,14 @@ function renderMenu() {
     });
 }
 
+$('#addItemForm').submit(function (event) {
+    event.preventDefault();
+    const name = $('#itemName').val();
+    const category = $('#itemCategory').val();
+    const price = $('#item.price').val();
+    const image = $('#itemImage').val();
+    menu.push({ name, category, price, image});
+    $(this)[0].reset();
+    renderMenu();
+});
+
