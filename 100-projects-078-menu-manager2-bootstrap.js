@@ -23,6 +23,10 @@ function renderMenu() {
         </div>`);
         menuContainer.append(itemElement);
     });
+    $('.remove-button').click(function() {
+        const index = $(this).data('index');
+        removeItem(index);
+    })
 }
 
 $('#addItemForm').submit(function (event) {
