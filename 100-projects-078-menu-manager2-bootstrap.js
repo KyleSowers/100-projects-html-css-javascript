@@ -40,3 +40,5 @@ function removeItem(index) {
     menu.splice(index, 1);
     renderMenu();
 }
+
+renderMenu();
