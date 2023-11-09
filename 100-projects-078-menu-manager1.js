@@ -35,3 +35,6 @@ function removeItem(index) {
     menu.splice(index, 1);
     renderMenu();
 }
+
+document.getElementById('addItemForm').addEventListener('submit', addItem);
+renderMenu();
