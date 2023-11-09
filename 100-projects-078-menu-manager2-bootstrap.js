@@ -36,3 +36,7 @@ $('#addItemForm').submit(function (event) {
     renderMenu();
 });
 
+function removeItem(index) {
+    menu.splice(index, 1);
+    renderMenu();
+}
