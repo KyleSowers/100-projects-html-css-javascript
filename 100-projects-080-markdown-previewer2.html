@@ -6,6 +6,18 @@
     <link rel="stylesheet" href="100-projects-080-markdown-previewer2.css">
 </head>
 <body>
+  <h1>Markdown Previewer</h1>
+  <div class="container">
+    <textarea id="editor" placeholder="Write markdown here..."></textarea>
+    <div id="preview"></div>
+  </div>
+  <div id="button-container">
+    <button id="loadSample">Load Sample</button>
+    <button id="clear">Clear</button>
+  </div>
+  <div id="instructions">
+    <p>You can use Markdown syntax to style your text. For example, **bold text** will become <b>bold</b>, *italic text* will become <i>italic</i>, and so on. You can learn more about Markdown syntax <a href="https://www.markdownguide.org/basic-syntax/" target="_blank">here</a>.</p>
+  </div>
 
 
   <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
