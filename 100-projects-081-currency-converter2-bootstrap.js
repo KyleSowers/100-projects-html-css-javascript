@@ -35,3 +35,12 @@ function convertCurrency() {
     resultParagraph.className = "";
 }
 
+function reverseCurrencies() {
+    const fromCurrency = fromCurrencySelect.value;
+    const toCurrency = toCurrencySelect.value;
+
+    fromCurrencySelect.value = toCurrency;
+    toCurrencySelect.value = fromCurrency;
+
+    convertCurrency();
+}
