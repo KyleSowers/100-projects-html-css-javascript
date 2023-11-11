@@ -14,5 +14,21 @@ body {
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
 }
 
+.currency-converter input, .currency-converter select {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
