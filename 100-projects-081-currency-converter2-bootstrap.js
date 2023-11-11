@@ -7,3 +7,14 @@ const resultParagraph = document.getElementById('result');
 
 let exchangeRates;
 
+//Replace APIKEY
+fetch('https://v6.exchangerate-api.com/v6/YOUAPIKEY/latest/USD')
+    .then(response => response.json())
+    .then(data => {
+        exchangeRates = data.conversion_rates;
+
+        Object.keys(exchangeRates).forEach(currency => {
+            fromCurrencySelect.innerHTML += ` <option value="${currency}">${currency}</option> `;
+            toCurrencySelect.innerHTML += ` <option value="${currency}">${currency}</option>`;
+        });
+    });
