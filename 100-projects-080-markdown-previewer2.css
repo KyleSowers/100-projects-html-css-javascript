@@ -31,3 +31,19 @@ h1 {
     border: 1px solid #ddd;
 }
 
+#preview {
+    width: 45%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    overflow-y: auto;
+}
+
+#button-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
