@@ -6,6 +6,21 @@
     <link rel="stylesheet" href="100-projects-081-currency-converter2.css">
 </head>
 <body>
+  <h2>Currency Converter</h2>
+  <div class="currency-converter">
+    <p>Amount</p>
+    <input type="number" id="amount" placeholder="Enter amount">
+    <p>From</p>
+    <select id="from-currency">
+<!--      The option values will be filled with javascript-->
+    </select>
+    <p>To</p>
+    <select id="to-currency">
+<!--      The option values will be filled with javascript-->
+    </select>
+    <button onclick="convertCurrency()">Currency Convert</button>
+    <p id="result"></p>
+  </div>
 
   <script src="100-projects-081-currency-converter1.js"></script>
 </body>
