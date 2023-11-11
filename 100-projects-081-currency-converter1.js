@@ -20,3 +20,11 @@ fetch('https://v6.exchangerate-api.com/v6/aaf53da1eba53d98819909**/latest/USD')
         });
     });
 
+function convertCurrency() {
+    const fromCurrency = fromCurrencySelect.value;
+    const toCurrency = toCurrentSelect.value;
+    const amount = amountInput.value;
+
+    const result = amount / exchangeRates[fromCurrency] * exchangeRates[toCurrency];
+    resultParagraph.innerText = `${new Intl.NumberFormat().format(amount)} ${fromCurrency} = ${new Intl.NumberFormat().format(result)} ${toCurrency}`;
+}
