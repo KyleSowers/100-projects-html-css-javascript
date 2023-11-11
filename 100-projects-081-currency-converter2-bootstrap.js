@@ -8,7 +8,7 @@ const resultParagraph = document.getElementById('result');
 let exchangeRates;
 
 //Replace APIKEY
-fetch('https://v6.exchangerate-api.com/v6/YOUAPIKEYHERE/latest/USD')
+fetch('https://v6.exchangerate-api.com/v6/YOURAPIKEYHERE/latest/USD')
     .then(response => response.json())
     .then(data => {
         exchangeRates = data.conversion_rates;
@@ -32,7 +32,7 @@ function convertCurrency() {
 
     const result = amount / exchangeRates[fromCurrency] * exchangeRates[toCurrency];
     resultParagraph.innerText = `${new Intl.NumberFormat().format(amount)} ${fromCurrency} = ${new Intl.NumberFormat().format(result)} ${toCurrency}`;
-    resultParagraph.className = "";
+    resultParagraph.className = '';
 }
 
 function reverseCurrencies() {
