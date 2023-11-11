@@ -35,7 +35,7 @@ $(document).ready(function () {
         updatePreview();
     });
 
-    $(#clear).on('click', function () {
+    $('#clear').on('click', function () {
         $('#editor').val('');
         updatePreview();
     });
