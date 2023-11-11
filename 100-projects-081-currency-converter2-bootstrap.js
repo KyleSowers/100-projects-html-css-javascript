@@ -8,7 +8,7 @@ const resultParagraph = document.getElementById('result');
 let exchangeRates;
 
 //Replace APIKEY
-fetch('https://v6.exchangerate-api.com/v6/YOUAPIKEY/latest/USD')
+fetch('https://v6.exchangerate-api.com/v6/YOUAPIKEYHERE/latest/USD')
     .then(response => response.json())
     .then(data => {
         exchangeRates = data.conversion_rates;
@@ -18,3 +18,20 @@ fetch('https://v6.exchangerate-api.com/v6/YOUAPIKEY/latest/USD')
             toCurrencySelect.innerHTML += ` <option value="${currency}">${currency}</option>`;
         });
     });
+
+function convertCurrency() {
+    const fromCurrency = fromCurrencySelect.value;
+    const toCurrency = toCurrencySelect.value;
+    const amount = Number(amountInput.value);
+
+    if (amount <= 0 ) {
+        resultParagraph.innerText = "Please enter a positive amount.";
+        resultParagraph.className = "text-danger";
+        return;
+    }
+
+    const result = amount / exchangeRates[fromCurrency] * exchangeRates[toCurrency];
+    resultParagraph.innerText = `${new Intl.NumberFormat().format(amount)} ${fromCurrency} = ${new Intl.NumberFormat().format(result)} ${toCurrency}`;
+    resultParagraph.className = "";
+}
+
