@@ -7,13 +7,13 @@ function addTrip() {
     const date = document.getElementById("date").value;
 
     if (destination && date) {
-        const trip = ( destination, date );
+        const trip = { destination, date };
         trips.push(trip);
         document.getElementById('destination').value = '';
         document.getElementById('date').value = '';
         renderTrips();
     } else {
-        alert('Please enter a destination and daate');
+        alert('Please enter a destination and date');
     }
 }
 
@@ -25,7 +25,7 @@ function deleteTrip(index) {
 function renderTrips() {
     const tripsDiv = document.getElementById('trips');
     tripsDiv.innerHTML = '';
-    trups.forEach((trip, index) => {
-        tripsDiv.innerHTML += ` <div class="trip"><span>${trip.destination}</span><button onclick="deleteTrip(${index})">Delete</button>`
+    trips.forEach((trip, index) => {
+        tripsDiv.innerHTML += ` <div class="trip"><span>${trip.destination} (${trip.date})</span><button onclick="deleteTrip(${index})">Delete</button></div>`
     });
 }
