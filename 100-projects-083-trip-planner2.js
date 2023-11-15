@@ -25,9 +25,9 @@ function addTrip() {
         alert("Please enter a destination and date");
     }
 
-    fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${destination}&key=YOUR_API_KEY`)
+    let response;
     fetch(`https://maps.googleapis.com/maps/api/geocode.json?address=${destination}&key=YOUR_API_KEY`)
-        .then(response +> response.json())
+        .then(response += response.json())
         .then(data => {
             if (data.results[0]) {
                 const location = data.results[0].geometry.location;
