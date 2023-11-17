@@ -15,7 +15,7 @@ let fontcolor = '#ffffff';
 document.getElementById('image-input').addEventListener('change', function (e) {
     const reader = new FileReader();
     reader.onload = function (event) {
-        img.onload = renderMeme();
+        img.onload = renderMeme;
         img.src = event.target.result;
     };
     reader.readAsDataURL(e.target.files[0]);
@@ -41,17 +41,17 @@ document.getElementById('bottom-text-input').addEventListener('input', function 
     renderMeme();
 });
 
-document.getElementById('font-size-input').addEventListener('input', function (e) {
-    fontSize = e.target.value;
+document.getElementById('font-size-input').addEventListener('change', function (e) {
+    fontSize = e.target.value + 'px';
     renderMeme();
 });
 
-document.getElementById('font-style-input').addEventListener('input', function (e) {
+document.getElementById('font-style-input').addEventListener('change', function (e) {
     fontStyle = e.target.value;
     renderMeme();
 });
 
-document.getElementById('color-input').addEventListener('input', function (e) {
+document.getElementById('color-input').addEventListener('change', function (e) {
     fontcolor = e.target.value;
     renderMeme();
 });
@@ -65,7 +65,7 @@ document.getElementById('generate-button').addEventListener('click', function ()
 function renderMeme() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-    ctx.font = fontSize + '' + fontStyle;
+    ctx.font = fontSize + ' ' + fontStyle;
     ctx.textAlign = 'center';
     ctx.strokeStyle = 'black';
     ctx.lineWidth = 3;
