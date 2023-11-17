@@ -62,5 +62,21 @@ document.getElementById('generate-button').addEventListener('click', function (e
     newTab.document.write("<img src='" + dataUrl + "' alt='Meme'/>");
 });
 
-
+function  renderMeme() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+    ctx.font = fontSize + ' ' + fontStyle;
+    ctx.textAlign  = 'center';
+    ctx.strokeStyle = 'black';
+    ctx.lineWidth = 3;
+    ctx.strokeText(topText, canvas.width / 2, 50);
+    ctx.strokeText(middleTopText, canvas.width / 2, canvas.height / 2 -20);
+    ctx.strokeText(middleBottomText, canvas.width / 2, canvas.height / 2 + 20);
+    ctx.strokeText(bottomText, canvas.width / 2, canvas.height - 20);
+    ctx.fillStyle = fontColor;
+    ctx.fillText(topText, canvas.width / 2, 50);
+    ctx.fillText(middleTopText, canvas.width / 2, canvas.height / 2 - 20);
+    ctx.fillText(middleBottomText, canvas.width / 2, canvas.height / 2 + 20);
+    ctx.fillText(bottomText, canvas.width / 2, canvas.height - 20);
+}
 
