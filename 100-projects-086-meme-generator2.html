@@ -6,7 +6,45 @@
   <link rel="stylesheet" href="100-projects-086-meme-genertor2.css">
 </head>
 <body>
-
+    <div class="meme-generator">
+        <h2>Meme Generator</h2>
+        <canvas id="meme-canvas" width="600" height="300"></canvas>
+        <div class="centered">
+            <label for="image-input">Image:
+                <input type="file" id="image-input" accept="image/*"></label>
+            <button id="generate-button">Generate Meme</button>
+        </div>
+        <div class="input-section">
+            <label for="top-text-input">text position:
+            <input type="text" id="top-text-input" placeholder="Top text"></label>
+            <label for="middle-top-text-input">Text position:
+            <input type="text" id="middle-top-text-input" placeholder="Middle top text"></label>
+            <label for="middle-bottom-text-input">text position:
+            <input type="text" id="middle-bottom-text-input" placeholder="Middle bottom text"></label>
+            <label for="bottom-text-input">text position:
+            <input type="text" id="bottom-text-input" placeholder="Bottom text"></label>
+        </div>
+        <div class="right-section">
+            <label for="font-size-input">Font Size:
+                <select id="font-size-input">
+                    <option value="10">Extra Small</option>
+                    <option value="20">Small</option>
+                    <option value="30" selected>Medium</option>
+                    <option value="40">Large</option>
+                    <option value="50">Extra Large</option>
+                </select></label>
+            <label for="font-size-input">Font Style:
+            <select id="font-size-input">
+                <option value="Arial" selected>Arial</option>
+                <option value="Courier">Courier</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Verdana">Verdana</option>
+            </select></label>
+            <label for="color-input">Font Color:
+            <input type="color" id="color-input" value="#ffffff"></label>
+        </div>
+    </div>
 
   <script src="100-projects-086-meme-generator2.js"></script>
 </body>
