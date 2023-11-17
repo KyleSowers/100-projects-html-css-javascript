@@ -7,6 +7,57 @@
     <link rel="stylesheet" href="100-projects-086-meme-generator3-bootstrap.css">
 </head>
 <body>
+  <div class="container meme-generator">
+    <h2 class="text-center mb-4">Meme Generator</h2>
+    <div class="centered mb-4">
+      <label for="image-input">Image:
+      <input type="file" id="image-input" accept="image/*">
+      </label>
+      <button id="generate-button" class="btn btn-success">Generate Meme</button>
+    </div>
+    <div class="row">
+      <div class="col-md-6 input-section">
+        <label for="top-text-input">Top Text:
+        <input type="text" id="top-text-input" class="form-control" placeholder="Top text">
+        </label>
+        <label for="middle-top-text-input">Middle Top Text:
+        <input type="text" id="middle-top-text-input" class="form-control" placeholder="Middle top text">
+        </label>
+        <label for="middle-bottom-text-input">Middle Bottom Text:
+        <input type="text" id="middle-bottom-text-input" class="form-control" placeholder="Middle bottom text">
+        </label>
+        <label for="bottom-text-input">Bottom Text:
+        <input type="text" id="bottom-text-input" class="form-control" placeholder="Bottom text">
+        </label>
+      </div>
+      <div class="col-md-6 right-section">
+        <label for="font-size-input">Font Size:
+          <select id="font-size-input" class="form-control">
+            <option value="10">Extra Small</option>
+            <option value="20">Small</option>
+            <option value="30" selected>Medium</option>
+            <option value="40">Large</option>
+            <option value="50">Extra Large</option>
+          </select>
+        </label>
+        <label for="font-style-input">Font Style:
+          <select id="font-style-input" class="form-control">
+            <option value="Arial">Arial</option>
+            <option value="Courier">Courier</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Verdana">Verdana</option>
+          </select>
+        </label>
+        <label for="color-input">Font Color:
+        <input type="color" id="color-input" class="form-control" value="#ffffff">
+        </label>
+      </div>
+    </div>
+    <div class="centered">
+      <canvas id="meme-canvas" width="500" height="250"></canvas>
+    </div>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
