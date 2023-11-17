@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fafafa;
+    font-family: Arial, sans-serif;
+}
+
+.meme-generator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    margin: 5px;
+}
+
+.meme-generator canvas {
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
