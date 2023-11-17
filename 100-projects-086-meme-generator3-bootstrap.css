@@ -1,0 +1,35 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #a3e6a6;
+    font-family: Arial, sans-serif;
+}
+
+.meme-generator {
+    background: #eeeeee;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    margin: 20px;
+}
+
+.meme-generator canvas {
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.input-section label, button {
+    margin: 5px;
+}
+
+.right-section label, .right-section select, .right-section ioput {
+    margin: 5px;
+}
+
+.centered {
+    text-align:  center;
+}
+
