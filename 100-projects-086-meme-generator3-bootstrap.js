@@ -18,7 +18,7 @@ document.getElementById('image-input').addEventListener('change', function (e) {
         img.onload = renderMeme;
         img.src = event.target.result;
     };
-    reader.readAllDataURL(e.target.files[0]);
+    reader.readAsDataURL(e.target.files[0]);
 });
 
 document.getElementById('top-text-input').addEventListener('input', function (e) {
@@ -42,7 +42,7 @@ document.getElementById('bottom-text-input').addEventListener('input', function 
 });
 
 document.getElementById('font-size-input').addEventListener('change', function (e) {
-    fontSize = e.target.value;
+    fontSize = e.target.value + 'px';
     renderMeme();
 });
 
