@@ -10,6 +10,15 @@ body {
     font-family: Arial, sans-serif;
 }
 
+#url-input, button {
+    width: 70%;
+    margin: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
 #url-input {
     border: 1px solid #ddd;
 }
