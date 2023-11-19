@@ -52,3 +52,10 @@ body {
 .card-flipped .card-back {
     transform: rotateY(360deg);
 }
+
+.button-container {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(58%);
+}
