@@ -33,3 +33,22 @@ body {
     border-radius: 10px;
     transition: transform 0.5s;
 }
+
+.card-front {
+    background-color: #00fbff;
+    color: white;
+}
+
+.card-back {
+    background-color: #28a745;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.card-flipped .card-front {
+    transform rotateY(180deg);
+}
+
+.card-flipped .card-back {
+    transform: rotateY(360deg);
+}
