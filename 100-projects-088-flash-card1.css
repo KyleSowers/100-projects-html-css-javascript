@@ -13,3 +13,9 @@ body {
     grid-gap: 40px;
     justify-items: center;
 }
+
+.card {
+    width: 200px;
+    height: 100px;
+    perspective: 1000px;
+}
