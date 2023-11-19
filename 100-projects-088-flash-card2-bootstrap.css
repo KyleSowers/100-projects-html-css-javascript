@@ -7,3 +7,9 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.flashcard-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+}
