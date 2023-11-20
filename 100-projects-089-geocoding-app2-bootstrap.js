@@ -34,22 +34,36 @@ $(document).ready(function () {
                 $('#result').html(formattedAddressOutput + geometryOutput);
             })
             .catch(function (error) {
-            console.log(error);
+                console.log(error);
+            });
     });
-});
 
 
 //Event listener for the clear button
     $('#clear-button').click(function () {
-    $('#location-input').val('');
-    $('#result').html('');
+        $('#location-input').val('');
+        $('#result').html('');
     });
 
 //Event listener for the copy button
     $('#copy-button').click(function () {
-    var formattedAddress = $('#result').find('.list-item').first().text();
-    copytoClipboard(formattedAddress);
+        var formattedAddress = $('#result').find('.list-group-item').first().text();
+        copyToClipboard(formattedAddress);
     });
+
+
+    function copyToClipboard(text) {
+        var tempInput = $('<input>');
+        $('body').append(tempInput);
+        tempInput.val(text).select();
+        document.execCommand('copy');
+        tempInput.remove();
+        alert('Formatted address copied to clipboard');
+    }
+});
+
+
+
 
 
 
