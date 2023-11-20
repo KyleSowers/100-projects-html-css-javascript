@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Geocoding App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="100-projects-089-geocoding-app2-bootstrap.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="m-4">Geocoding App</h1>
+
+    <form id="geocode-form">
+      <div class="input-group mb-3">
+        <input type="text" id="location-input" class="form-control" placeholder="Enter an address or coordinates">
+        <div class="input-group-append">
+          <button type="submit" class="btn btn-primary">Search</button>
+        </div>
+        <div class="input-group-append">
+          <button type="button" class="btn btn-secondary" id="clear-button">Clear></button>
+        </div>
+      </div>
+    </form>
+
+    <div id="result"></div>
+    <button type="button" class="btn btn-success mt-3" id="copy-button">Copy Formatted Address</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axious/dist/axious.min.js"></script>
+  <script src="100-projects-089-geocoding-app2-bootstrap.js"></script>
+</body>
+</html>
