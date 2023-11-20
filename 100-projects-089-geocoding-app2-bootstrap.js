@@ -39,3 +39,13 @@ $(document).ready(function () {
 });
 
 
+//Event listener for the clear button
+    $('#clear-button').click(function () {
+    $('#location-input').val('');
+    $('#result').html('');
+    });
+
+
+
+
+
