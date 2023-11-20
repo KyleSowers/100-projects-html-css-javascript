@@ -45,6 +45,11 @@ $(document).ready(function () {
     $('#result').html('');
     });
 
+//Event listener for the copy button
+    $('#copy-button').click(function () {
+    var formattedAddress = $('#result').find('.list-item').first().text();
+    copytoClipboard(formattedAddress);
+    });
 
 
 
