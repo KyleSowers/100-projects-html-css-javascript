@@ -7,7 +7,18 @@
     <link rel="stylesheet" href="100-projects-091-product-inventory2-bootstrap.css">
 </head>
 <body>
-
+    <div class="container">
+        <h1 class="my-4">Product Inventory</h1>
+        <form id="product-form">
+            <input type="hidden" id="productId"/>
+            <input type="text" id="productName" class="form-control" placeholder="Product Name"/>
+            <input type="text" id="productDescription" class="form-control" placeholder="Product Description"/>
+            <input type="number" id="productPrice" class="form-control" placeholder="Product Price"/>
+            <input type="number" id="productQuantity" class="form-control" placeholder="Product Quantity"/>
+            <button class="btn btn-primary mt-2">Add Product</button>
+        </form>
+        <ul id="product-list"></ul>
+    </div>
   <script src="100-projects-091-product-inventory2-bootstrap.js"></script>
 </body>
 </html>
