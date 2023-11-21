@@ -2,11 +2,11 @@
 
 const form = document.getElementById('product-form');
 const nameInout = document.getElementById('productName');
-const descriptionInput = document.getElementById('productDescription');
-const priceInput = document.getElementById('productPrice');
-const quantityInput = document.getElementById('productQuantity');
+let descriptionInput = document.getElementById('productDescription');
+let priceInput = document.getElementById('productPrice');
+let quantityInput = document.getElementById('productQuantity');
 const productList = document.getElementById('product-list');
-const API_URL = 'https://my-json-server.tyicode.com/SanghyunNa-web/inventory/products';
+const API_URL = 'https://my-json-server.typicode.com/SanghyunNa-web/inventory/products';
 
 //Fetch initial products
 fetch(API_URL)
@@ -41,7 +41,7 @@ form.addEventListener('submit', (event) => {
 
 function addProductToPage(product) {
     const listItem = document.createElement('li');
-    listItem.textContent = `${product.name} - ${product.quality}`;
+    listItem.textContent = `${product.name} - ${product.quantity}`;
 
     const deleteButton = document.createElement('button');
     deleteButton.textContent = 'Delete';
