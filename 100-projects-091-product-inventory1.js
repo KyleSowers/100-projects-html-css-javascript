@@ -17,3 +17,39 @@ fetch(API_URL)
     });
 });
 
+
+//Form Submission
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const product = {
+        name: nameInout.value,
+        description: descriptionInput.value,
+        price: parseFloat(priceInput.value),
+        quantity: parseInt(quantityInput.value),
+    };
+
+    //In real-world scenario, you would send POST request to API here
+    addProductToPage(product);
+
+    //Clear the input fields
+    nameInout.value = '';
+    descriptionInput = '';
+    priceInput = '';
+    quantityInput = '';
+});
+
+function addProductToPage(product) {
+    const listItem = document.createElement('li');
+    listItem.textContent = `${product.name} - ${product.quality}`;
+
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent = 'Delete';
+    deleteButton.addEventListener('click', () => {
+        //In real world scenario, you would send DELETE request to API here
+        productList.removeChild(listItem);
+    });
+
+    listItem.appendChild(deleteButton);
+    productList.appendChild(listItem);
+}
