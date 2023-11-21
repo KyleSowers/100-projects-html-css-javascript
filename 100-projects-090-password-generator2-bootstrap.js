@@ -39,3 +39,10 @@ function generatePassword() {
     passwordDisplay.innerText = generatedPassword;
 }
 
+function copyPassowrd() {
+    const generatedPassword = passwordDisplay.innerText;
+    if(!generatedPassword) {
+        alert("No password generated to copy!");
+        return;
+    }
+}
