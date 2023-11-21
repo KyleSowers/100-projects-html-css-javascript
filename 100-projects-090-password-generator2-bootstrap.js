@@ -3,7 +3,7 @@
 
 const passwordDisplay = document.getElementById('passwordDisplay');
 const passwordLength = document.getElementById('passwordLength');
-const includeUpperCase = document.getElementById('includeUpperCase');
+const includeUpperCase = document.getElementById('includeUppercase');
 const includeNumbers = document.getElementById('includeNumbers');
 const includeSymbols = document.getElementById('includeSymbols');
 const generateButton = document.getElementById('generateButton');
