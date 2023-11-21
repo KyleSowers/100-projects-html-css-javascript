@@ -59,5 +59,11 @@ function resetPassword() {
     passwordDisplay.innerText = '';
 }
 
-
+function arrayFromLowToHigh(low, high) {
+    const array = [];
+    for (let i = low; i <= high; i++) {
+        array.push(i);
+    }
+    return array;
+}
 
