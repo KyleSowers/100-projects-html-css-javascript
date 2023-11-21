@@ -6,3 +6,23 @@ body {
 form {
     margin-bottom: 20px;
 }
+
+input {
+    margin-bottom: 5px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 0.5em;
+    background-color: #f0f0f0;
+    padding: 0.5em;
+}
+
+button {
+    margin-left: 1em;
+}
+
