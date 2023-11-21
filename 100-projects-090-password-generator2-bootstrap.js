@@ -39,10 +39,25 @@ function generatePassword() {
     passwordDisplay.innerText = generatedPassword;
 }
 
-function copyPassowrd() {
+function copyPassword() {
     const generatedPassword = passwordDisplay.innerText;
     if(!generatedPassword) {
         alert("No password generated to copy!");
         return;
     }
+
+    const tempInput = document.createElement('textarea');
+    document.body.appendChild(tempInput);
+    tempInput.value = generatedPassword;
+    tempInput.select();
+    document.execCommand('copy');
+    document.body.removeChild(tempInput);
+    alert('Password copied to clipboard!');
 }
+
+function resetPassword() {
+    passwordDisplay.innerText = '';
+}
+
+
+
