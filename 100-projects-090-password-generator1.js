@@ -5,7 +5,7 @@ const passwordLength = document.getElementById('passwordLength');
 const includeUpperCase = document.getElementById('includeUpperCase');
 const includeNumbers = document.getElementById('includeNumbers');
 const includeSymbols = document.getElementById('includeSymbols');
-const generateButton = document.getElementById('generate-button');
+const generateButton = document.getElementById('generateButton');
 
 const upperCaseCharCodes = arrayFromLowToHigh(65, 90)
 const lowerCaseCharCodes = arrayFromLowToHigh(97,122)
