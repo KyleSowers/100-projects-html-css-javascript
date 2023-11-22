@@ -36,3 +36,31 @@ form.addEventListener('submit', (event) => {
     phoneInput = '';
     addressInput = '';
 });
+
+function addContactToPage(contact) {
+    const listItem = document.createElement('li');
+    listItem.textContent = `${contact.name} - ${contact.email} - ${contact.phone} - ${contact.address}`;
+
+    const editButton = document.createElement('button');
+    editButton.textContent = "Edit";
+    editButton.classList.add('btn', 'button-info', 'mr-2');
+    editButton.addEventListener('click', () => {
+        //Real-world scenario, you implement the edit functionality here
+        alert("Edit functionality is not implemented in this demo");
+    });
+
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent = 'DELETE';
+    deleteButton.classList.add('btn', 'btn-danger');
+    deleteButton.addEventListener('click', () => {
+        //in real-world scenario, you would send DELETE to API here
+        const confirmDelete = confirm("Are you sure you want to delete this contact?");
+        if (confirmDelete) {
+            contactList.removeChild(listItem);
+        }
+    });
+
+    listItem.appendChild(editButton);
+    listItem.appendChild(deleteButton);
+    contactList.appendChild(listItem);
+}
