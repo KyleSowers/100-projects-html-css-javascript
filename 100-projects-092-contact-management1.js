@@ -8,4 +8,13 @@ const addressInput = document.getElementById('contactAddress');
 const contactList = document.getElementById('contact-list');
 const API_URL = 'https://my-json-server.typicode.com/SanghyunNa-web/contactmanage/contacts';
 
+//Fetching initial contacts
+fetch(API_URL)
+    .then((response) => response.json())
+    .then((contacts) => {
+        contacts.forEach((contact) => {
+            addContactToPage(contact);
+        });
+    });
+
 
