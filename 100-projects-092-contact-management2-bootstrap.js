@@ -16,3 +16,23 @@ fetch(API_URL)
             addContactToPage(contact);
         });
     });
+
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const contact = {
+        name: nameInput.value,
+        email: emailInput.value,
+        phone: phoneInput.value,
+        address: addressInput.value,
+    };
+
+    //in real world scenario, you would send POST request to API here
+    addContactToPage(contact);
+
+    //Clear the input fields
+    nameInput = '';
+    emailInput = '';
+    phoneInput = '';
+    addressInput = '';
+});
