@@ -64,3 +64,17 @@ function addContactToPage(contact) {
     listItem.appendChild(deleteButton);
     contactList.appendChild(listItem);
 }
+
+//search functionality
+searchInput.addEventListener('input', () => {
+    const searchText = searchInput.value.toLowerCase();
+    const contacts = contactList.getElementsByTagName('li');
+    for (const contact of contacts) {
+        const contactText = contact.textContent.toLowerCase();
+        if (contactText.includes(searchText)) {
+            contact.style.display = "block";
+        } else {
+            contact.style.display = 'none';
+        }
+    }
+});
