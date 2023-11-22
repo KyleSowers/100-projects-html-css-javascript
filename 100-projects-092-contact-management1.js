@@ -37,3 +37,18 @@ form.addEventListener('submit', (event) => {
     phoneInput = '';
     addressInput = '';
 });
+
+function addContactToPage(contact) {
+    const listItem = document.createElement('li');
+    listItem.textContent = `${contact.name} - ${contact.email} - ${contact.phone} - ${contact.address}`;
+
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent = 'DELETE';
+    deleteButton.addEventListener('click', () => {
+        //in real-world scenario, you would send DELETE to API here
+        contactList.removeChild(listItem);
+    });
+
+    listItem.appendChild(deleteButton);
+    contactList.appendChild(listItem);
+}
