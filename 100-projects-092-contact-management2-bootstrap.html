@@ -7,6 +7,22 @@
     <link rel="stylesheet" href="100-projects-092-contact-management2-bootstrap.css">
 </head>
 <body>
+    <div class="container">
+        <h1 class="my-4">Contact Management</h1>
+        <form id="contact-form">
+            <input type="hidden" id="contactId">
+            <input type="text" id="contactName" class="form-control" placeholder="Name">
+            <input type="text" id="contactEmail" class="form-control" placeholder="Email">
+            <br>
+            <input type="text" id="contactPhone" class="form-control" placeholder="Phone">
+            <input type="text" id="contactAddress" class="form-control" placeholder="Address">
+            <button class="btn btn-primary mt-2">Add Contact</button>
+        </form>
+        <div class="form-group">
+            <input type="text" id="searchInput" class="form-control mt-4" placeholder="Search by Name or Email">
+        </div>
+        <ul id="contact-list"></ul>
+    </div>
 
 
     <script src="100-projects-092-contact-management2-bootstrap.js"></script>
