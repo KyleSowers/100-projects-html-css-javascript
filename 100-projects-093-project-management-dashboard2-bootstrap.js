@@ -49,3 +49,29 @@ function displayProjects(projects) {
 
 //initial display of projects
 displayProjects(projects);
+
+//Form submission
+projectForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const projectName = document.getElementById('projectName').value;
+    const projectDescription = document.getElementById('projectDescription').value;
+    const projectStatus = docu.getElementById('projectStatus').value;
+    const projectTeam = document.getElementById('projectTeam').value.split(",").map(item => item.trim());
+
+    const newProject = {
+        name: projectName,
+        description: projectDescription,
+        status: projectStatus,
+        teamMembers: projectTeam,
+    };
+
+    //Add newProject to array
+    projects.push(newProject);
+
+    //Refresh the display
+    displayProjects(projects);
+
+    //clear form fields
+    projectForm.reset();
+});
