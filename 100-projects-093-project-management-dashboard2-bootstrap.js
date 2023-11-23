@@ -56,7 +56,7 @@ projectForm.addEventListener('submit', (event) => {
 
     const projectName = document.getElementById('projectName').value;
     const projectDescription = document.getElementById('projectDescription').value;
-    const projectStatus = docu.getElementById('projectStatus').value;
+    const projectStatus = document.getElementById('projectStatus').value;
     const projectTeam = document.getElementById('projectTeam').value.split(",").map(item => item.trim());
 
     const newProject = {
