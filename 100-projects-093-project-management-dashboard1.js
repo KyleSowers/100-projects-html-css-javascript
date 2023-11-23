@@ -20,7 +20,25 @@ const projects = [
 ];
 
 projects.forEach((project) => {
-    const projectDiv = document.createElement('div');
+    const projectDiv = document.createElement("div");
     projectDiv.classList.add("project");
-})
+
+    const projectName = document.createElement("h2");
+    projectName.textContent = project.name;
+    projectDiv.appendChild(projectName);
+
+    const projectDescription = document.createElement("p");
+    projectDescription.textContent = `Status: ${project.status}`;
+    projectDiv.appendChild(projectDescription);
+
+    const projectStatus = document.createElement("p");
+    projectStatus.textContent = `Status: ${projectStatus}`;
+    projectDiv.appendChild(projectStatus);
+
+    const projectTeam = document.createElement("p");
+    projectTeam.textContent = `Team: ${project.teamMembers.join(', ')}`;
+    projectDiv.appendChild(projectTeam);
+
+    projectList.appendChild(projectDiv);
+});
 
