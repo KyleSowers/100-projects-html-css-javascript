@@ -29,3 +29,9 @@ h1 {
     color: #666;
 }
 
+#project-list {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
