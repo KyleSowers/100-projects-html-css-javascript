@@ -46,3 +46,6 @@ function displayProjects(projects) {
         projectList.appendChild(projectDiv);
     });
 }
+
+//initial display of projects
+displayProjects(projects);
