@@ -19,3 +19,15 @@ const projects = [
     },
     //Can add as many as desired
 ];
+
+//Function for display
+function displayProjects(projects) {
+    projectList.innerHTML = "";
+
+    projects.forEach((project)) => {
+        const projectDiv = document.createElement("div");
+        projectDiv.classList.add("project");
+
+
+    }
+}
