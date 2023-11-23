@@ -19,3 +19,8 @@ const projects = [
     //Can add as man as desired
 ];
 
+projects.forEach((project) => {
+    const projectDiv = document.createElement('div');
+    projectDiv.classList.add("project");
+})
+
