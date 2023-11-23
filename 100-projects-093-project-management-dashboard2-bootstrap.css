@@ -7,3 +7,24 @@ body {
     padding: 0;
     background-color: #f0f0f0;
 }
+
+h1 {
+    color: #333;
+}
+
+.project {
+    width: 80%;
+    background-color: #fff;
+    margin: 1em 0;
+    padding: 1em;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.project h2 {
+    color: #333;
+}
+
+.project p {
+    color: #666;
+}
