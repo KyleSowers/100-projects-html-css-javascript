@@ -44,3 +44,17 @@ function addPostToPage(posts) {
 }
 
 addPostToPage(posts);
+
+function searchPosts() {
+    const searchTerm = searchTitleInput.value.toLowerCase();
+    const posts = postList.querySelectorAll(".post");
+
+    posts.forEach((post) => {
+        const title = post.querySelector("h2").textContent.toLowerCase();
+        if (title.includes(searchTerm)) {
+            post.style.display = "block";
+        } else {
+            post.style.display = "none";
+        }
+    });
+}
