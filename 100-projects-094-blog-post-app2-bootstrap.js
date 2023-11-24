@@ -77,3 +77,23 @@ function sortPosts() {
         postList.appendChild(post);
     });
 }
+
+//Form submission
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const postTitle = document.getElementById("postTitle").value;
+    const postBody = document.getElementById("postBody").value;
+
+    const newPost = {
+        title: postTitle,
+        body: postBody,
+    }
+
+    posts.push(newPost);
+
+    addPostToPage(posts);
+
+    //Clear inputs
+    form.reset();
+})
