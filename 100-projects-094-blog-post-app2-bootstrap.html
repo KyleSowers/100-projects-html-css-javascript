@@ -7,6 +7,28 @@
     <link rel="stylesheet" href="100-projects-094-blog-post-app2-bootstrap.css">
 </head>
 <body>
+  <h1 class="my-4">Blog Post App</h1>
+  <form id="post-form">
+    <input type="text" id="postTitle" class="form-control" placeholder="Title">
+    <textarea id="postBody" class="form-control" placeholder="Body"></textarea>
+    <button class="btn btn-primary mt-2">Add Post</button>
+  </form>
+  <div class="input-group my-4 w-50">
+    <input type="text" id="searchTitle" class="form-control" placeholder="Search by Title">
+    <div  class="input-group-append">
+      <button class="btn btn-secondary" onclick="searchPosts()">Search</button>
+    </div>
+  </div>
+  <div class="input-group w-50">
+    <select id="sortPosts" class="form-control">
+      <option value="asc">Sort by Title (Ascending)</option>
+      <option value="desc">Sort by Title (Decending)</option>
+    </select>
+    <div class="input-group-append">
+      <button class="btn btn-secondary" onclick="sortPosts()">Sort</button>
+    </div>
+  </div>
+  <div id="post-list"></div>
 
   <script src="100-projects-094-blog-post-app2-bootstrap.js"></script>
 </body>
