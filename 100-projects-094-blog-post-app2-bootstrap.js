@@ -58,3 +58,22 @@ function searchPosts() {
         }
     });
 }
+
+function sortPosts() {
+    const sortOrder = sortPostsInput.value;
+    const posts = Array.from(postList.querySelectorAll(".post"));
+
+    posts.sort((a, b) => {
+        const titleA = a.querySelector("h2").textContent.toLowerCase();
+        const titleB = b.querySelector("h2").textContent.toLowerCase();
+        if (sortOrder === "asc") {
+            return titleA.localeCompare(titleB);
+        } else {
+            return titleB.localeCompare(titleA);
+        }
+    });
+
+    posts.forEach((post) => {
+        postList.appendChild(post);
+    });
+}
