@@ -1,19 +1,17 @@
 'use strict'
 
 const form = document.getElementById("post-form");
-const titleInput = document.getElementById("postTitle");
-const bodyInput = document.getElementById("postBody");
+// const titleInput = document.getElementById("postTitle");
+// const bodyInput = document.getElementById("postBody");
 const postList = document.getElementById("post-list");
 
 
 const posts = [
     {
-        "id": 1,
         "title": "First Post",
         "body": "This is the first post"
     },
     {
-        "id": 2,
         "title": "Second Post",
         "body": "This is the second post"
     }
@@ -32,7 +30,7 @@ function addPostToPage(posts) {
         postDiv.appendChild(postTitle);
 
         const postBody = document.createElement("p");
-        postBody.textContent = postBody;
+        postBody.textContent = post.body;
         postDiv.appendChild(postBody);
 
         const deleteButton = document.createElement("button");
@@ -52,15 +50,19 @@ addPostToPage(posts);
 form.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    const post = {
-        title: titleInput.value,
-        body: bodyInput.value,
+    const postTitle = document.getElementById('postTitle').value;
+    const postBody = document.getElementById('postBody').value;
+
+    const newPost = {
+        title: postTitle,
+        body: postBody,
     };
 
-    //Real-world you would send POSt request to API here
-    addPostToPage(post);
+    //Add to posts array
+    posts.push(newPost);
+
+    addPostToPage(posts);
 
     //Clear input fields
-    titleInput.value = "";
-    bodyInput.value = "";
+    form.reset();
 });
