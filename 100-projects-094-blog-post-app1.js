@@ -26,4 +26,9 @@ form.addEventListener("submit", (event) => {
 
     //Real-world you would send POSt request to API here
     addPostToPage(post);
-})
+
+    //Clear input fields
+    titleInput.value = "";
+    bodyInput.value = "";
+});
+
