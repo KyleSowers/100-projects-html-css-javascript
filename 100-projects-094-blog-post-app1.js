@@ -14,3 +14,16 @@ fetch(API_URL)
             addPostToPage(post);
         });
     });
+
+//Form Submission
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const post = {
+        title: titleInput.value,
+        body: bodyInput.value,
+    };
+
+    //Real-world you would send POSt request to API here
+    addPostToPage(post);
+})
