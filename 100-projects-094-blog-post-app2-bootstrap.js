@@ -16,3 +16,31 @@ const posts = [
     }
 ];
 
+function addPostToPage(posts) {
+    postList.innerHTML = "";
+
+    posts.forEach((post) => {
+        const postDiv = document.createElement('div');
+        postDiv.classList.add('post');
+
+        const postTitle = document.createElement("h2");
+        postTitle.textContent = post.title;
+        postDiv.appendChild(postTitle);
+
+        const postBody = document.createElement("p");
+        postBody.textContent = post.body;
+        postDiv.appendChild(postBody);
+
+        const deleteButton = document.createElement("button");
+        deleteButton.textContent = "Delete";
+        deleteButton.classList.add("btn", "btn-danger", "my-2");
+        deleteButton.addEventListener('click', () => {
+            //Real-world scenario, send delete request to API here
+            postList.removeChild(postDiv);
+        });
+        postDiv.appendChild(deleteButton);
+        postList.appendChild(postDiv);
+    });
+}
+
+addPostToPage(posts);
