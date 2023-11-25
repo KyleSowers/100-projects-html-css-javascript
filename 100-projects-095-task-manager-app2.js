@@ -37,3 +37,27 @@ setTaskNumberButton.addEventListener('submit', (event) => {
     titleInput.value = '';
 });
 
+function addTaskToPage(task, prepend = false) {
+    const taskItem = document.createElement('li');
+    taskItem.textContent = task.title;
+
+    if (task.completed) {
+        taskItem.classList.add('Completed');
+    }
+
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent = 'Delete';
+    deleteButton.addEventListener('click', () => {
+        //Real-world you would send DELETE request to API here
+        taskList.removeChild(taskItem);
+    });
+
+    taskItem.appendChild(deleteButton);
+
+    //Prepend or append the task item to the list based on the 'prepend parameter
+    if (prepend) {
+        taskList.prepend(taskItem);
+    } else {
+        taskList.appendChild(taskItem);
+    }
+}
