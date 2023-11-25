@@ -30,5 +30,10 @@ setTaskNumberButton.addEventListener('submit', (event) => {
         completed: false;
     };
 
+    //Add task to the top of the list
+    addTaskToPage(task, true);
 
-})
+    //clear the input field
+    titleInput.value = '';
+});
+
