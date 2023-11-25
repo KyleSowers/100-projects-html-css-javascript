@@ -26,8 +26,8 @@ setTaskNumberButton.addEventListener('submit', (event) => {
     event.preventDefault();
 
     const task = {
-        title: titleInput.value;
-        completed: false;
+        title: titleInput.value,
+        completed: false,
     };
 
     //Add task to the top of the list
