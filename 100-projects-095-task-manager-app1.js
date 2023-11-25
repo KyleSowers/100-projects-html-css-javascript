@@ -19,8 +19,8 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
 
     const task = {
-        title: titleInput.value;
-        completed: false;
+        title: titleInput.value,
+        completed: false,
     };
     //Real-world you would send POST request to API here
     addTaskToPage(task);
@@ -28,4 +28,22 @@ form.addEventListener('submit', (event) => {
     //Clear input field
     titleInput.value = '';
 });
+
+function addTaskToPage(task) {
+    const taskItem = document.createElement('li');
+    taskItem.textContent = task.title;
+
+    if (task.completed) {
+        taskItem.classList.add('completed');
+    }
+
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent = 'Delete';
+    deleteButton.addEventListener('click', () => {
+        //Real-world you would send DELETE request to API here
+        taskList.removeChild(taskItem);
+    });
+    taskItem.appendChild(deleteButton);
+    taskList.appendChild(taskItem);
+}
 
