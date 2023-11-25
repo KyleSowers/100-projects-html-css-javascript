@@ -22,3 +22,26 @@ form input {
     padding: 0.5em;
 }
 
+ul {
+    width: 80%;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    background-color: #fff;
+    margin: 0.5em 0;
+    padding: 0.5em;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+li.completed {
+    text-decoration: line-through;
+}
+
+button {
+    margin-left: 1em;
+}
+
+
