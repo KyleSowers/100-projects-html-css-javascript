@@ -7,6 +7,25 @@
     <link rel="stylesheet" href="100-projects-095-task-manager-app3-bootstrap.css">
 </head>
 <body>
+   <div class="container">
+     <h1 class="my-4">Task Manager App</h1>
+     <form  id="task-form" class="form-incline mb-3">
+       <input type="text" id="task-title" class="form-control mr-2" placeholder="Task title"/>
+       <button type="submit" class="btn btn-primary">Add Task</button>
+     </form>
+     <div class="input-group mb-3">
+       <input type="number" id="taskNumber" class="form-control" min="1" value="10"/>
+       <div class="input-group-append">
+         <button id="setTaskNumber" class="btn btn-secondary">Set nNumber of Tasks</button>
+       </div>
+     </div>
+     <select id="task-status-filter" class="from-control mb-3">
+       <option value="all">All</option>
+       <option value="completed">Completed</option>
+       <option value="incomplete">Incomplete</option>
+     </select>
+     <ul id="task-list" class="list-group"></ul>
+   </div>
 
   <script src="100-projects-095-task-manager-app3-bootstrap.js"></script>
 </body>
