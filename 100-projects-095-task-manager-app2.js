@@ -14,20 +14,26 @@ function fetchTasks() {
         .then((tasks) => {
             taskList.innerHTML = '';
             tasks.slice(0, taskNumberInput.value).forEach((task) => {
-                addTaskToPage(tasks);
+                addTaskToPage(task);
             });
         });
 }
 
 fetchTasks();
 
-//Set a number of tasks
-setTaskNumberButton.addEventListener('submit', (event) => {
+//Set number of tasks
+setTaskNumberButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    fetchTasks();
+});
+
+
+form.addEventListener('submit', (event) => {
     event.preventDefault();
 
     const task = {
         title: titleInput.value,
-        completed: false,
+        completed: false
     };
 
     //Add task to the top of the list
@@ -42,7 +48,7 @@ function addTaskToPage(task, prepend = false) {
     taskItem.textContent = task.title;
 
     if (task.completed) {
-        taskItem.classList.add('Completed');
+        taskItem.classList.add('completed');
     }
 
     const deleteButton = document.createElement('button');
@@ -53,7 +59,7 @@ function addTaskToPage(task, prepend = false) {
     });
 
     taskItem.appendChild(deleteButton);
-
+    // taskList.appendChild(taskItem);
     //Prepend or append the task item to the list based on the 'prepend parameter
     if (prepend) {
         taskList.prepend(taskItem);
