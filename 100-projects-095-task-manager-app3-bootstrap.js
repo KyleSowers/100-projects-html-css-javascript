@@ -43,3 +43,25 @@ form.addEventListener('submit', (event) => {
     titleinput.value = '';
 });
 
+//Mark a task as completed
+taskList.addEventListener('click', (event) => {
+    const target = event.target;
+    if (target.classList.contains('task-item')) {
+        target.classList.toggle('completed');
+    }
+});
+
+//Filter tasks by status
+taskStatusfilter.addEventListener('change', (event) => {
+    const selectedStatus = event.target.value;
+    const taskItems = taskList.querySelectorAll('.task-item');
+
+    if (selectedStatus === "all") {
+        taskItems.forEach(item => item.style.display = 'block');
+    } else {
+        taskItems.forEach(item => {
+            item.style.display = item.classList.contains(selectedStatus) ? "block" : "none";
+        });
+    }
+});
+
