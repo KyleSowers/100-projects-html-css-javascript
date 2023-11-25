@@ -65,3 +65,29 @@ taskStatusfilter.addEventListener('change', (event) => {
     }
 });
 
+function addTaskToPage(task, prepend = false) {
+    const taskItem = document.createElement('li');
+    taskItem.textContent = task.title;
+    taskItem.classList.add('list-group-item', 'task-item');
+
+    if (task.completed) {
+        taskItem.classList.add('completed');
+    }
+
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent = 'Delete';
+    deleteButton.classList.add('btn', 'btn-danger', 'btn-sm', 'float-right');
+    deleteButton.addEventListener('click', () => {
+        //Real-world you would send DELETE request to API here
+        taskList.remove();
+    });
+
+    taskItem.appendChild(deleteButton);
+    // taskList.appendChild(taskItem);
+    //Prepend or append the task item to the list based on the 'prepend parameter
+    if (prepend) {
+        taskList.prepend(taskItem);
+    } else {
+        taskList.appendChild(taskItem);
+    }
+}
