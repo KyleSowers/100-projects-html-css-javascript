@@ -15,3 +15,6 @@ fetch(API_URL)
     });
 //Real-world you would send POST request to API here
 addTaskToPage(task);
+
+//Clear input field
+titleInput.value = '';
