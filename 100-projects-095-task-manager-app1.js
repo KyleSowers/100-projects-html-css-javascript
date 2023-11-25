@@ -13,8 +13,19 @@ fetch(API_URL)
             addTaskToPage(task);
         });
     });
-//Real-world you would send POST request to API here
-addTaskToPage(task);
 
-//Clear input field
-titleInput.value = '';
+//Form submission
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const task = {
+        title: titleInput.value;
+        completed: false;
+    };
+    //Real-world you would send POST request to API here
+    addTaskToPage(task);
+
+    //Clear input field
+    titleInput.value = '';
+});
+
