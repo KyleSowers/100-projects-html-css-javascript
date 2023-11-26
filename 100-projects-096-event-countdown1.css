@@ -10,3 +10,15 @@ h1 {
     color: #333;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    width: 80%;
+}
+
+form input {
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+}
+
