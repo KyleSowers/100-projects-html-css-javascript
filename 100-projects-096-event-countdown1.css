@@ -22,3 +22,11 @@ form input {
     padding: 0.5em;
 }
 
+h2 {
+    color: #666;
+}
+
+p {
+    color: #f70606;
+    font-size: 20px;
+}
