@@ -21,5 +21,8 @@ $('#event-form').on('submit', function (event) {
     countdownDiv.append(`<h3>⏳ ${eventName} ⏰</h3>`);
     countdownDiv.append(`<p class="lead text-danger countdown-number"></p>`);
 
+    //Add to events list
+    $('#events-list').append(countdownDiv);
 
+    let countdownEl = countdownDiv.find('.countdown-number');
 })
