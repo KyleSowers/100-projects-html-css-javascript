@@ -44,4 +44,9 @@ $('#event-form').on('submit', function (event) {
             countdownEl.text("Event has started");
         }
     }, 1000);
-})
+
+    //Reset input fields
+    $(`#eventName`).value('');
+    $(`#eventTime`).value('');
+});
+
