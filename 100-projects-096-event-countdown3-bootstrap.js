@@ -27,7 +27,7 @@ $('#event-form').on('submit', function (event) {
     let countdownEl = countdownDiv.find('.countdown-number');
 
     //Start countdown
-    let countddownInterval =setInterval(function () {
+    let countdownInterval =setInterval(function () {
         let now = new Date();
         let distance = eventTime - now;
 
@@ -37,5 +37,11 @@ $('#event-form').on('submit', function (event) {
         let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         countdownEl.text(`${days}d ${hours}h ${minutes}m ${seconds}s`);
-    })
+
+        //When counter is over
+        if(distance < 0) {
+            clearInterval(countdownInterval);
+            countdownEl.text("Event has started");
+        }
+    }, 1000);
 })
