@@ -25,4 +25,17 @@ $('#event-form').on('submit', function (event) {
     $('#events-list').append(countdownDiv);
 
     let countdownEl = countdownDiv.find('.countdown-number');
+
+    //Start countdown
+    let countddownInterval =setInterval(function () {
+        let now = new Date();
+        let distance = eventTime - now;
+
+        let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        let hours = Math.floor(distance % (1000 * 60 * 60 * 24));
+        let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        countdownEl.text(`${days}d ${hours}h ${minutes}m ${seconds}s`);
+    })
 })
