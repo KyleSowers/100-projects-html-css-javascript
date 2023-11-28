@@ -15,5 +15,27 @@ body {
     border: 2px, solid #a9a9a9;
     border-radius: 5px;
     padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
 }
+
+#display {
+    width: 1000%;
+    height: 50px;
+    margin-bottom: 10px;
+    text-align: right;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 60px;
+    height: 40px;
+    margin-bottom: 10px;
+    text-align: right;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+
 
