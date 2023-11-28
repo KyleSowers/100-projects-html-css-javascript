@@ -16,6 +16,10 @@ document.querySelectorAll("button").forEach((button) => {
             display.value = "";
         } else if (button.hasAttribute("data-sign")) {
             if (display.value) {
+                display.value = parseFloat(display.value) * -1;
+            }
+        }else if (button.hasAttribute("data-percent")) {
+            if (display.value) {
                 display.value = parseFloat(display.value) / 100;
             }
         } else if (button.hasAttribute("data-sqrt")) {
