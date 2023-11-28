@@ -50,3 +50,10 @@ $('#event-form').on('submit', function (event) {
     $(`#eventTime`).value('');
 });
 
+$('#reset').on('click', function (event) {
+    event.preventDefault();
+
+    //Clear all events
+    $('#events-list').empty();
+});
+
