@@ -28,13 +28,37 @@ body {
     box-sizing: border-box;
 }
 
-button {
-    width: 60px;
-    height: 40px;
-    margin: 5px;
-    font-size: 18px;
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 100%;
+}
+
+button{
+    height: 50px;
+    font-size: 1.5em;
     border: none;
     background-color: #ddd;
     border-radius: 5px;
 }
 
+[data-operator] {
+    background-color: #ffa500;
+}
+
+[data-equal] {
+    background-color: #ff6347;
+    grid-column: span 2;
+}
+
+[data-clear], [data-sign], [data-percent] {
+    background-color: #a9a9a9;
+}
+
+
+#equals {
+    background-color: #ff6347;
+}
+
+cle
