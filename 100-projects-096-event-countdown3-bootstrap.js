@@ -16,5 +16,10 @@ $('#event-form').on('submit', function (event) {
         return;
     }
 
+    //Create new event countdown
+    let countdownDiv = $('<div class="jumbotron"></div>');
+    countdownDiv.append(`<h3>⏳ ${eventName} ⏰</h3>`);
+    countdownDiv.append(`<p class="lead text-danger countdown-number"></p>`);
+
 
 })
