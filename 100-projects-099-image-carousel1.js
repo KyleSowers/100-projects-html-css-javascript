@@ -9,3 +9,22 @@ let intervalid;
 intervalid = setInterval(() => {
     changeSlide(1);
 }, 3000);
+
+function changeSlides(n) {
+    if ((currentIndex === numSlides - 1 && n === 1) || (currentIndex === 0 && n === -1)) {
+        //do not move past the last or first slide
+        clearInterval(intervalid); //stop auto-rotate when the last image is reached
+        return;
+    }
+    currentIndex += n;
+    showSlide();
+}
+
+function showSlide() {
+    carouselImages.forEach((image, i) => {
+        image.classList.remove("active");
+        if (i === currentIndex) {
+            image.classList.add("active");
+        }
+    });
+}
