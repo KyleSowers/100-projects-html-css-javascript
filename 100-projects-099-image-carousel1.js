@@ -10,7 +10,7 @@ intervalid = setInterval(() => {
     changeSlide(1);
 }, 3000);
 
-function changeSlides(n) {
+function changeSlide(n) {
     if ((currentIndex === numSlides - 1 && n === 1) || (currentIndex === 0 && n === -1)) {
         //do not move past the last or first slide
         clearInterval(intervalid); //stop auto-rotate when the last image is reached
