@@ -30,5 +30,31 @@
     opacity: 1;
 }
 
+.carousel-nav {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.carousel-prev, .carousel-next {
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carousel-prev {
+    margin-right: 10px;
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+    background-color: #555;
+}
+
+
+
 
 
