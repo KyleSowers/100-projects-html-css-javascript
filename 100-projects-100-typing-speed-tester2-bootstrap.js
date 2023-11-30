@@ -25,7 +25,7 @@ $(document).ready(function () {
         startBtn.prop('disabled', false);
         testText.prop('disabled', true);
         timeRemaining = 60;
-        progressBar.css('width', 100%).text(timeRemaining);
+        progressBar.css('width', '100%').text(timeRemaining);
     });
 
     testText.keydown(function (event) {
@@ -43,4 +43,10 @@ $(document).ready(function () {
             calculateSpeed();
         }
     }
-})
+
+    function calculateSpeed() {
+        let totalWords = testText.val().split('').length;
+        result.text(`You typed at ${totalWords} words per minute.`);
+        testText.prop('disabled', true);
+    }
+});
