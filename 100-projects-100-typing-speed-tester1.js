@@ -15,3 +15,12 @@ function startTest() {
     intervalId = setInterval(countdown, 1000);
 }
 
+function countdown() {
+    timeRemaining--;
+    timer.textContent = timeRemaining;
+    if (timeRemaining === 0) {
+        clearInterval(intervalId);
+        calculateSpeed();
+    }
+}
+
