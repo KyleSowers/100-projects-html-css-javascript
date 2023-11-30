@@ -35,5 +35,12 @@ $(document).ready(function () {
         }
     });
 
-
+    function countdown() {
+        timeRemaining--;
+        progressBar.css('width', `${(timeRemaining / 60) * 100}%`).text(timeRemaining);
+        if (timeRemaining === 0) {
+            clearInterval(intervalId);
+            calculateSpeed();
+        }
+    }
 })
