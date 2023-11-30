@@ -28,5 +28,12 @@ $(document).ready(function () {
         progressBar.css('width', 100%).text(timeRemaining);
     });
 
+    testText.keydown(function (event) {
+        if (event.keyCode === 8) {
+            errorCount++;
+            $('#error').text(`Errors: ${errorCount}`);
+        }
+    });
+
 
 })
