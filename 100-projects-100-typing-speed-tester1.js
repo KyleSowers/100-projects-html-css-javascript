@@ -24,3 +24,9 @@ function countdown() {
     }
 }
 
+function calculateSpeed() {
+    let totalWords = testText.value.split('').length;
+    result.textContent = `You typed at ${totalWords} words per minute.`;
+    testText.disabled = true;
+}
+
