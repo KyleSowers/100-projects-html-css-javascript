@@ -20,3 +20,28 @@ textarea {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
 }
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #008CBA;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px, rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: #007B9A;
+}
+
+.timer {
+    color: red;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.result {
+    margin-top: 20px;
+}
