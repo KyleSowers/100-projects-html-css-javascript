@@ -30,3 +30,13 @@ function calculateSpeed() {
     testText.disabled = true;
 }
 
+function resetTest() {
+    clearInterval(intervalId);
+    testText.value = '';
+    result.textContent = '';
+    startBtn.disabled = false;
+    testText.disabled = true;
+    timeRemaining = 60;
+    timer.textContent = timeRemaining;
+}
+
