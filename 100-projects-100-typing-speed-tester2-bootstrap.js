@@ -17,6 +17,16 @@ $(document).ready(function () {
     });
 
     $('#reset-btn').click(function () {
+        clearInterval(intervalId);
+        testText.val('');
+        result.text('');
+        errorCount = 0;
+        $('#error').text('');
+        startBtn.prop('disabled', false);
+        testText.prop('disabled', true);
+        timeRemaining = 60;
+        progressBar.css('width', 100%).text(timeRemaining);
+    });
 
-    })
+
 })
