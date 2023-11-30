@@ -9,4 +9,14 @@ $(document).ready(function () {
     let timeRemaining = 60;
     let errorCount = 0;
 
+    startBtn.click(function () {
+        startBtn.prop('disabled', true);
+        testText.prop('disabled', false).focus();
+        progressBar.text(timeRemaining);
+        intervalId = setInterval(countdown, 1000);
+    });
+
+    $('#reset-btn').click(function () {
+
+    })
 })
