@@ -1,14 +1,20 @@
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     font-family: Arial, sans-serif;
 }
 
 .container {
     width: 300px;
     padding: 16px;
-    background-color: #f1f1f1;
-    margin: 0 auto;
-    margin-top: 100px;
-    border-radius: 4px;
+    background-color: #343434;
+    color: white;
+    margin: 100px auto 0;
+    border-radius: 14px;
+
 }
 
 label {
