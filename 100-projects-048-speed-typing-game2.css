@@ -6,7 +6,7 @@ body {
     text-align: center;
     font-family: Arial, sans-serif;
     height: 100vh;
-    background-color: #666999;
+    background-color: #a8afc2;
 }
 
 #container {
@@ -14,7 +14,7 @@ body {
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    height: 90vh;
+    height: 75vh;
     width: 400px;
     gap: 15px;
     margin-top: 10px;
