@@ -67,8 +67,9 @@ body {
 }
 
 #username-display {
-    color: blue;
-    margin-top: 20px;
+    color: #2badd3;
+    margin: 40px;
+    padding: 8px;
     font-size: 50px;
     font-weight: bold;
     letter-spacing: 1.5px;

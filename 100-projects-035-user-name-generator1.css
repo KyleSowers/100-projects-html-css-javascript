@@ -1,4 +1,10 @@
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #94a49c;
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 20px;
@@ -6,7 +12,7 @@ body {
 
 #generate-button {
     padding: 10px 20px;
-    background-color: blue;
+    background-color: #4d8166;
     color: white;
     border: none;
     border-radius: 8px;
@@ -14,8 +20,14 @@ body {
     letter-spacing: 2px;
 }
 
+#generate-button:hover {
+    background-color: #265e3e;
+}
+
 #username-display {
     margin-top: 20px;
     font-size: 24px;
+    font-weight: bold;
     letter-spacing: 1.5px;
+    color: #1e623f;
 }
