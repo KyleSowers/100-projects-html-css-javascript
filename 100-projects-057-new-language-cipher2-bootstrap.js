@@ -2,7 +2,7 @@
 
 const NewLanguage = {
     'a': '!', 'b': '@', 'c': '#', 'd': '$', 'e': '%', 'f': '^', 'g': '&', 'h': '*', 'i': '(', 'j': ')', 'k':
-        '-', 'l': '=', 'm': '+', 'n': '[', 'o': ']', 'p': '{', 'q': '}', 'r': ';', 's': ':', 't': ',', 'u': '.', 'v': '<', 'w': '>', 'x': '/', 'y': ':', 'z': '|', '': '~', '!': 'x'};
+        '-', 'l': '=', 'm': '+', 'n': '[', 'o': ']', 'p': '{', 'q': '}', 'r': ';', 's': ':', 't': ',', 'u': '.', 'v': '<', 'w': '>', 'x': '/', 'y': ':', 'z': '|', ' ': ' ', '!': 'x'};
 
 const inverseNewLanguage = {};
 for (const key in NewLanguage) {
@@ -24,7 +24,7 @@ $('#to-new-language').click(function () {
 
 $('#to-english').click(function () {
     const inputNewLanguage = $('#input-new-language').val();
-    let outputEnglish = '';
+    let outputEnglish = ' ';
     for ( let i = 0; i < inputNewLanguage.length; i++) {
         if (inverseNewLanguage[inputNewLanguage[i]]) {
             outputEnglish += inverseNewLanguage[inputNewLanguage[i]];
