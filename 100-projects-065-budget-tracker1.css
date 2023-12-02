@@ -1,6 +1,11 @@
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 1000vh;
     font-family: Arial, sans-serif;
-    margin: 30px;
+    margin: 60px;
 }
 
 #balance {
