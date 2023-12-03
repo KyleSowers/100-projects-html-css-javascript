@@ -23,12 +23,17 @@ main {
     padding: 1em;
 }
 
+
 #blog-posts {
     margin-bottom: 2em;
 }
 
 #new-post-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     margin-top: 1em;
+    gap: 10px;
 }
 
 footer {
