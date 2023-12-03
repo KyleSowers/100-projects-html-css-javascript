@@ -1,0 +1,41 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 10px;
+    background-color: #343434;
+}
+
+h1 {
+    font-size: 37px;
+    font-weight: bold;
+    color: #d2d6f5;
+}
+
+#job-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.job    {
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 9px;
+    box-shadow: 0 5px 10px rgba(215, 215, 215, 0.7);
+    width: calc(25% - 20px);
+}
+
+.job h2 {
+    margin: 0;
+}
+
+.job a {
+    color: blue;
+    text-decoration: none;
+}
