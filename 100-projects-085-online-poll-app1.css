@@ -4,11 +4,21 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f5f5f5;
+    background-color: black;
+    color: white;
     font-family: Arial, sans-serif;
 }
 
+.container {
+    background-color: #343434;
+    padding: 33px;
+    border-radius: 15px;
+    min-height: 253px;
+    box-shadow: 0 0 13px rgba(233, 233, 233, 0.9);
+}
+
 .poll {
+    color: white;
     margin-top: 20px;
 }
 
@@ -24,8 +34,8 @@ body {
 .results {
     margin: 20px;
     display: flex;
-    justify-content: space-around;
-    width: 30%;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .results p {
