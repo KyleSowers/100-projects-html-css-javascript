@@ -11,7 +11,7 @@ function shortenUrl() {
     fetch('https://api.rebrandly.com/v1/links', {
         method: 'POST',
         headers: {
-            'Content-Type': 'aplication/json',
+            'Content-Type': 'application/json',
             'apikey': 'YOURAPIKEYHERE',
         },
         body: JSON.stringify({
