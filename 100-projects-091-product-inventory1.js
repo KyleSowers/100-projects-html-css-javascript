@@ -41,7 +41,7 @@ form.addEventListener('submit', (event) => {
 
 function addProductToPage(product) {
     const listItem = document.createElement('li');
-    listItem.textContent = `${product.name} - ${product.quantity}`;
+    listItem.textContent = `${product.name} ${product.quantity} - ${product.price}`;
 
     const deleteButton = document.createElement('button');
     deleteButton.textContent = 'Delete';
