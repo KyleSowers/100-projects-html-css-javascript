@@ -5,11 +5,11 @@ body {
     align-items: center;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #434343;
 }
 
 h1 {
-    color: #333;
+    color: #f0f0f0;
 }
 
 .project {
