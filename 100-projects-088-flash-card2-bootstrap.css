@@ -2,9 +2,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    background-color: #f0f0f0;
+    height: 100vh;
+    background-color: #434343;
     font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: white;
 }
 
 .flashcard-grid {
@@ -30,12 +34,12 @@ body {
     align-items: center;
     padding: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
+    border-radius: 3px;
     transition: transform 0.5s;
 }
 
 .card-front {
-    background-color: #00fbff;
+    background-color: #21c6c9;
     color: white;
 }
 
